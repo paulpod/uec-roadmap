@@ -1,0 +1,24 @@
+//NHS Header
+
+header#nhs-header {
+  background-color: $nhs-blue;
+  border-top: $dark-blue 4px solid;
+  padding-top:0em;
+  margin-top:0em;
+}
+
+.header-logo {
+  width: 100%;
+}
+
+
+
+.header-list {
+
+  ul, li {
+    color: white;
+    line-height: 1.8;
+    font-size:18px;
+  }
+}
+

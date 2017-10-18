@@ -4,7 +4,7 @@
 <!--[if gt IE 8]><!--><html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>{% block page_title %}INVEST in GREAT{% endblock %}</title>
+    <title>{% block page_title %}NHS Pharmacy Dos Quality Payments{% endblock %}</title>
 
     <!--[if gt IE 8]><!--><link href="{{ asset_path }}stylesheets/govuk-template.css?0.19.2" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="{{ asset_path }}stylesheets/govuk-template-ie6.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
@@ -60,17 +60,13 @@
     </div>-->
 
     
-    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
-      <div class="header-wrapper" style="background-color: ">
-        <div class="header-global">
+     <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
           <div class="header-logo">
-            <a href="{{ homepage_url|default('') }}" title="{{ logo_link_title|default('Go to the NHS.UK homepage') }}" id="logo" class="content">
-              <img src="/public/images/nhs-white.svg" alt="NHS LOGO"> {{ global_header_text|default('') }}
+            <a href="{{ homepage_url|default('') }}" title="{{ logo_link_title|default('Go to the NHS.UK homepage') }}" id="logo">
+              <img src="/public/images/nhs-logo-white.svg" class="header-logo-img" alt="NHS LOGO" style="width: 2.5em"> Pharmacy DoS Quality 
             </a>
-          </div>
-          {% block inside_header %}{% endblock %}
         </div>
-        {% block proposition_header %}{% endblock %}
       </div>
     </header>
     
@@ -81,22 +77,26 @@
 
     {% block content %}{% endblock %}
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
-      <div class="footer-content">
+    <footer id="nhs-footer">
+      <div class="" id="content">
 
     
-         
-
-
-
-            
-
-          <div class="footer-hmgov" >
-            
+          <div class="footer-logo-block">
+            <img src="/public/images/nhs-logo-white.svg" class="footer-logo" alt="NHS logo">
           </div>
 
 
-          <div class="copyright">&copy; Crown copyright 2017. All rights reserved.
+
+
+          <div class="footer-list">
+
+            <ul class="footer-list">
+              <li>Help using this service</li>
+              <li>Privacy and cookies</li>
+              <li>Terms &amp; Conditions</li>
+              <li>NHS.UK</li>
+            </ul>
+
           </div>
 
           <br clear="all">

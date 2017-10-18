@@ -1,0 +1,19 @@
+//NHS Footer
+
+footer#nhs-footer {
+  background-color: $nhs-blue;
+  border-top: $dark-blue 4px solid;
+  padding-top:4em;
+  margin-top:4em;
+}
+
+
+.footer-list {
+
+  ul, li {
+    color: white;
+    line-height: 1.8;
+    font-size:18px;
+  }
+}
+

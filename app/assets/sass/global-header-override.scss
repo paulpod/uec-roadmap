@@ -4,18 +4,17 @@
 }
 
 #global-header {
-  background-color: #f0f0f0;
+  background-color: $nhs-blue;
 }
   #global-header .header-wrapper {
-    background-color: #f0f0f0;
-    max-width: 1200px;
+    background: $nhs-blue;
     margin: 0 auto;
     padding-top: 8px;
     padding-bottom: 0;
-    margin-bottom: -30px }
+    margin-bottom: 0px }
     @media (min-width: 769px) {
       #global-header .header-wrapper {
-            background-color: #f0f0f0;
+        background: $nhs-blue;
         padding-left: 0;
         padding-right: 0;
         padding-top: 8px;
@@ -23,15 +22,15 @@
         margin-bottom: 1px } }
     @media (min-width: 641px) {
       #global-header .header-wrapper {
-            background-color: #f0f0f0;
-
+        background-color: $nhs-blue;
         padding-left: 0;
         padding-right: 0;
         padding-top: 8px;
     padding-bottom: 8px; } }
 
 #global-header .header-wrapper .header-global .header-logo {
-  float: left; }
+  float: left;
+   }
   @media (min-width: 769px) {
     #global-header .header-wrapper .header-global .header-logo {
        } }
@@ -42,10 +41,10 @@
       float: none; } }
 
 #global-header .header-wrapper .header-global .header-logo .content {
-  margin: 0 15px; }
+  margin: 0; }
 
 #global-header .header-wrapper .header-global .header-logo {
-  margin-top: 2px; }
+  margin-top: 0; }
 
 @media (min-width: 769px) {
 #global-header.with-proposition .header-wrapper .header-global {
@@ -62,13 +61,19 @@
   float: left; } }
 
 #global-header.with-proposition .header-wrapper .header-proposition .content {
-  margin: 0 15px; }
+  margin: 0 0; }
 
 #global-header #logo {
-  background-image: url('/public/images/iigb-logo.png') no-repeat;
-  background-size: 120px 100px;
-  overflow: visible;
+  margin-left:12px;
+  padding-bottom: 2px;
+  font-size: 2em;
 }
+@media (max-width: 769px) {
+  #global-header #logo {
+  margin-left:12px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}}
 
 #global-header #logo img {
   visibility: visible;
@@ -76,7 +81,6 @@
 }
 @media (max-width: 769px) {
   #global-header #logo img {
-    margin-top: 10px;
   }
 }
 
@@ -87,10 +91,10 @@
 #global-header .header-proposition {
   padding-top: 10px;
   position: relative;
-  right: -70px; }
+  right: 70px; }
   @media (min-width: 1069px) {
     #global-header .header-proposition {
-      right: -140px;
+      right: 140px;
       padding-top: 0; } }
   @media (min-width: 969px) {
     #global-header .header-proposition {
@@ -107,7 +111,7 @@
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2;
   font-weight: bold;
   color: white;
@@ -124,7 +128,7 @@
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.14286;
   color: black;
   display: block;
@@ -138,7 +142,7 @@
   border:2px #ccc solid; }
   @media (min-width: 641px) {
     #global-header .header-proposition a.menu {
-      font-size: 16px;
+      font-size: 11px;
       line-height: 1.25; } }
 
 
@@ -152,7 +156,7 @@
 
 #global-header .header-proposition a.menu:after {
   display: inline-block;
-  font-size: 20px;
+  font-size: 10px;
   height: 8px;
   padding-left: 0;
   vertical-align: middle;
@@ -208,7 +212,7 @@
   background-color: white;
   position: absolute;
   z-index: 10;
-  left:-120px;
+  left:120px;
   padding-left:5em;
   padding-bottom: 1.25em; }
   }
@@ -246,7 +250,7 @@
 @media (min-width: 641px) {
   #global-header .header-proposition #proposition-link a,
   #global-header .header-proposition #proposition-links a {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.42857; } }
 
 
@@ -264,7 +268,7 @@
 @media (min-width: 769px) and (min-width: 641px) {
 #global-header .header-proposition #proposition-link a,
 #global-header .header-proposition #proposition-links a {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.25; } }
 
 @media (max-width: 769px) {
@@ -300,7 +304,6 @@
 #global-header .header-proposition #proposition-links a.active {
     color: black;
     overflow: visible;
-    background: url('/public/images/triangle-right-red.svg') left 1px top 5px no-repeat;
 
 }
 @media (min-width: 769px) {

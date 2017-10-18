@@ -1,0 +1,11 @@
+.back-arrow:before {
+	content:'← ';
+}
+.back-arrow {
+ color: $nhs-blue;
+ text-decoration: none;
+}
+
+a:visited {
+ color: $nhs-blue;
+	}

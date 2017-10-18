@@ -1,0 +1,69 @@
+// Date pattern
+
+// Hide the 'spinner' for webkit
+// and also for Firefox
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-date {
+
+  .form-group {
+    float: left;
+    width: 50px;
+
+    margin-right: 20px;
+    margin-bottom: 0;
+    clear: none;
+
+    label {
+      display: block;
+      padding-bottom: 2px;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .form-group-year {
+    width: 70px;
+  }
+}
+
+
+
+// Text pattern
+
+.form-text {
+
+  .form-group {
+    
+    margin-right: 20px;
+    margin-bottom: 1px;
+
+    label {
+      display: block;
+      padding-bottom: 2px;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    p.form-hint {
+		margin-top:5px;
+    }
+  }
+
+}
+
+.form-group-phone {
+	width: 50%;
+}

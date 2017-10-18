@@ -1,0 +1,69 @@
+// ODS Search and results pattern
+
+
+.secondary-button {
+  background-color: $nhs-blue;
+  box-shadow: 0 2px 0 #001636;
+  
+}
+
+.multiple-choice {
+position: relative;
+top:13px;
+}
+
+.tab {
+display:block;
+background-color: $grey-5;
+border: 2px $grey-4 solid;
+border-bottom: none;
+width: 45%;
+max-width: 300px;
+padding: 5px 12px 1px 16px;
+margin-right:6px;
+float: left;
+height: 52px;
+}
+@media screen and (max-width: 767px) {
+  .tab {
+    //width: 48%;
+    padding: 2px 6px 1px 10px;
+    margin-right:0;
+    border: none;
+  }
+
+}
+
+.active-tab {
+background-color: white;
+border: 2px solid $grey-3;
+border-bottom: 2px solid white;
+}
+.tab:after {
+  clear: all;
+}
+
+.two-tabs {
+  background-color: white;
+  border-bottom: 2px solid $grey-3;
+  overflow: visible;
+  height: 60px;
+
+}
+.tab {
+  .label {
+    display: block;
+    //background-color: yellow;
+    //width:66%;
+    float:left;
+    margin-top:13px;
+  }
+}
+#results-count, #selected-count {
+  text-align: right;
+  margin-top:13px;
+}
+#results-table {
+  label {
+    display: inline-block;}
+}

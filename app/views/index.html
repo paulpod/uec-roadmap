@@ -1,7 +1,7 @@
 {% extends "layout-simple.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  A NHS.UK prototype kit
 {% endblock %}
 
 {% block content %}
@@ -11,166 +11,25 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge" style>
-        Design
+        NHS A2SI - Design
         <span class="heading-secondary"></span>
       </h1>
 
-      <h2 class="heading-large">
-        Styles
-      </h2>
 
-      <p>Text styles with examples and spec <a href="type">for desktop</a> and <a href="type-mobile">for mobile</a>.</p>
-
-
+      
 
       <h2 class="heading-large">
-        Revised home page
+        Prototypes
       </h2>
 
 
 
-      <p><strong>Minimum viable update:</strong>
-      <ul>
-      <li class="list-bullet">reduced height jumbotron, as the video no longer plays in-place</li>
-      <li class="list-bullet">a simple content unit after the video on "Why the UK?"</li>
-      <li class="list-bullet">"Why the UK" uses existing styles, with padded, bordered boxes</lI>
+      <ul class="list list-bullet">
+      <li class="list-bullet"><a href="start">Start page</a>, profile updater</li>
+      <li class="list-bullet"><a href="user-reg">User registration</a>, form</li>
+      <li class="list-bullet"><a href="search-results">Search results</a>, select + shortlist</lI>
       </ul>
-      </p>
 
-      <a href="/public/images/homepage-minimum.png"><img src="/public/images/homepage-minimum.png" width="550px"></a>
-
-      <p>Some edits to get more of this unit sharing a common baseline:</p>
-
-      <a href="/public/images/tweaks-to-improve-why-uk.png"><img src="/public/images/tweaks-to-improve-why-uk.png" width="550px"></a>
-
-
-
-
-
-
-      
-
-      <p style="margin-top: 3em"><strong>Recommended additional update:</strong>
-      <ul>
-      <li class="list-bullet">remove the blurbs from the "Set up guide" extracts</li>
-      <li class="list-bullet">remove the "What we do" section entirely</strong></li>
-      <li class="list-bullet">update the "UK industries" subsection to match /industries index</li>
-      <li class="list-bullet">add a new content unit for "Where to invest" </li>
-      <li class="list-bullet">add new styles for these content units (mainly remove boxes, borders)</li>
-      </ul>
-      </p>
-
-      <a href="/public/images/homepage-recommended.png"><img src="/public/images/homepage-recommended.png" width="360px"></a>
-
-
-      <p style="margin-top: 3em"><strong>Checkerboard concept:</strong>
-      <br>
-      Rearranges the homepage elements in a more dynamic layout, drawing the user down the page, fixed into a chunky tiled grid. Tiles run 3x wide on desktop - could run 2x on mobile, 4x on landscape/large tablet. Use white spaces alongside image tiles to keep the page light and bright.</p>
-
-      <a href="/public/images/homepage-checkers.png"><img src="/public/images/homepage-checkers.png" width="360px"></a>
-
-
-     
-
-
-
-    <h2 class="heading-large">
-      Investment locations (iOps)
-    </h2>
-
-    <p>Latest maps have a city overlay layer, produced manually. A <a href="/public/images/region-map-label-overlay.zip">PSD file for each of the regions is archived here</a>.</p>
-
-    <p>Latest maps have a vector region, positioned to allow room for the mini-uk map in the top left, produced manually. A <a href="/public/images/region-maps.zip">PSD file for each of the regions is archived here</a>.</p>
-
-
-    <p>Latest region page, with baseline fixes applied and a reccommendation to move to a 4:3 rectagular map when time permits - this will better fit the shortest x longest key facts content on the left:</p>
-
-    <a href="/public/images/region-map-keyfacts-together.png">
-    <img src="/public/images/region-map-keyfacts-together.png" width="360px">
-    </a>
-
-    <p style="margin-top:2em">Why the UK page, with no selected industry, has the map below, showing regions moved across from flush-right to alongside the list. This makes the page a 2/3rds column in-keeping with the other pages, and is partly a result of the smaller 21px fontsize everywhere now.</p>
-
-    <a href="/public/images/where-uk-unselected.png">
-    <img src="/public/images/where-uk-unselected.png" width="360px">
-    </a>
-
-
-    <p><a href="where-uk-1"><strike>New</strike> A prototype for this version</a>, with an 'empty' map on entry direct from the nav, with selectable industy or region. Unspecific datasets with map + table can be made available here (eg. Transport links)</p>
-
-    <p>Clicking on any of the industry links goes to...</p>
-
-    <p><a href="where-uk-2"><strike>New</strike> A prototype for this version</a>, with a selected industry, and corresponding industry cluster heat map. Below, there are map + table pairs that show data related to the industry x University, Salary differential, R&amp;D hubs.</p>
-
-    <p><a href="where-uk-3">A quick sketch of a generated summary</a>, to the right of the map, using the data to generate a few sentences summarising the (same) industry clusters data on the heatmap.</p>
-
-
-    <h3 class="heading-medium">Older</h3>
-
-    <p><a href="mixmap4">A prototype of a region picking page</a>, the entry point to the 'Investment Opportunities' area (nb. working title, 'Location guide' another we are using).</p>
-
-    <p><a href="location-1">Prototype of a region-level 'location profile' page</a>, with a single layout showing images, region overview, data points presented as an infographic and an interactive map.</p>
-
-    <p>Interactive map allows user to see what industries are active in a region, what transport links are there, as well as R&amp;D Hubs, financial incentives, etc.</p>
-
-    <p><a href="location-1-notes">I've written up notes on the various parts</a> of the region page.</p>
-
-    <p>A quick <a href="/public/images/region-page-mobile.png">sketch for mobile</a> has all of the content, but omits the interactive map. Obviously we will want to revisit this, but after we've validated more of the decisions around content and the desktop interactive map.</p>
-
-    <p><a href="/public/images/sitemap.png">A draft of the sitemap</a> showing links from/to the new iOPS region pages</p>
-
-    <p><a href="mobile-anim">An animation of how menus</a> might work with the map on a mobile size screen</p>
-
-
-
-    <h3 class="heading-medium">even older</h3>
-
-    <p><a href="/public/images/location-profile-with-industry-map.jpg">Latest sketch of a location profile</a>, with embedded interative industry sector map of region.</p>
-
-    <p>Quick comps of <a href="maps-sketches-1">things I've sketched and adapted while exploring</a> how to present our specific information in a map-centric way.</p>
-
-    <p><a href="maps-research-1">Scrapbook of found examples of maps</a>, data, and how these have been applied successfully (and not).</p>
-
-    
-
-
-
-      
-
-    <h2 class="heading-large">
-      Contact form
-    </h2>
-
-    <p>Fairly straight reworking of <a href="contact-1">the contact form on one page</a>, but removed the 123 from desktop (already supressed on live for mobile)</p>
-
-    <p>One thing per page - <a href="contact-2">this is the recommended GDS model</a> for simple and complex forms, not literally one thing, but multi-page simple forms perform better than over-grouping of elements on fewer pages.</p>
-
-    <p>Further guidance <a href="https://www.gov.uk/service-manual/design/form-structure"> on the Service Manual</a>.</p>
-
-    
-
-
-    <hr>
-
-
-
-    <h2 class="heading-large">
-      Testing for mobile: Industries
-    </h2>
-
-    <p style="padding-top:1em"><strong style="font-size:1.3em">LIVE</strong> Here is the current live <a href="https://invest.great.gov.uk/int/">home page, mocked up</a>. Choose the <a href="https://invest.great.gov.uk/int/industries/">'industries' list</a> from the menu, to see how the list is currently presented.</p>
-
-    <p style="padding-top:2em"><strong style="font-size:1.3em">LIST</strong> Here is a <a href="home-ind1">home page mockup</a>. You can choose the <a href="industries-1">'industries' list</a> from the menu, or the 'discover more' button half way down the page. This takes you to <a href="industries-1">one variation of the industry list</a> we are testing.</p>
-
-    <p style="padding-top:2em"><strong style="font-size:1.3em">IMAGES</strong> Here is another <a href="home-ind2">home page mockup</a>. You can choose the <a href="industries-2">'industries' list</a> from the menu, or the 'discover more' button half way down the page. This takes you to <a href="industries-2">a second variation of the industry list</a>.</p>
-
-    <p>On both of those you can go through to <a href="industry-automotive">an industry page - choose 'Automotive' </a> from the list.</p>
-
-    <h3 class="heading-medium">
-
-    <p>Revisited the desktop view of this list, assuming images (for major sectors) and a list of everything else.</p>
-
-    <a href="/public/images/desktop-industries-list.jpg"><img src="/public/images/desktop-industries-list.jpg" width="400" ></a>
 
 
     <hr>

@@ -1,0 +1,184 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+      <h1 class="heading-large">Find your services</h1>
+
+      <p>
+      You can search again using the search box below.</p>
+
+      <p>If you can't find any of your services, <a href="#">click here</a>.</p>
+
+
+
+        <fieldset class="form-group form-block">
+          <legend class="visuallyhidden">Search for services</legend>
+          <div class="form-text">
+
+            <label for="name-first">ODS code or Postcode</label>
+
+
+            <div class="form-group form-group-name form-control-2-3" style="float:left;">
+              <input class="form-control " id="name-first" name="name-full" type="text">
+            </div>
+
+             <div class="form-group form-control-1-4">
+              <input class="button secondary-button" type="submit" value="Search" >
+            </div>
+
+          </div>
+        </fieldset>
+
+
+        <p>Showing results for <strong>FEF88</strong>, select all the pharmacy services that are yours:</p>
+
+
+      </div>
+
+
+      <div class="column-third">
+        &nbsp;
+      </div>
+
+    </div><!-- end Grid row -->
+
+
+    <div class="grid-row">
+      <div class="column-full">
+
+
+
+
+        <div id="tabs" class="two-tabs">
+
+          <div id="tab" class="tab">
+            <div class="label"><a href="search-results">Search results</a></div>
+
+            <div id="results-count">12</div>
+          </div>
+
+          <div id="tab" class="tab active-tab">
+            <div class="label">Selected services</div>
+
+            <div id="selected-count">0</div>
+          </div>
+
+
+
+        </div>
+
+
+        <br clear="all">
+
+
+
+
+
+
+
+        <div id="results-table" class="form-group ">
+
+            <table>
+              <tr class="clickable-row">
+                <td data-locator="td_ods_code" >
+                  <div class="form-group">
+                    <div class="multiple-choice">
+                      <input id="check-FXH69" name="FXH69" type="checkbox" value="FXH69">
+                      <label for="check-FXH69">FXH69</label>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-locator="td_pharmacy_name" class=""><label for="check-FXH69">Pharmacy-Cohens Chemist Holmfield Blackpool</label></td>
+                <td data-locator="td_address"><label for="check-FXH69">91 Holmfield Road, Blackpool, Lancashire, FY2 9RS</label></td>
+              </tr>
+
+              <tr class="">
+                <td data-locator="td_ods_code" class="">
+                  <div class="form-group">
+                    <div class="multiple-choice">
+                      <input id="check-FHD57" name="FHD57" type="checkbox" value="FHD57">
+                      <label for="check-FHD57">FHD57</label>
+                    </div>
+                  </div>
+                </td>
+                <td data-locator="td_pharmacy_name" class=""><label for="check-FHD57">Pharmacy-B J Rhodes Pharmacy Blackpool</label></td>
+                <td data-locator="td_address"><label for="check-FHD57">275 Devonshire Road, Blackpool, Lancashire, FY2 0TN</label></td>
+              </tr>
+
+              <tr class="row-stripe">
+                <td data-locator="td_ods_code" class="">
+                  <div class="form-group">
+                    <div class="multiple-choice">
+                      <input id="check-FGF35" name="FGF35" type="checkbox" value="FGF35">
+                      <label for="check-FGF35">FGF35</label>
+                    </div>
+                  </div>
+                </td>
+                <td data-locator="td_pharmacy_name" class=""><label for="check-FGF35">Pharmacy- Well Pharmacy All Hallows Blackpool</label></td>
+                <td data-locator="td_address"><label for="check-FGF35">9-11 All Hallows Road, Blackpool, Lancashire, FY2 0AS</label></td>
+              </tr>
+
+              <tr class="">
+                <td data-locator="td_ods_code" class="">
+                <div class="form-group">
+                    <div class="multiple-choice">
+                      <input id="check-FR658" name="FR658" type="checkbox" value="FR658">
+                      <label for="check-FR658">FR658</label>
+                    </div>
+                  </div>
+                </td>
+                <td data-locator="td_pharmacy_name" class=""><label for="check-FR658">Pharmacy- Lloyds Pharmacy in Sainsburys -  Blackpool</label></td>
+                <td data-locator="td_address"><label for="check-FR658">Sainsburys Store, Red Bank Road, Blackpool, Lancashire, FY2 9HY</label></td>
+              </tr>
+
+            </table>
+
+        </div><!-- end table container -->
+
+
+
+
+
+
+
+        <div id="buttons">
+          <div class="form-group">
+            <input class="button" type="submit" value="Continue">
+          </div>
+
+
+          <div>
+            <a class="user-reg" href="start">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+
+{% endblock %}
+
+
