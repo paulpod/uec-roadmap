@@ -48,8 +48,18 @@ border-bottom: 2px solid white;
   border-bottom: 2px solid $grey-3;
   overflow: visible;
   height: 60px;
+}
+@media screen and (max-width: 767px) {
+  .two-tabs {
+    background-color: white;
+    border-bottom: 2px solid $grey-3;
+    overflow: visible;
+    height: 56px;
+  }
 
 }
+
+
 .tab {
   .label {
     display: block;
@@ -66,4 +76,16 @@ border-bottom: 2px solid white;
 #results-table {
   label {
     display: inline-block;}
+}
+
+
+
+button.remove-service {
+  background: none !important;
+    border: none;
+    padding: 0! important;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit !important;
+  color:red;
 }
