@@ -12,12 +12,16 @@ $path: "/public/images/";
 // Take a look at in app/assets/sass/patterns/ to see which files are imported.
 @import 'patterns/check-your-answers';
 @import 'patterns/task-list';
-
-@import 'patterns/user-details-form';
-@import 'patterns/ods-search-form';
 @import 'patterns/back-arrows';
 @import 'patterns/nhs-footer';
 @import 'patterns/nhs-header';
+
+
+@import 'patterns/user-details-form';
+@import 'patterns/ods-search-form';
+@import 'patterns/ods-review-items';
+
+
 
 
 // Add extra styles here, or re-organise the Sass files
