@@ -149,17 +149,17 @@
               <span>Are these details complete and correct?</span>
             </div>
 
-            <div style="float:left">
+            <div style="float:left" id="radiocb">
 
               <fieldset class="inline" style="position: relative;top:-3px">
 
                 <div class="multiple-choice">
-                  <input id="radio-yes" type="checkbox" name="radio-group" value="yes">
+                  <input id="radio-yes" type="radio" name="radio-group" value="yes">
                   <label for="radio-yes" >Yes</label>
                 </div>
 
                 <div class="multiple-choice">
-                  <input id="radio-no" type="checkbox" name="radio-group" value="no">
+                  <input id="radio-no" type="radio" name="radio-group" value="no">
                   <label for="radio-no" >No</label>
                 </div>
 
@@ -226,6 +226,21 @@
 	</div>
 
 </main>
+
+<script type="text/javascript">
+  
+  function cbclick(e){
+   e = e || event;
+   var cb = e.srcElement || e.target;
+   if (cb.type !== 'checkbox') {return true;}
+   var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+    while(i--) {
+        if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+         cbxs[i].checked = false;
+        }
+    }
+    // if the click should always 
+</script>
 
 
 {% endblock %}
