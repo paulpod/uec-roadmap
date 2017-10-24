@@ -1,14 +1,11 @@
-// ODS Edit services, times, dates, items
+// ODS Review services, times, dates, items
 
-input.form-control,
-textarea.form-control {
-font-size: 2em;
-}
+
 
 
 .review-day {
   display: block;
-  width:120px;
+  width:110px;
   margin-right:1em;
   float: left;
 }
@@ -23,7 +20,9 @@ font-size: 2em;
   color: #cc0000;
 }
 
-
+.form-bold {
+  font-weight: 600;
+}
 
 
 .edit-services-column {
@@ -33,7 +32,10 @@ font-size: 2em;
     margin-bottom: 0.52em;
     margin-top: 0;
   }
-  
+  .form-control {
+    font-size: 1em;
+    background-color: white;
+  }
 
   p.review-day-p {
     margin-bottom: 1.04em;
@@ -73,6 +75,10 @@ font-size: 2em;
 }
 
 
+.review-message {
+  float:left;
+  padding: 0.9em 1em 0.25em 0;
+}
 
 .review-buttons {
   background-color:#edf3f8;
@@ -82,15 +88,16 @@ font-size: 2em;
 }
 
 @media (max-width: 769px) {
-.review-buttons {
-display: block;
-height: 100px;
+  .review-buttons {
+  display: block;
+  height: 160px;
+  }
 }
 
 
+#closed-service {
+  float: right;
+  margin-top:-0.2em;
+  font-size: 0.9em;
+}
 
-  #closed-service {
-    float: right;
-    margin-top:-0.2em;
-    font-size: 0.9em;
-  }

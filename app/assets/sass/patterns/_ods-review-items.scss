@@ -69,6 +69,10 @@
 }
 
 
+.review-message {
+  float:left;
+  padding: 0.9em 1em 0.25em 0;
+}
 
 .review-buttons {
   background-color:#edf3f8;
@@ -80,14 +84,14 @@
 @media (max-width: 769px) {
   .review-buttons {
   display: block;
-  height: 100px;
+  height: 160px;
   }
 }
 
 
-  #closed-service {
-    float: right;
-    margin-top:-0.2em;
-    font-size: 0.9em;
-  }
+#closed-service {
+  float: right;
+  margin-top:-0.2em;
+  font-size: 0.9em;
+}
 
