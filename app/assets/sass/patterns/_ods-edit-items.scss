@@ -1,6 +1,9 @@
 // ODS Edit services, times, dates, items
 
-
+input.form-control,
+textarea.form-control {
+font-size: 2em;
+}
 
 
 .review-day {
@@ -24,17 +27,13 @@
 
 
 .edit-services-column {
-  .input-field {
-  border: 2px solid #333 !important;
-}
-
-
   p {
     font-size: 0.9em;
     line-height: 1.6;
     margin-bottom: 0.52em;
     margin-top: 0;
   }
+  
 
   p.review-day-p {
     margin-bottom: 1.04em;
