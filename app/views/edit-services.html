@@ -15,9 +15,9 @@
 	<div class="grid-row">
 		<div class="column-two-thirds">
 
-      <h1 class="heading-large">Review your services</h1>
+      <h1 class="heading-large">Editing your services</h1>
 
-      <p>Check the details for each of your services and choose Yes or No.</p>
+      <p>All of the </p>
 
       <p>If you have services missing, please <a href="#">click here</a>.</p>
 
@@ -51,23 +51,29 @@
       <div class="column-third">
         
 
-        <div class="review-services-column">
+        <div class="edit-services-column">
 
           <p><strong>ODS Code</strong><br>
-          FEF88</p>
+            <input class="input-field" type="text" size="8" value="FEF88">
+          </p>
 
           <p><strong>Public phone</strong><br>
-          01752896787</p>
+            <input type="text" size="16" value="01752896787">
+          </p>
 
           <p><strong>Address</strong><br>
-          Boots Pharmacy, <br>
-          2-3 Erme Terrace, <br>
-          Station Road, <br>
-          Ivybridge, <br>
-          Devon</p>
+            <input type="text" size="16" value="Boots Pharmacy"></p>
+
+            <p><input type="text" size="16" value="2-3 Erme Terrace"></p>
+            <p><input type="text" size="16" value="Station Road"></p>
+            <p><input type="text" size="16" value="Ivybridge"></p>
+            <p><input type="text" size="16" value="Devon"></p>
+            <p><a href="#">Add an address line</a>
+          </p>
 
           <p><strong>Post Code</strong><br>
-          PL21 0AL</p>
+            <input type="text" size="16" value="PL21 0AL">
+          </p>
 
           <p><strong>Town</strong> (set from postcode)<br>
           Bourton-on-the-Water xyz</p>
@@ -79,7 +85,7 @@
 
 
         
-        <div class="review-services-column">
+        <div class="edit-services-column">
 
           <p class="review-day-p"><strong>Opening hours</strong><br>
           <span class="review-day">Monday</span> <strong>09:00 – 17:30</strong></p>
@@ -104,7 +110,7 @@
 
       <div class="column-third">
 
-        <div class="review-services-column">
+        <div class="edit-services-column">
 
           <p class="review-day-p"><strong>Bank holidays</strong><br>
           <span class="review-bankhol">Mon, Christmas Day</span><br>
@@ -141,7 +147,7 @@
 
 
     <div class="grid-row">
-      <div class="column-full review-buttons">
+      <div class="column-full"  style="background-color:#edf3f8;border-top: 1px solid #bdd8ee;border-bottom: 4px solid #0f6ecc;margin-bottom:2em">
 
           <div class="form-group" style="margin: 0 0 0.5em 0">
 
@@ -168,16 +174,16 @@
 
 
 
-        <div id="closed-service">
+        <div id="closed-service" style="float: right;margin-top:-0.2em">
           <div class="multiple-choice">
             <input id="radio-closed" type="checkbox" name="radio-group" value="closed">
-            <label for="radio-closed">Service no longer available</label>
+            <label for="radio-closed" style="font-size: 0.9em;">Service no longer available</label>
           </div>
         
 
         </div>
 
-        <br clear="all">
+            <br clear="all">
 
       </div>
     </div><!-- end Grid row -->
@@ -203,14 +209,14 @@
 
 
 
-          <div class="form-group ">
+          <div class="form-group">
             <!--<input class="button" type="submit" value="Continue">-->
 
-            <a class="button primarybutton" href="edit-services" role="button">Continue →</a>
+            <a class="button" href="search-results" role="button">Continue →</a>
           </div>
 
 
-          <div class="secondarybutton">
+          <div>
             <a class="back-arrow" href="start">Previous step</a>
           </div>
         </div>

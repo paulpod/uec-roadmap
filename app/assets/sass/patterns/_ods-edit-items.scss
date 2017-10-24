@@ -1,4 +1,4 @@
-// ODS Review services, times, dates, items
+// ODS Edit services, times, dates, items
 
 
 
@@ -23,7 +23,12 @@
 
 
 
-.review-services-column {
+.edit-services-column {
+  .input-field {
+  border: 2px solid #333 !important;
+}
+
+
   p {
     font-size: 0.9em;
     line-height: 1.6;
