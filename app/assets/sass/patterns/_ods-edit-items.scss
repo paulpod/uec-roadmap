@@ -6,6 +6,7 @@
 }
 
 .review-day {
+  //font-size: 0.9em;
   display: block;
   width:110px;
   margin-right:1em;
@@ -26,6 +27,33 @@
 .form-bold {
   font-weight: 600;
 }
+
+.addhours {
+  text-decoration: none;
+  background-image: url('/public/images/icon-moretime+.png');
+  background-repeat: no-repeat;
+  background-size: 2em;
+  background-position: 1px 4px;
+  padding-left: 2em;
+}
+a.addhours:hover:after {
+  //text-decoration: underline;
+  content: 'add more hours';
+  color: #005eb8;
+  margin-left: 0.3em;
+  }
+
+.removehours {
+  text-decoration: none;
+  background-image: url('/public/images/icon-circle-close-x.png');
+  background-repeat: no-repeat;
+  background-size: 0.85em;
+  background-position: 0 4.5px;
+  padding-left: 1.2em;
+}
+
+
+
 
 
 .edit-services-column {
