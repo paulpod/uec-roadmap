@@ -32,7 +32,7 @@
   text-decoration: none;
   background-image: url('/public/images/icon-moretime+grey.png');
   background-repeat: no-repeat;
-  background-size: 2em;
+  background-size: 44px 16.5px;
   background-position: 1px 4px;
   padding-left: 2em;
 }
@@ -190,3 +190,42 @@ a.addhours:hover:after {
   div.combobox  .dropdownlist, input {}
   div.combobox  input {}
   div.combobox  span  {}
+
+
+  div.day-sqr-container {
+    
+
+    li.day-sqr {
+      
+      width: 36px;
+      height: 26px;
+      display: inline-block;
+      float: left;
+      margin-right: 3px;
+      font-size: 0.7em;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 11px;
+    }
+    li.day-sqr:last-child {
+      margin-right: 0;
+    }
+
+    .day-sqr-open {
+      border: solid 2px #208000;
+      background-color:#208000;
+      color:white;
+    }
+    .day-sqr-altopen {
+      border: solid 2px #E5CD8B;
+      background-color:#fde39a;
+      color: #208000;
+    }
+    .day-sqr-closed {
+      border: solid 2px #bf0000;
+      color: #bf0000;
+    }
+    
+  }
+
