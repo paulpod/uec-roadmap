@@ -30,17 +30,23 @@
 
 .addhours {
   text-decoration: none;
-  background-image: url('/public/images/icon-moretime+grey.png');
+  background-image: url('/public/images/icon-moretime+blue.png');
   background-repeat: no-repeat;
-  background-size: 44px 16.5px;
+  background-size: 42px 16px;
   background-position: 1px 4px;
-  padding-left: 2em;
+  padding-left: 2.6em;
+  padding-bottom: 0.2em;
+  font-size: 0.96em;
+position: relative;
+top: -8px;
 }
 a.addhours:hover:after {
   //text-decoration: underline;
   content: 'add more hours';
   color: #005eb8;
   margin-left: 0.3em;
+  position: relative;
+  top:2px;
   }
 
 .removehours {
@@ -163,7 +169,7 @@ a.addhours:hover:after {
   div.combobox  div.dropdownlist  {
    z-index: 2000;
     display: none;
-    width: 102%;
+    width: 112%;
     border: solid 2px #666;
     border-radius: 4px;
     background-color: #fff;
