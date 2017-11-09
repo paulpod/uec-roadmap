@@ -236,3 +236,105 @@ a.addhours:hover:after {
     
   }
 
+
+
+
+
+
+
+div.tombobox  {font-size: 0.9em;}
+  div.tombobox  {
+    //background-color: yellow;
+    position: relative;
+    zoom: 1;
+    width: 24.5%;
+    float: left;
+    margin-top: -5px;
+  }
+  div.tombobox-dash {
+    float: left;
+    padding: 0.15em 0.25em 0 0.25em;
+    color: #333;
+  }
+
+
+
+  div.tombobox  div.dropdownlist  {
+   z-index: 2000;
+    display: none;
+    width: 4.5em;
+    border: solid 2px #666;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 200px;
+    overflow: auto;
+    position: absolute;
+    top: 2.25em;left: -4px;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+  }
+
+  div.tombobox  .dropdownlist a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: #000;
+    padding: 1px 0 1px 10px;
+    height: 1.5em;
+    cursor: default;
+    font-weight:600;
+  }
+
+  div.tombobox  .dropdownlist a.light {}
+  div.tombobox  .dropdownlist, input {}
+  div.tombobox  input {}
+  div.tombobox  span  {}
+
+
+.green-box {
+  background-color: #fff8bf;
+  width: 31px;
+  height: 31px;
+  border: solid 2px #45ae00;
+  position: relative;
+  top:-3px;
+}
+.red-box {
+  background-color: #ffd9d9;
+  width: 31px;
+  height: 31px;
+  border: solid 2px #a60000;
+  position: relative;
+  top:-3px;
+}
+.grey-box {
+  background-color: white;
+  width: 31px;
+  height: 31px;
+  border: solid 2px #ccc;
+  position: relative;
+  top:-3px;
+}
+.green-box img, .red-box img {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top:4px;
+  left: 3px;
+}
+.grey-box img {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top:6px;
+  left: 6px;
+}
+
+
+.times-table {
+  font-size: 0.9em;
+}
+.times-table th, .times-table td {
+  font-size: 1em;
+}
