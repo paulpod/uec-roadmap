@@ -28,6 +28,13 @@
   font-weight: 600;
 }
 
+.form-arrow {
+  background-image: url('/public/images/click-arrow.png');
+  background-repeat: no-repeat;
+  background-size: 7px 9px;
+  background-position: 60px 11px;
+}
+
 .addhours {
   text-decoration: none;
   background-image: url('/public/images/icon-moretime+blue.png');
@@ -142,10 +149,10 @@ a.addhours:hover:after {
 
 
 .form-control-1-1 {
-  width: 100%;
+  width: 102%;
 
   @include media(tablet) {
-    width: 100%;
+    width: 102%;
   }
 }
 
