@@ -29,7 +29,7 @@
 }
 
 .form-arrow {
-  background-image: url('/public/images/click-arrow.png');
+  //background-image: url('/public/images/click-arrow.png');
   background-repeat: no-repeat;
   background-size: 7px 9px;
   background-position: 60px 11px;
@@ -323,6 +323,16 @@ div.tombobox  {font-size: 0.9em;}
   position: relative;
   top:-3px;
 }
+.noll-box {
+  background-color: #e0e0e0;
+  width: 31px;
+  height: 31px;
+  border: solid 2px #e0e0e0;
+  position: relative;
+  top:-3px;
+}
+
+
 .green-box img, .red-box img {
   width: 24px;
   height: 24px;
@@ -339,9 +349,25 @@ div.tombobox  {font-size: 0.9em;}
 }
 
 
-.times-table {
+
+.times-table, .times-table-vert {
   font-size: 0.9em;
 }
-.times-table th, .times-table td {
+.times-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em
+}
+.times-table td {
   font-size: 1em;
+}
+
+.times-table-vert th {
+  border-bottom: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.times-table-vert td {
+  border-bottom: none;
 }
