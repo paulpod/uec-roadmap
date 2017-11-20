@@ -1,0 +1,259 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+      <h1 class="heading-large">Editing your services</h1>
+
+      <p>Make as many changes as you need to your service details.</p>
+
+
+
+
+      </div>
+
+
+      <div class="column-third">
+        &nbsp;
+      </div>
+
+    </div><!-- end Grid row -->
+
+
+
+
+    <div class="grid-row">
+      <div class="column-full" style="background-color:#fff7da;border-top: 4px solid #fce8b6;margin-bottom:9px">
+        <div class="review-services-header">
+          <h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        
+
+        <div class="edit-services-column">
+
+
+          <table class="timing-table">
+
+            <thead>
+              <th>Pharmacy opening hours</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Monday to Friday</td>
+                <td class="hours">08:30 to 13:00</td>
+                <td class="hours">14:00 to 18:00</td>
+              </tr>
+
+              <tr>
+                <td>Saturday</td>
+                <td class="hours">08:30 to 17:00</td>
+                <td class="hours">&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>Sunday</td>
+                <td class="hours"><span style="color:#c00">Closed</span></td>
+                <td class="hours">&nbsp;</td>
+              </tr>
+
+            </tbody>
+
+          
+          
+
+            <thead>
+              <th>Services and hours available</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Emergency contraception</td>
+                <td class="hours">Mon to Fri</td>
+                <td class="hours">Open as above</td>
+              </tr>
+
+              <tr>
+                <td>Head lice management</td>
+                <td class="hours">Mon, Tues, Thu<br>Fri, Sat</td>
+                <td class="hours">Open as above<br>09:00 to 12:00</td>
+              </tr>
+
+
+              <tr>
+                <td>Inhaler technique service</td>
+                <td class="hours">Tues, Wed<br>Sat</td>
+                <td class="hours">09:00 to 15:00<br>10:00 to 15:00</td>
+              </tr>
+
+              <tr>
+                <td>Medication review service</td>
+                <td class="hours">Mon to Fri</td>
+                <td class="hours">Open as above</td>
+              </tr>
+
+              <tr>
+                <td>Minor ailment service</td>
+                <td class="hours">Mon to Fri</td>
+                <td class="hours">10:00 to 13:00</td>
+              </tr>
+
+              <tr>
+                <td>Needle and syringe exchange</td>
+                <td class="hours">Mon, Tues, Wed<br>Thu, Fri, Sat</td>
+                <td class="hours">09:00 to 13:00<br>10:00 to 13:00</td>
+              </tr>
+
+
+              <tr>
+                <td>NHS Health Check</td>
+                <td class="hours">Mon to Fri</td>
+                <td class="hours">Open as above</td>
+              </tr>
+
+              <tr>
+                <td>Post-discharge support</td>
+                <td class="hours">Mon to Fri</td>
+                <td class="hours">Open as above</td>
+              </tr>
+
+              <tr>
+                <td>Stop smoking service</td>
+                <td class="hours">Mon to Fri</td>
+                <td class="hours">Open as above</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+
+          
+
+        </div>
+      </div><!-- end column third -->
+
+      <div class="column-third">
+
+
+        <div class="edit-services-column">
+
+         
+          <br clear="all">
+
+        </div>
+
+      </div><!-- end column third -->
+
+     
+    </div><!-- end Grid row -->
+
+   
+
+
+      
+
+
+
+            
+
+            
+
+        </div><!-- end result container -->
+
+
+
+<hr>
+
+
+
+        <div id="buttons" style="margin-top:2em">
+
+
+
+          <div class="form-group">
+            <!--<input class="button" type="submit" value="Continue">-->
+
+            <a class="button" href="search-results" role="button">Continue →</a>
+          </div>
+
+
+          <div>
+            <a class="back-arrow" href="review-services-3">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+
+<script type="text/javascript" charset="utf-8" src="/public/javascripts/combobox.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+var no = new ComboBox('cb-mon1');
+var no = new ComboBox('cb-mon2');
+var no = new ComboBox('cb-tue1');
+var no = new ComboBox('cb-tue2');
+var no = new ComboBox('cb-wed1');
+var no = new ComboBox('cb-wed2');
+var no = new ComboBox('cb-wed3');
+var no = new ComboBox('cb-wed4');
+var no = new ComboBox('cb-thu1');
+var no = new ComboBox('cb-thu2');
+var no = new ComboBox('cb-thu3');
+var no = new ComboBox('cb-thu4');
+var no = new ComboBox('cb-fri1');
+var no = new ComboBox('cb-fri2');
+var no = new ComboBox('cb-sat1');
+var no = new ComboBox('cb-sat2');
+var no = new ComboBox('cb-sun1');
+var no = new ComboBox('cb-sun2');
+
+</script>
+
+<script type="text/javascript">
+  
+  function cbclick(e){
+   e = e || event;
+   var cb = e.srcElement || e.target;
+   if (cb.type !== 'checkbox') {return true;}
+   var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+    while(i--) {
+        if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+         cbxs[i].checked = false;
+        }
+    }
+    // if the click should always ddd
+</script>
+
+
+{% endblock %}
+
+

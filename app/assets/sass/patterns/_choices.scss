@@ -1,0 +1,79 @@
+.list-nobullet {
+	margin-bottom:1em;
+}
+
+
+.servlist-check div {
+	display: table-cell;
+	vertical-align: top;
+	padding-bottom: 1em;
+	font-size: 0.9em;
+}
+
+@media (min-width: 1020px) {
+#content {
+	max-width: 1280px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+
+
+
+}
+
+
+.timing-table {
+	th {
+		border-bottom: none;
+	}
+	td {
+		vertical-align: top;
+		border-bottom: none;
+		line-height: 1.6;
+	}
+	.hours {
+		font-weight: 600;
+	}
+
+
+}
+
+
+.small-day-boxes {
+	.day-sqr li {
+		background-color: #380;
+		color: white;
+		font-weight: 600;
+		text-align: center;
+		float: left;
+		width:1.6em;
+		height:1.6em;
+		margin-right: 2px;
+		margin-bottom: 0.8em;
+		line-height: 1.7;
+	}
+
+	.day-sqr li.day-closed {
+		background-color: #ccc;
+	}
+}
+
+
+.time-blocks {
+	line-height: 1;
+
+	.time-open {
+		float:left;
+		font-size: 0.9em;
+		padding-bottom: 0.25em;
+		border-bottom: #380 solid 8px;
+	}
+	.time-closed {
+		float:left;
+		font-size: 0.9em;
+		color: white;
+		padding-bottom: 0.25em;
+		border-bottom: #eee solid 8px;
+	}
+}
