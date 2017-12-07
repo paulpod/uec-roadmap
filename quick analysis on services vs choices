@@ -1,0 +1,178 @@
+
+
+
+
+
+
+Weekend
+
+- saturday is ad hoc
+- numsas - patchy cases 2,3 to 10 in a day at the weekend
+- in the week these would be referred to GPs
+
+positive solutions - pharma barcode software, for picking
+
+
+
+Typical pharmacy services
+
+Pharmacy with NUMSAS as a second service on DoS (share ODS code)
+
+FY283
+Pharmacy: Chemcare Pharmacy, Greenwich, London
+1 ELFORD CLOSE, KIDBROOKE, SE3 9FA
+
+FY283
+NUMSAS Pharmacy: Chemcare Pharmacy, Greenwich, London
+1 ELFORD CLOSE, KIDBROOKE, SE3 9FA
+
+
+
+Devon pharmacy entries also have many separate services sharing the ODS code
+
+FEF88
+Pharmacist - Boots Pharmacy - Ivybridge
+2-3 Erme Terrace, Station Road, Ivybridge, Devon, PL21 0AL
+
+Also on DoS separately:
+Emergency Contraception and Chlamydia
+Needle Exchange
+Supervised Consumption
+Emergency Supply Medicines
+Minor Ailments
+Chlamydia Grab Box
+Medicines Use Review
+New Medicines Scheme
+
+Listed on Choices:
+Medicines use review (MUR) service
+New medicine service
+Prescription collection from local General Practices
+Private consultation room
+Public Health
+
+
+another Devon example
+
+on DoS FHJ27
+Pharmacist - Bere Peninsula Pharmacy - Bere Alston
+The Pharmacy, 3 Fore Street, Bere Alston, Devon, PL20 7AA
+
+	Emergency Contraception and Chlamydia
+	Stop Smoking
+	Emergency Supply Medicines
+	Chlamydia Grab Box
+	New Medicines Scheme
+	Medicines Use Review
+
+
+On Choices
+
+Pharmacy services:
+Appliance dispensing
+Appointment booking available for consultations
+Appointment booking for consultations not required
+Medicines use review (MUR) service
+New medicine service
+Prescription collection from local General Practices
+Prescription delivery service
+Private consultation room
+Public Health
+Seasonal flu vaccination service (at risk groups)
+Stoma appliance customisation service
+
+Pharmacy Service (NHS)
+Chlamydia screening and treatment
+Emergency contraception
+Needle and syringe exchange
+Post-discharge support
+Stop smoking service
+Supervised consumption of medicines
+
+Pharmacy Service (Non-NHS)
+Emergency contraception
+
+
+
+
+
+
+In the description
+
+The NHS treatment services can be provided for:
+	1) Bacterial Urinary Tract Infection in a Women aged 16- 64 years
+	2) Bacterial Eye Infection Over 1 years
+	3) Emergency Repeat Medicine Supply
+	4) Impetigo skin infection
+	5) Nappy Rash
+	6) Emergency hormonal contraception
+	7) Influenza vaccination
+The NHS treatment services can be provided for:
+	1) Malarial prophylaxis and vaccination - travel clinics
+
+Pharmacy Service
+	Appliance dispensing
+	Appointment booking available for consultations
+	Medicines use review (MUR) service
+	New medicine serviceOther health professionals onsite
+	Prescription collection from local General Practices
+	Prescription delivery service
+	Private consultation room
+	Seasonal flu vaccination service (at risk groups)
+	Stoma appliance customisation service
+
+Pharmacy Service (NHS)
+	Alcohol screening and intervention service
+	Condom supply
+	Domiciliary support service
+	Emergency contraception
+	Head lice management
+	Inhaler technique service
+	Medication review service
+	Minor ailment service
+	Post-discharge support
+	Stop smoking service
+	Vaccination service
+	Weight management
+
+Pharmacy Service (Non-NHS)
+	Blood pressure monitoring
+	Chlamydia screening and treatment
+	Emergency contraception
+	Inhaler technique service
+	Seasonal flu vaccination service (not at risk groups)
+	Stop smoking service
+	Travel clinic
+	Vaccination service
+
+
+
+** Analysis **
+Services appear to be a mix of:
+- Most commonly one or two ODS/DoS registered services - regular pharmacy service + NUMSAS emergency medication service
+- additional ODS/DoS registered services, possibly with independent availability days/times
+- Choices services selected from the menu, without independent availability data
+- Additional free-text added services on the Choices page
+
+Problems:
+- The free text added services may or may not conform to any specific searches
+- Both the free text services and the selected services have no additional data on availability and hours
+- very few of these services are registered on DoS and therefore found on Service Finder
+
+Objectives:
+- Add some structure to the ODS/DoS registered services so services offered by pharmacies can be related to them and found in a single search
+- Add the additional services offered by pharmacies so they can be found on both Choices and DoS
+- Add granular availablity of days/hours for all services so they can be used
+- Clean up free-text areas on Choices so services listed can be found as searchable services 
+
+
+What are the Design issues?
+Showing lots of services
+Navigating lots of services x pharmacies
+Showing lots of time data for pharmacies x services
+Navigating to the required availability of a service x pharmacy, and next best alternative
+Editing and reviewing lots of services, and their availability
+
+
+
+

@@ -31,6 +31,21 @@ $path: "/public/images/";
 
 
 
+/* For responsive a wider viewport 1280 view */
+
+@media (min-width: 1020px) {
+	#content {
+		max-width: 1280px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
+	}
+
+	#global-header .header-wrapper {
+        max-width: 1280px;
+    }
+}
+
 
 /* NHS specific styles */
 /* - - - - - - - - - - */
