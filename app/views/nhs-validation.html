@@ -1,0 +1,97 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+      <h1 class="heading-large">Sign in using your nhs.net email address</h1>
+
+      <p>This appears to be the first time you've used this login.</p>
+
+      <p>We have sent a message to <strong>username@nhs.net</strong> to your address containing a validation code. Enter it below</p>
+
+
+
+      <form class="form">
+
+
+
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Validation code</legend>
+          <div class="form-text">
+
+
+            <div class="form-group form-group-email">
+
+
+              <label for="validation-code">8 character code from your email</label>
+              <input class="form-control" name="validation-code" type="text" id="validation-code">
+
+              <p class="form-hint">For example, ABC 123 XZ</p>
+
+            </div>
+
+          </div>
+        </fieldset>
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+
+          <a class="button" href="default-pharmacies" role="button">Continue</a>
+        </div>
+
+         
+
+
+        <div>
+           <a class="back-arrow" href="start">Previous step</a>
+         </div>
+
+      </form>
+
+
+			
+		</div>
+
+
+    <div class="column-third">
+
+      
+      &nbsp;
+
+
+    </div>
+
+
+	</div>
+
+</main>
+
+
+
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,98 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+      <h1 class="heading-large">Sign in using your nhs.net email address</h1>
+
+      <p>
+      Please enter your full name and contact details in the boxes below.</p>
+
+      <p>These details will be used by your local DoS team to contact you if they have any questions about your review.</p>
+
+
+      <form class="form">
+
+
+
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Email</legend>
+          <div class="form-text">
+
+
+            <div class="form-group form-group-email">
+
+
+              <label for="contact-email">NHS.net email</label>
+              <input class="form-control" name="contact-email" type="text" id="contact-email">
+
+              <p class="form-hint">For example, Sarah.Morgan72@nhs.net</p>
+
+            </div>
+
+          </div>
+        </fieldset>
+
+
+
+
+        <p>If this is the first time you've used this login, we will send a validation code to your nhs.net email address.</p>
+
+
+
+
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+
+          <a class="button" href="nhs-validation" role="button">Continue</a>
+        </div>
+
+         
+
+
+        <div>
+           <a class="back-arrow" href="start">Previous step</a>
+         </div>
+
+      </form>
+
+
+			
+		</div>
+
+
+    <div class="column-third">
+
+      
+      &nbsp;
+
+
+    </div>
+
+
+	</div>
+
+</main>
+
+
+
+
+
+
+{% endblock %}
+
+
