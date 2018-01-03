@@ -1,0 +1,197 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	
+      <h1 class="heading-large">Review your details</h1>
+
+      <p>Please check all of the details for your pharmacy and the services offered by it. You will be able to make changes, if required, at the next step.</p>
+
+
+
+      <h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Emergency Contraception and Chlamydia - Boots Pharmacy - Ivybridge</h3>
+      
+
+
+      <p><strong>ODS Code</strong><br>
+      FEF88</p>
+
+      <p><strong>Public phone</strong><br>
+      01752896787</p>
+
+      <p><strong>Address</strong><br>
+      Boots Pharmacy, <br>
+      2-3 Erme Terrace, <br>
+      Station Road, <br>
+      Ivybridge, <br>
+      Devon</p>
+
+      <p><strong>Post Code</strong><br>
+      PL21 0AL</p>
+
+      <p><strong>Town</strong> (set from postcode)<br>
+      Bourton-on-the-Water xyz</p>
+
+   
+
+      <p class="review-day-p"><strong>Opening hours</strong><br>
+      <span class="review-day">Monday</span> <strong>09:00 – 17:30</strong></p>
+
+      <p class="review-day-p"><span class="review-day">Tuesday</span> <strong>09:00 – 17:30</strong></p>
+
+      <p class="review-day-p"><span class="review-day">Wednesday</span> <strong>09:00 – 13:00</strong><br>
+      <span class="review-day">&nbsp;</span> <strong>14:00 – 18:30</strong></p>
+
+      <p class="review-day-p"><span class="review-day">Thursday</span> <strong>09:00 – 13:00</strong><br>
+     <span class="review-day">&nbsp;</span> <strong>14:00 – 18:30</strong></p>
+      
+      <p class="review-day-p"><span class="review-day">Friday</span> <strong>09:00 – 17:30</strong></p>
+
+      <p class="review-day-p"><span class="review-day">Saturday</span> <strong class="closed">Closed</strong></p>
+
+      <p class="review-day-p"><span class="review-day">Sunday</span> <strong class="closed">Closed</strong></p>
+
+   
+
+
+
+      <p class="review-day-p"><strong>Bank holidays</strong><br>
+      <span class="review-bankhol">Mon, Christmas Day</span><br>
+      <span class="review-date">25/12/2017</span> <strong class="closed">Closed</strong></p>
+
+      <p class="review-day-p"><span class="review-bankhol">Tue, Boxing Day</span><br>
+      <span class="review-date">26/12/2017</span> <strong>09:00 – 13:00</strong></p>
+
+      <p class="review-day-p"><span class="review-bankhol">Mon, New Year’s Day</span><br>
+      <span class="review-date">01/01/2018</span> <strong class="closed">Closed</strong></p>
+
+      <p class="review-day-p"><strong>Other dates</strong><br>
+      <span class="review-date">30/03/2018</span> <strong class="closed">Closed</strong></p>
+
+      <p class="review-day-p"><span class="review-date">02/04/2018</span> <strong class="closed">Closed</strong></p>
+
+
+      <p><strong>Website</strong>
+      <br>
+      <a href="http://www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/">http://www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/</a></p>
+
+
+
+    <div class="grid-row">
+      <div class="column-full review-buttons">
+
+          <div class="form-group" style="margin: 0 0 0.5em 0">
+
+            <div class="review-message">
+              <span>Are these details complete and correct?</span>
+            </div>
+
+            <div style="float:left" id="radiocb">
+
+              <fieldset class="inline" style="position: relative;top:-3px">
+
+                <div class="multiple-choice">
+                  <input id="radio-yes" type="radio" name="radio-group" value="yes">
+                  <label for="radio-yes" >Yes</label>
+                </div>
+
+                <div class="multiple-choice">
+                  <input id="radio-no" type="radio" name="radio-group" value="no">
+                  <label for="radio-no" >No</label>
+                </div>
+
+
+              </fieldset>
+
+            </div>
+
+
+
+        <!--<div id="closed-service">
+          <div class="multiple-choice">
+            <input id="radio-closed" type="checkbox" name="radio-group" value="closed">
+            <label for="radio-closed">Service no longer available</label>
+        </div>-->
+        
+
+        </div>
+
+        <br clear="all">
+
+      </div>
+    </div><!-- end Grid row -->
+
+
+      
+
+
+
+            
+
+            
+
+        </div><!-- end result container -->
+
+
+
+
+
+
+
+        <div id="buttons">
+
+
+
+          <div class="form-group ">
+            <!--<input class="button" type="submit" value="Continue">-->
+
+            <a class="button primarybutton" href="edit-services-3" role="button">Continue →</a>
+          </div>
+
+
+          <div class="secondarybutton">
+            <a class="back-arrow" href="start">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+<script type="text/javascript">
+  
+  function cbclick(e){
+   e = e || event;
+   var cb = e.srcElement || e.target;
+   if (cb.type !== 'checkbox') {return true;}
+   var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+    while(i--) {
+        if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+         cbxs[i].checked = false;
+        }
+    }
+    // if the click should always 
+</script>
+
+
+{% endblock %}
+
+
