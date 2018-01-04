@@ -18,7 +18,7 @@ a:visited {
     background-color: none;
   }
   .back-arrow {
-    background-color: $grey-4;
+    //background-color: $grey-4;
     color: $nhs-blue;
     text-decoration: none;
     width: 100%;
@@ -26,6 +26,10 @@ a:visited {
     text-align: center;
     padding:0 0 0.5em 0;
 
+  }
+  .secondarybutton {
+    background-color: $grey-4;
+  
   }
 }
 
