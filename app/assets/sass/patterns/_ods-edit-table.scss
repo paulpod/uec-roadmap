@@ -1,11 +1,22 @@
 // New table for editing times
 
 .timeedittable {
-  max-width: 680px
+  max-width: 680px;
+}
+
+.reviewtable {
+  max-width: 420px;
 }
 
 .timeedittable td, .timeedittable th {
   border-bottom: none;
+}
+
+.reviewtable td {
+    border-bottom: 1px solid #999;
+}
+.reviewtable tr:last-child td {
+    border-bottom: none;
 }
 
 .timeedittable thead {
@@ -32,6 +43,10 @@
 
 .day {
 width: 7em;
+}
+
+.time {
+  font-weight: 600;
 }
 
 .day, .to {
