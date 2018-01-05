@@ -1,0 +1,148 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	
+      <h1 class="heading-large">Edit your details</h1>
+
+
+
+      <p style="max-width: 620px">Please correct and complete all of the details for your pharmacy.</p>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>
+      
+
+
+      <p>
+      <label for="ODS-code" style="font-weight: 600">ODS Code</label><br>
+      <input class="form-control form-control-1-4" name="ods-code" value="FEF88" type="text" id="ods-code">
+      </p>
+
+      <p>
+        <label for="ODS-code" style="font-weight: 600">Public phone</label><br>
+        <input class="form-control form-control-1-4" name="public-phone" value="01752896787" type="text" id="public-phone">
+      </p>
+
+      <p><label for="address" style="font-weight: 600">Address</label><br>
+
+      <input class="form-control form-control-1-2" name="address" value="Boots Pharmacy" type="text" id="address" style="margin-bottom: 1em"><br>
+
+      <input class="form-control form-control-1-2" name="address-2" value="2-3 Erme Terrace" type="text" id="address-2" style="margin-bottom: 1em"><br>
+
+      <input class="form-control form-control-1-2" name="address-3" value="Station Road" type="text" id="address-3" style="margin-bottom: 1em"><br>
+
+      <input class="form-control form-control-1-2" name="address-4" value="Ivybridge" type="text" id="address-4" style="margin-bottom: 1em"><br>
+
+      <input class="form-control form-control-1-2" name="address-5" value="Devon" type="text" id="address-5" style="margin-bottom: 1em"><br>
+
+      <a href="#addline" style="text-decoration: none;">+ add an additional line of address</a>
+
+      </p>
+
+      <p>
+        <label for="postcode" style="font-weight: 600">Post Code</label><br>
+        <input class="form-control form-control-1-4" name="postcode" value="PL21 0AL" type="text" id="postcode">
+      </p>
+
+      <p><strong>Town</strong> (set from postcode)<br>
+      <span style="color:#666">Ivybridge</span></p>
+      <!-- Not user editible? I think so -->
+      <!-- my copy fit longest name is Bourton-on-the-Water -->
+
+      <p><strong>Website</strong>
+      <br>
+      <a href="http://www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/">http://www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/</a></p>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="column-half">
+
+      
+      &nbsp;
+     
+
+    </div>
+  </div><!-- end Grid row -->
+
+
+
+
+      
+
+    
+
+     
+      
+
+
+
+
+
+        <br clear="all">
+
+        <div id="buttons">
+
+
+
+          <div class="form-group ">
+            <!--<input class="button" type="submit" value="Continue">-->
+
+            <a class="button primarybutton" href="review-pharma-hours" role="button">Continue →</a>
+          </div>
+
+
+          <div class="secondarybutton">
+            <a class="back-arrow" href="start">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+<script type="text/javascript">
+  
+  function cbclick(e){
+   e = e || event;
+   var cb = e.srcElement || e.target;
+   if (cb.type !== 'checkbox') {return true;}
+   var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+    while(i--) {
+        if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+         cbxs[i].checked = false;
+        }
+    }
+    // if the click should always 
+</script>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,39 @@
+// New table for editing times
+
+.timeedittable {
+  max-width: 680px
+}
+
+.timeedittable td, .timeedittable th {
+  border-bottom: none;
+}
+
+.timeedittable thead {
+}
+
+
+
+.timeedittable tr {
+  height: 3em;
+}
+
+
+
+.timeedittable input {
+  width: 5em;
+}
+
+.to {
+  width: 3em;
+  display: block;
+  text-align: center;
+  color: #666;
+}
+
+.day {
+width: 7em;
+}
+
+.day, .to {
+  margin-top:-4px;
+}

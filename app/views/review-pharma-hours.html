@@ -74,74 +74,58 @@
 
 
 
+  <form action="/pharma-hours" method="get" class="form">
+    
+    <div class="form-group completebox">
 
-      
-      <div class="form-group" style="margin: 1em 0 1em 0;background-color: #edf3f8;border-left: 8px solid #0f6ecc;padding:0.5em 1em 0.8em 1em">
-
-        <div class="review-message">
-          <span>Are these hours complete and correct?</span>
-        </div>
-
-        <div style="float:left" id="radiocb">
-          <fieldset class="inline" style="position: relative;top:-3px">
-
-            <div class="multiple-choice">
-              <input id="radio-yes" type="radio" name="radio-group" value="yes">
-              <label for="radio-yes" >Yes</label>
-            </div>
-
-            <div class="multiple-choice">
-              <input id="radio-no" type="radio" name="radio-group" value="no">
-              <label for="radio-no" >No</label>
-            </div>
-
-          </fieldset>
-        </div>
-
+      <div class="review-message">
+        <span>Are these hours complete and correct?</span>
       </div>
 
-    
+      <div style="float:left" id="radiocb">
+        <fieldset class="inline" style="position: relative;top:-3px">
 
-     
-      
-
-
-
-            
-
-            
-
-        </div><!-- end result container -->
-
-
-
-
-
-
-        <br clear="all">
-
-        <div id="buttons">
-
-
-
-          <div class="form-group ">
-            <!--<input class="button" type="submit" value="Continue">-->
-
-            <a class="button primarybutton" href="review-pharma-holidays" role="button">Continue →</a>
+          <div class="multiple-choice">
+            <input id="radio-yes" type="radio" name="reviewPharmaHours" value="true">
+            <label for="radio-yes" >Yes</label>
           </div>
 
-
-          <div class="secondarybutton">
-            <a class="back-arrow" href="start">Previous step</a>
+          <div class="multiple-choice">
+            <input id="radio-no" type="radio" name="reviewPharmaHours" value="false">
+            <label for="radio-no" >No</label>
           </div>
+
+        </fieldset>
+      </div>
+
+    </div>
+
+
+
+
+
+    <br clear="all">
+
+      <div id="buttons">
+
+
+        <div class="form-group ">
+          <input class="button" type="submit" value="Continue →">
+
+          <!--<a class="button primarybutton" href="review-pharma-holidays" role="button">Continue →</a>-->
         </div>
 
-      </form>
 
-		</div>
+        <div class="secondarybutton">
+          <a class="back-arrow" href="">Previous step</a>
+        </div>
+  
+      </div>
 
+  	</div>
 
-   
+  </form>
+
 
 
 	</div>

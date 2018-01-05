@@ -17,10 +17,11 @@
 
 
 
-      <p style="max-width: 660px">Please check all of the details for your pharmacy. You will be able to make changes, if required, at the next step.</p>
+      <p style="max-width: 620px">Please check all of the details for your pharmacy.<br>
+      You will be able to make changes, if required, at the next step.</p>
 
   <div class="grid-row">
-    <div class="column-half">
+    <div class="column-full">
 
       <h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>
       
@@ -68,9 +69,10 @@
   </div><!-- end Grid row -->
 
 
+      <form action="/pharma-details" method="get" class="form">
 
 
-      <div class="form-group" style="margin: 1em 0 1em 0;background-color: #edf3f8;border-left: 8px solid #0f6ecc;padding:0.5em 1em 0.8em 1em">
+      <div class="form-group completebox">
 
         <div class="review-message">
           <span>Are these details complete and correct?</span>
@@ -80,12 +82,12 @@
           <fieldset class="inline" style="position: relative;top:-3px">
 
             <div class="multiple-choice">
-              <input id="radio-yes" type="radio" name="radio-group" value="yes">
+              <input id="radio-yes" type="radio" name="reviewPharmaDetails" value="true">
               <label for="radio-yes" >Yes</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="radio-no" type="radio" name="radio-group" value="no">
+              <input id="radio-no" type="radio" name="reviewPharmaDetails" value="false">
               <label for="radio-no" >No</label>
             </div>
 
@@ -119,14 +121,14 @@
 
 
           <div class="form-group ">
-            <!--<input class="button" type="submit" value="Continue">-->
+            <input class="button" type="submit" value="Continue →">
 
-            <a class="button primarybutton" href="review-pharma-hours" role="button">Continue →</a>
+            <!--<a class="button primarybutton" href="review-pharma-hours" role="button">Continue →</a>-->
           </div>
 
 
           <div class="secondarybutton">
-            <a class="back-arrow" href="start">Previous step</a>
+            <a class="back-arrow" href="">Previous step</a>
           </div>
         </div>
 

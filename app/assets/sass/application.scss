@@ -22,6 +22,8 @@ $path: "/public/images/";
 @import 'patterns/ods-review-items';
 @import 'patterns/ods-edit-items';
 
+@import 'patterns/ods-edit-table';
+
 @import 'patterns/choices';
 
 
@@ -65,6 +67,24 @@ padding: 0
 .details-table.form-group {
 	margin:0;
 }
+
+
+
+.completebox {
+	margin: 1em 0 1em 0;
+	background-color: #edf3f8;
+	border-left: 8px solid #0f6ecc;
+	padding:0.5em 1em 0.8em 1em
+}
+@media screen and (max-width: 767px) {
+	.completebox {
+		padding:0 1em 1.8em 1em
+
+	}
+}
+
+
+
 
 /* NHS specific styles */
 /* - - - - - - - - - - */
