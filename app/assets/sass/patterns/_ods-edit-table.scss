@@ -4,23 +4,35 @@
   max-width: 680px;
 }
 
-.reviewtable {
+
+.reviewtable, holidaystable {
   max-width: 420px;
 }
+
+.reviewtable td, .holidaystable td {
+  padding: 0.75em 0;
+  }
 
 .timeedittable td, .timeedittable th {
   border-bottom: none;
 }
-
-.reviewtable td {
-    border-bottom: 1px solid #999;
+.reviewtable th, .holidaystable th {
+    border-bottom: 2px solid #ccc;
 }
-.reviewtable tr:last-child td {
+.reviewtable tr, .holidaystable tr {
+    border-bottom: 2px solid #ccc;
+}
+.reviewtable tr:last-child, .holidaystable tr:last-child  {
     border-bottom: none;
+}
+
+.holidaystable td {
+  vertical-align: top;
 }
 
 .timeedittable thead {
 }
+
 
 
 
@@ -51,4 +63,9 @@ width: 7em;
 
 .day, .to {
   margin-top:-4px;
+}
+
+.reviewtable .day, .reviewtable .to,
+.holidaystable .day, .holidaystable .to {
+  margin-top: 0;
 }
