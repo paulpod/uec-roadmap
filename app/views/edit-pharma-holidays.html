@@ -13,37 +13,36 @@
 <main id="content" role="main" style="padding-bottom: 0">
 
 	
-      <h1 class="heading-large">Review your hours</h1>
+      <h1 class="heading-large">Review your holidays</h1>
 
 
 
-      <p style="max-width: 660px">Please check all of the opening hours for your pharmacy. You will be able to make changes, if required, at the next step.</p>
+      <p style="max-width: 660px">Please check all of the opening hours for the bank holidays. Other planned days with non-standard hours or closure can be added.</p>
 
   <div class="grid-row">
-    <div class="column-half">
+    <div class="column-full">
 
       <h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>
 
 
-      <table class="timeedittable">
+
+      <table class="timeedittable editholstable" style="max-width: 680px">
 
         <thead>
-          <th> <!--DAY --> </th>
-          <th>Open</th>
-          <th> <!-- TO --> </th>
-          <th>Close</th>
+          <th style="width:200px">Bank&nbsp;holidays</th>
+          <th style="width:100px">Open</th>
+          <th style="width:40px"> <!-- TO --> </th>
+          <th style="width:100px">Close</th>
           <th style="font-weight: 300">Add&nbsp;more&nbsp;hours</th>
         </thead>
 
         <tbody>
           <tr>
-            <td>
-              <div class="day">Monday</div> 
-            </td>
+            <td><div class="day"><strong>Good Friday</strong><br>30 March 2018</div></td>
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-mon1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh11">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -78,18 +77,16 @@
                   <a>21:00</a>
 
                 </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
+              </div><!-- end a time-entry combobox --></td>
 
             <td> <div class="to">to</div> </td>
 
             <td>
-              <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-mon2">
+            <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="12:30" name="comboboxfieldname" id="cb-bh12">
 
                 <span></span>
-                <div class="dropdownlist" style="width: 100px">
+                <div class="dropdownlist" style="display: none;width: 100px">
                   <a style="color:#cc0000">Closed</a>
 
                   <a>08:00</a>
@@ -122,26 +119,17 @@
 
                 </div>
               </div><!-- end a time-entry combobox -->
-
             </td>
-
             <td>
               <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
             </td>
-
           </tr>
-
-
-
-
           <tr>
-            <td>
-              <div class="day">Tuesday</div> 
-            </td>
+            <td><div class="day"><strong>Easter&nbsp;Monday</strong><br>02 April 2018</div></td>
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-tue1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-bh21" style="color: #c00">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -177,457 +165,13 @@
 
                 </div>
               </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td> <div class="to">to</div> </td>
-
-            <td>
-              <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-tue2">
-
-                <span></span>
-                <div class="dropdownlist" style="width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td>
-              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
-            </td>
-
-          </tr>
-
-
-
-
-          <tr>
-            <td>
-              <div class="day">Wednesday</div> 
-            </td>
-
-            <td>
-              <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-wed1">
-
-                <span></span>
-                <div class="dropdownlist" style="display: none;width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td> <div class="to">to</div> </td>
-
-            <td>
-              <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-wed2">
-
-                <span></span>
-                <div class="dropdownlist" style="width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td>
-              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
-            </td>
-
-          </tr>
-
-
-
-
-          <tr>
-            <td>
-              <div class="day">Thursday</div> 
-            </td>
-
-            <td>
-              <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-thu1">
-
-                <span></span>
-                <div class="dropdownlist" style="display: none;width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td> <div class="to">to</div> </td>
-
-            <td>
-              <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-thu2">
-
-                <span></span>
-                <div class="dropdownlist" style="width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td>
-              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
-            </td>
-
-          </tr>
-
-
-
-
-          <tr>
-            <td>
-              <div class="day">Friday</div> 
-            </td>
-
-            <td>
-              <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-fri1">
-
-                <span></span>
-                <div class="dropdownlist" style="display: none;width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td> <div class="to">to</div> </td>
-
-            <td>
-              <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-fri2">
-
-                <span></span>
-                <div class="dropdownlist" style="width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-            <td>
-              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
-            </td>
-
-          </tr>
-
-
-
-
-          <tr>
-            <td>
-              <div class="day">Saturday</div> 
-            </td>
-
-            <td>
-              <div class="combobox" >
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sat1" style="color: #cc0000">
-
-                <span></span>
-                <div class="dropdownlist" style="display: none;width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
             </td>
 
             <td> <div class="to" style="display:none">to</div> </td>
 
             <td>
               <div class="combobox" style="display:none">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sat2">
-
-                <span></span>
-                <div class="dropdownlist" style="width: 100px">
-                  <a style="color:#cc0000">Closed</a>
-
-                  <a>08:00</a>
-                  <a>08:30</a>
-                  <a>09:00</a>
-                  <a>09:30</a>
-                  <a>10:00</a>
-                  <a>10:30</a>
-                  <a>11:00</a>
-                  <a>11:30</a>
-                  <a>12:00</a>
-                  <a>12:30</a>
-                  <a>13:00</a>
-                  <a>13:30</a>
-                  <a>14:00</a>
-                  <a>14:30</a>
-                  <a>15:00</a>
-                  <a>15:30</a>
-                  <a>16:00</a>
-                  <a>16:30</a>
-                  <a>17:00</a>
-                  <a>17:30</a>
-                  <a>18:00</a>
-                  <a>18:30</a>
-                  <a>19:00</a>
-                  <a>19:30</a>
-                  <a>20:00</a>
-                  <a>20:30</a>
-                  <a>21:00</a>
-
-                </div>
-              </div><!-- end a time-entry combobox -->
-
-            </td>
-
-          </tr>
-
-
-
-
-          <tr>
-            <td>
-              <div class="day">Sunday</div> 
-            </td>
-
-            <td>
-              <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sun1" style="color: #cc0000">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh22">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -663,17 +207,17 @@
 
                 </div>
               </div><!-- end a time-entry combobox -->
-
             </td>
-
-            <td> <div class="to" style="display:none">to</div> </td>
+          </tr>
+          <tr>
+            <td><div class="day"><strong>Early May</strong><br>07 May 2018</div></td>
 
             <td>
-              <div class="combobox" style="display:none">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sun2">
+              <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-bh31" style="color: #c00">
 
                 <span></span>
-                <div class="dropdownlist" style="width: 100px">
+                <div class="dropdownlist" style="display: none;width: 100px">
                   <a style="color:#cc0000">Closed</a>
 
                   <a>08:00</a>
@@ -706,21 +250,493 @@
 
                 </div>
               </div><!-- end a time-entry combobox -->
-
             </td>
 
+            <td> <div class="to" style="display:none">to</div> </td>
+
+            <td>
+              <div class="combobox" style="display:none">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh32">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+          </tr>
+          <tr>
+            <td><div class="day"><strong>Spring&nbsp;bank&nbsp;holiday</strong><br>28 May 2018</div></td>
+
+            <td>
+              <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Add" name="comboboxfieldname" id="cb-bh41" style="color:#999">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+
+            <td> <div class="to" style="display:none">to</div> </td>
+
+            <td>
+              <div class="combobox"  style="display:none">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh42">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+          </tr>
+          <tr>
+            <td><div class="day"><strong>Summer&nbsp;bank&nbsp;holiday</strong><br>27&nbsp;August&nbsp;2018</div></td>
+
+            <td>
+              <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Add" name="comboboxfieldname" id="cb-bh51" style="color: #999">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+
+            <td> <div class="to" style="display:none">to</div> </td>
+
+            <td>
+              <div class="combobox" style="display:none">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh52">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+          </tr>
+          <tr>
+            <td><div class="day"><strong>Christmas&nbsp;Day</strong><br>25&nbsp;December&nbsp;2018</div></td>
+
+            <td>
+              <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Add" name="comboboxfieldname" id="cb-bh61" style="color:#999">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+
+            <td> <div class="to" style="display:none">to</div> </td>
+
+            <td>
+              <div class="combobox" style="display:none">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh62">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+          </tr>
+          <tr>
+            <td><div class="day"><strong>Boxing&nbsp;Day</strong><br>26&nbsp;December&nbsp;2018</div></td>
+
+            <td>
+              <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Add" name="comboboxfieldname" id="cb-bh71" style="color:#999">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+
+            <td> <div class="to" style="display:none">to</div> </td>
+
+            <td>
+              <div class="combobox" style="display:none">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-bh72">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+          </tr>
+          <tr>
+            <td><div class="day"><strong>Other dates</strong></div></td>
+
+            <td> <!--<div class="time">09:00</div>--> </td>
+
+            <td> <!--<div class="to">to</div>--> </td>
+
+            <td> <!--<div class="time">17:30</div>--> </td>
+          </tr>
+          <tr>
+            <td><div class="day">Saturday<br>31&nbsp;March&nbsp;2018</div></td>
+
+            <td>
+              <div class="combobox" style="">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-oth1" style="color: #c00">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
+
+            <td> <!--<div class="to">to</div>--> </td>
+
+            <td>
+              <div class="combobox" style="display: none;">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-oth2">
+
+                <span></span>
+                <div class="dropdownlist" style="display: none;width: 100px">
+                  <a style="color:#cc0000">Closed</a>
+
+                  <a>08:00</a>
+                  <a>08:30</a>
+                  <a>09:00</a>
+                  <a>09:30</a>
+                  <a>10:00</a>
+                  <a>10:30</a>
+                  <a>11:00</a>
+                  <a>11:30</a>
+                  <a>12:00</a>
+                  <a>12:30</a>
+                  <a>13:00</a>
+                  <a>13:30</a>
+                  <a>14:00</a>
+                  <a>14:30</a>
+                  <a>15:00</a>
+                  <a>15:30</a>
+                  <a>16:00</a>
+                  <a>16:30</a>
+                  <a>17:00</a>
+                  <a>17:30</a>
+                  <a>18:00</a>
+                  <a>18:30</a>
+                  <a>19:00</a>
+                  <a>19:30</a>
+                  <a>20:00</a>
+                  <a>20:30</a>
+                  <a>21:00</a>
+
+                </div>
+              </div><!-- end a time-entry combobox -->
+            </td>
           </tr>
 
+          <tr>
+             <td colspan="3">
+              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours">  add another date</a></div>
+            </td>
+          </tr>
+       
         </tbody>
-
       </table>
-
-
-
-
-         
-
-
 
     </div>
 
@@ -738,22 +754,11 @@
 
 
 
-
+     
     
 
      
       
-
-
-
-            
-
-            
-
-        </div><!-- end result container -->
-
-
-
 
 
 
@@ -766,12 +771,12 @@
           <div class="form-group ">
             <!--<input class="button" type="submit" value="Continue">-->
 
-            <a class="button primarybutton" href="review-pharma-holidays" role="button">Continue →</a>
+            <a class="button primarybutton" href="review-pharma-servicehours" role="button">Continue →</a>
           </div>
 
 
           <div class="secondarybutton">
-            <a class="back-arrow" href="">Previous step</a>
+            <a class="back-arrow" href="start">Previous step</a>
           </div>
         </div>
 
@@ -791,32 +796,29 @@
 
 
 
-
-
-
 <script type="text/javascript" charset="utf-8" src="/public/javascripts/combobox.js"></script>
 <script type="text/javascript" charset="utf-8">
 
-var no = new ComboBox('cb-mon1');
-var no = new ComboBox('cb-mon2');
-var no = new ComboBox('cb-tue1');
-var no = new ComboBox('cb-tue2');
-var no = new ComboBox('cb-wed1');
-var no = new ComboBox('cb-wed2');
+var no = new ComboBox('cb-bh11');
+var no = new ComboBox('cb-bh12');
+var no = new ComboBox('cb-bh21');
+var no = new ComboBox('cb-bh22');
+var no = new ComboBox('cb-bh31');
+var no = new ComboBox('cb-bh32');
 
-var no = new ComboBox('cb-thu1');
-var no = new ComboBox('cb-thu2');
+var no = new ComboBox('cb-bh41');
+var no = new ComboBox('cb-bh42');
+var no = new ComboBox('cb-bh51');
+var no = new ComboBox('cb-bh52');
+var no = new ComboBox('cb-bh61');
+var no = new ComboBox('cb-bh62');
+var no = new ComboBox('cb-bh71');
+var no = new ComboBox('cb-bh72');
 
-var no = new ComboBox('cb-fri1');
-var no = new ComboBox('cb-fri2');
-var no = new ComboBox('cb-sat1');
-var no = new ComboBox('cb-sat2');
-var no = new ComboBox('cb-sun1');
-var no = new ComboBox('cb-sun2');
+var no = new ComboBox('cb-oth1');
+var no = new ComboBox('cb-oth2');
 
 </script>
-
-
 <script type="text/javascript">
   
   function cbclick(e){

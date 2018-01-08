@@ -12,11 +12,17 @@
 .reviewtable td, .holidaystable td {
   padding: 0.75em 0;
   }
+  .editholstable td {
+  padding: 0.88em 0;
+  }
 
 .timeedittable td, .timeedittable th {
   border-bottom: none;
 }
 .reviewtable th, .holidaystable th {
+    border-bottom: 2px solid #ccc;
+}
+.editholstable th {
     border-bottom: 2px solid #ccc;
 }
 .reviewtable tr, .holidaystable tr {

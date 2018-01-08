@@ -48,7 +48,7 @@
           <tr>
             <td><div class="day"><strong>Easter&nbsp;Monday</strong><br>02 April 2018</div></td>
 
-            <td><div class="time"><span style="color:red">Closed</span></div></td>
+            <td><div class="time"><span style="color:#c00">Closed</span></div></td>
 
             <td> <!--<div class="to">to</div>--> </td>
 
@@ -57,7 +57,7 @@
           <tr style="border-bottom: none">
             <td><div class="day"><strong>Early May</strong><br>07 May 2018</div></td>
 
-            <td><div class="time"><span style="color:red">Closed</span></div></td>
+            <td><div class="time"><span style="color:#c00">Closed</span></div></td>
 
             <td> <!--<div class="to">to</div>--> </td>
 
@@ -75,7 +75,7 @@
           <tr>
             <td><div class="day">Saturday<br>31 March 2018</div></td>
 
-            <td><div class="time"><span style="color:red">Closed</span></div></td>
+            <td><div class="time"><span style="color:#c00">Closed</span></div></td>
 
             <td> <!--<div class="to">to</div>--> </td>
 
@@ -101,7 +101,8 @@
 
 
 
-      
+      <form action="/pharma-hols" method="get" class="form">
+
       <div class="form-group completebox">
 
         <div class="review-message">
@@ -112,12 +113,12 @@
           <fieldset class="inline" style="position: relative;top:-3px">
 
             <div class="multiple-choice">
-              <input id="radio-yes" type="radio" name="radio-group" value="yes">
+              <input id="radio-yes" type="radio" name="reviewPharmaHols" value="true">
               <label for="radio-yes" >Yes</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="radio-no" type="radio" name="radio-group" value="no">
+              <input id="radio-no" type="radio" name="reviewPharmaHols" value="false">
               <label for="radio-no" >No</label>
             </div>
 
@@ -149,14 +150,14 @@
 
 
           <div class="form-group ">
-            <!--<input class="button" type="submit" value="Continue">-->
+            <input class="button" type="submit" value="Continue →">
 
-            <a class="button primarybutton" href="review-pharma-servicehours" role="button">Continue →</a>
+            <!--<a class="button primarybutton" href="review-pharma-servicehours" role="button">Continue →</a>-->
           </div>
 
 
           <div class="secondarybutton">
-            <a class="back-arrow" href="start">Previous step</a>
+            <a class="back-arrow" href="review-pharma-hours">Previous step</a>
           </div>
         </div>
 
