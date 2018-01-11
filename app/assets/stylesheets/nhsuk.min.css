@@ -1042,7 +1042,7 @@ p {
     line-height: 1.6;
     text-transform: none;
     margin-top:0 !important /* <---- UURRRRGH! */;
-    margin-bottom:27px;
+    margin-bottom:32px;
 }
 
 
