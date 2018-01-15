@@ -64,31 +64,31 @@
     display: inline-block;
     /*Alex added*/
     font-family: "Frutiger W01";
-    font-size: 1.741rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 @media(min-width:925px) {
     .o-list-sections>li:before {
-        font-size: 1.741rem;
+        font-size: 1rem;
     }
 }
 
 .o-list-sections__item {
-    font-size: 1.741rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 48px !important;
 }
 
 @media(min-width:641px) {
     .o-list-sections__item {
-        font-size: 1.741rem;
+        font-size: 1rem;
     }
 }
 
 @media(min-width:925px) {
     .o-list-sections__item {
-        font-size: 1.741rem;
+        font-size: 1rem;
         margin-top: 80px !important;
     }
 }
@@ -102,7 +102,7 @@
 }
 
 .o-list-sections__section {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 @media(max-width:640px) {
@@ -129,7 +129,7 @@
 
 .c-page-contents__title {
     display: none;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 32px;
 }
 
@@ -366,7 +366,7 @@
 }
 
 .c-common-questions__header {
-    font-size: 20px;
+    font-size: 1em;
     border-top: 1px dotted #ccc;
     font-weight: normal;
     margin-top: 0;
@@ -375,7 +375,7 @@
 
 .c-common-questions__header::after {
     content: "+ ";
-    font-size: 25px;
+    font-size: 1rem;
     position: absolute;
     right: 10px;
     top: 6px;
@@ -610,7 +610,7 @@
 }
 
 .callout--diagram h3 {
-    font-size: 20px;
+    font-size: 1em;
     margin: 0;
 }
 
