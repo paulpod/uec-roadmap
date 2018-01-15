@@ -410,7 +410,7 @@ body {
 
 .button {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 600;
     line-height: 32px;
     text-transform: none;
@@ -429,14 +429,14 @@ body {
 
 @media(min-width:641px) {
     .button {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     .button {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -504,7 +504,7 @@ details {
 
 details summary {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 32px;
     text-transform: none;
@@ -517,14 +517,14 @@ details summary {
 
 @media(min-width:641px) {
     details summary {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     details summary {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -605,7 +605,7 @@ body:not(:-moz-handler-blocked) fieldset {
 
 legend {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 32px;
     text-transform: none;
@@ -616,14 +616,14 @@ legend {
 
 @media(min-width:641px) {
     legend {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     legend {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -712,7 +712,7 @@ h4 {
 
 @media(min-width:925px) {
     h4 {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -779,7 +779,7 @@ hr {
 
 ul {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 27px;
     text-transform: none;
@@ -792,7 +792,7 @@ ul {
 
 ol {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 27px;
     text-transform: none;
@@ -808,7 +808,7 @@ ol li {
 
 dl {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 32px;
     text-transform: none;
@@ -816,21 +816,21 @@ dl {
 
 @media(min-width:641px) {
     dl {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     dl {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 dl dt {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 600;
     line-height: 32px;
     text-transform: none;
@@ -838,14 +838,14 @@ dl dt {
 
 @media(min-width:641px) {
     dl dt {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     dl dt {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -1091,7 +1091,7 @@ table td {
 
 table th {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 600;
     line-height: 32px;
     text-transform: none;
@@ -1100,14 +1100,14 @@ table th {
 
 @media(min-width:641px) {
     table th {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     table th {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -1576,7 +1576,7 @@ strong {
 
 .form-label {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 600;
     line-height: 32px;
     text-transform: none;
@@ -1585,14 +1585,14 @@ strong {
 
 @media(min-width:641px) {
     .form-label {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     .form-label {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -1634,7 +1634,7 @@ strong {
 
 .form-textbox {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 32px;
     text-transform: none;
@@ -1648,14 +1648,14 @@ strong {
 
 @media(min-width:641px) {
     .form-textbox {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     .form-textbox {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -1666,7 +1666,7 @@ strong {
 
 .multiple-choice {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 32px;
     text-transform: none;
@@ -1681,14 +1681,14 @@ strong {
 
 @media(min-width:641px) {
     .multiple-choice {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     .multiple-choice {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
@@ -1934,7 +1934,7 @@ only screen and (min-resolution:2dppx) {
 
 .meta {
     font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 32px;
     text-transform: none;
@@ -1944,14 +1944,14 @@ only screen and (min-resolution:2dppx) {
 
 @media(min-width:641px) {
     .meta {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
 
 @media(min-width:925px) {
     .meta {
-        font-size: 20px;
+        font-size: 1em;
         line-height: 32px;
     }
 }
