@@ -5,6 +5,7 @@
 }
 
 
+
 .reviewtable, holidaystable {
   max-width: 420px;
 }
@@ -43,7 +44,7 @@
 
 
 .timeedittable tr {
-  height: 3em;
+  //height: 3em;
 }
 
 
@@ -74,4 +75,40 @@ width: 7em;
 .reviewtable .day, .reviewtable .to,
 .holidaystable .day, .holidaystable .to {
   margin-top: 0;
+}
+
+
+.mobilecontent {
+  displa:none;
+}
+
+@media screen and (max-width: 767px) {
+  .timeedittable {
+    max-width: 370px;
+  }
+  .day {
+    width: 5em;
+
+  }
+
+  .to {
+    width: 0.4em;
+    text-align: left;
+    margin-left: -8px;
+  }
+
+  .addhours {
+    margin-left: -5px;
+    padding-right: 5px;
+  }
+
+  .mobilecontent {
+    display: visible;
+  }
+
+  .hiddenmobilecontent {
+    display: none;
+  }
+
+
 }
