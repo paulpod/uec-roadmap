@@ -32,7 +32,7 @@
           <th>Open</th>
           <th> <!-- TO --> </th>
           <th>Close</th>
-          <th style="font-weight: 300">Add<span class="hiddenmobilecontent">&nbsp;more&nbsp;hours</span></th>
+          <th style="font-weight: 300" class="addhourscol">Add<span class="hiddenmobilecontent">&nbsp;more&nbsp;hours</span></th>
         </thead>
 
         <tbody>
@@ -43,7 +43,7 @@
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-mon1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="09:00" name="comboboxfieldname" id="cb-mon1">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -86,7 +86,7 @@
 
             <td>
               <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-mon2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="17:30" name="comboboxfieldname" id="cb-mon2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">
@@ -125,8 +125,15 @@
 
             </td>
 
-            <td>
+            <td class="addhourscol">
               <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
+            </td>
+
+          </tr>
+
+          <tr class="forsmallmobile">
+            <td colspan="3">
+              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"> add more hours</a></div>
             </td>
 
           </tr>
@@ -141,7 +148,7 @@
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-tue1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="09:00" name="comboboxfieldname" id="cb-tue1">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -184,7 +191,7 @@
 
             <td>
               <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-tue2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="17:30" name="comboboxfieldname" id="cb-tue2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">
@@ -223,8 +230,15 @@
 
             </td>
 
-            <td>
+            <td class="addhourscol">
               <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
+            </td>
+
+          </tr>
+
+          <tr class="forsmallmobile">
+            <td colspan="3">
+              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"> add more hours</a></div>
             </td>
 
           </tr>
@@ -239,7 +253,7 @@
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-wed1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="09:00" name="comboboxfieldname" id="cb-wed1">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -282,7 +296,7 @@
 
             <td>
               <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-wed2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="17:30" name="comboboxfieldname" id="cb-wed2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">
@@ -321,8 +335,15 @@
 
             </td>
 
-            <td>
+            <td class="addhourscol">
               <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
+            </td>
+
+          </tr>
+
+          <tr class="forsmallmobile">
+            <td colspan="3">
+              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"> add more hours</a></div>
             </td>
 
           </tr>
@@ -337,7 +358,7 @@
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-thu1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="09:00" name="comboboxfieldname" id="cb-thu1">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -380,7 +401,7 @@
 
             <td>
               <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-thu2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="17:30" name="comboboxfieldname" id="cb-thu2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">
@@ -419,11 +440,19 @@
 
             </td>
 
-            <td>
+            <td class="addhourscol">
               <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
             </td>
 
           </tr>
+
+          <tr class="forsmallmobile">
+            <td colspan="3">
+              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"> add more hours</a></div>
+            </td>
+
+          </tr>
+
 
 
 
@@ -435,7 +464,7 @@
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="09:00" name="comboboxfieldname" id="cb-fri1">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="09:00" name="comboboxfieldname" id="cb-fri1">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -478,7 +507,7 @@
 
             <td>
               <div class="combobox">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="17:30" name="comboboxfieldname" id="cb-fri2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="17:30" name="comboboxfieldname" id="cb-fri2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">
@@ -517,11 +546,19 @@
 
             </td>
 
-            <td>
+            <td class="addhourscol">
               <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"></a></div>
             </td>
 
           </tr>
+
+          <tr class="forsmallmobile">
+            <td colspan="3">
+              <div style="position:relative;top: 5px"><a href="#addhours" class="addhours"> add more hours</a></div>
+            </td>
+
+          </tr>
+          
 
 
 
@@ -533,7 +570,7 @@
 
             <td>
               <div class="combobox" >
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sat1" style="color: #cc0000">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="Closed" name="comboboxfieldname" id="cb-sat1" style="color: #cc0000">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -576,7 +613,7 @@
 
             <td>
               <div class="combobox" style="display:none">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sat2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="Closed" name="comboboxfieldname" id="cb-sat2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">
@@ -627,7 +664,7 @@
 
             <td>
               <div class="combobox" style="">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sun1" style="color: #cc0000">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="Closed" name="comboboxfieldname" id="cb-sun1" style="color: #cc0000">
 
                 <span></span>
                 <div class="dropdownlist" style="display: none;width: 100px">
@@ -670,7 +707,7 @@
 
             <td>
               <div class="combobox" style="display:none">
-                <input class="form-control form-control-1-1 form-bold form-arrow" type="text" size="16" value="Closed" name="comboboxfieldname" id="cb-sun2">
+                <input class="form-control form-control-1-1 form-bold form-arrow" type="time" size="16" value="Closed" name="comboboxfieldname" id="cb-sun2">
 
                 <span></span>
                 <div class="dropdownlist" style="width: 100px">

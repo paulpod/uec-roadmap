@@ -78,10 +78,19 @@ width: 7em;
 }
 
 
+
+/* hide some stuff for mobile only layouts */
 .mobilecontent {
   display:none;
 }
 
+.forsmallmobile {
+  display:none;
+}
+
+
+
+/* fix, hide and show some stuff for generic mobile/narrow layouts */
 @media screen and (max-width: 767px) {
   .timeedittable {
     max-width: 370px;
@@ -118,8 +127,17 @@ width: 7em;
     display: none;
   }
 
+  
+
+}
+
+/* fix, hide and show some stuff specifically for small mobiles (iPhone 5 SE etc) */
+@media screen and (max-width: 360px) {
+
   .addhourscol {
     display: none;
   }
-
+  .forsmallmobile {
+    display: visible;
+  }
 }
