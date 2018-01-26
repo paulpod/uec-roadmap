@@ -1,6 +1,20 @@
 // ODS Review services, times, dates, items
 
 
+
+#results-table td:first-child {
+  vertical-align: top;
+  width: 5.5em;
+  position: relative;
+  top: -15px;
+}
+
+// NOTE : to fix, on mobile the column for the checkbox + ods code label
+// is too wide, should rearrange the items to stack ODS code over checkbox
+// but I couldn't get it to work as the input using :before is too closely
+// integrated to move them separately... a better dev might be able!
+
+
 .edit-day {
   margin-bottom: 0;
 }
