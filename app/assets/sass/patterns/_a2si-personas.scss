@@ -4,7 +4,25 @@
 #persona-pic-mary {
   background-image: url('/public/images/cutout-mary.jpg');
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 50%;
+  background-position: bottom right;
+  display: block;
+  height: 100%;
+  border-bottom: 4px solid #0072ce;
+}
+#persona-pic-debbie {
+  background-image: url('/public/images/cutout-debbie.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+  display: block;
+  height: 100%;
+  border-bottom: 4px solid #0072ce;
+}
+#persona-pic-peter {
+  background-image: url('/public/images/cutout-peter.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
   background-position: bottom right;
   display: block;
   height: 100%;
@@ -22,6 +40,7 @@
   color: #005eb8;
   max-width: 360px;
   margin-left: 1em;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
 }
 
 .persona-table {
@@ -38,6 +57,11 @@
 
 .persona-success {
 line-height: 1.6;
+padding-bottom: 2.6em;
+background-image: url('/public/images/persona-quotemark-end.png');
+  background-repeat: no-repeat;
+  background-size: 3.6em 3.6em;
+  background-position: bottom right;
 }
 
 
@@ -55,6 +79,31 @@ line-height: 1.6;
   max-width: 60%;
   margin: 2em 0;
 }
+.persona-success {
+padding-bottom: 2.5em;
+background-image: url('/public/images/persona-quotemark-end.png');
+  background-repeat: no-repeat;
+  background-size: 3.2em 3.2em;
+  background-position: bottom right;
+}
 
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 659px) {
+  #persona-pic-debbie {
+  background-size: 30%;
+  }
+  #persona-pic-mary {
+  background-size: 30%;
+  }
+  #persona-pic-peter {
+  background-size: 30%;
+  }
 
 }
