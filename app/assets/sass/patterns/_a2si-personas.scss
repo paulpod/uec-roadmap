@@ -1,0 +1,60 @@
+// Persona pages have some nicer styles
+
+
+#persona-pic-mary {
+  background-image: url('/public/images/cutout-mary.jpg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom right;
+  display: block;
+  height: 100%;
+  border-bottom: 4px solid #0072ce;
+}
+
+
+.persona-quote {
+  background-image: url('/public/images/persona-quotemark.png');
+  background-repeat: no-repeat;
+  background-size: 3.6em 3.6em;
+  padding-top: 2.6em;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: #005eb8;
+  max-width: 360px;
+  margin-left: 1em;
+}
+
+.persona-table {
+  margin-top: 1.6em;
+}
+.persona-table th {
+  font-size: 24px;
+}
+.persona-table td {
+  vertical-align: top;
+  padding-bottom: 1em;
+}
+
+
+.persona-success {
+line-height: 1.6;
+}
+
+
+@media screen and (max-width: 767px) {
+.persona-table th {
+  font-size: 18px;
+}
+.persona-quote {
+  background-image: url('/public/images/persona-quotemark.png');
+  background-repeat: no-repeat;
+  background-size: 2.6em 2.6em;
+  padding-top: 2em;
+  font-weight: 600;
+  font-size: 1.2em;
+  max-width: 60%;
+  margin: 2em 0;
+}
+
+
+}
