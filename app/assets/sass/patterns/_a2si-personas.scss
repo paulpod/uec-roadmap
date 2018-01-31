@@ -28,6 +28,15 @@
   height: 100%;
   border-bottom: 4px solid #0072ce;
 }
+#persona-pic-imran {
+  background-image: url('/public/images/cutout-imran.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+  display: block;
+  height: 100%;
+  border-bottom: 4px solid #0072ce;
+}
 
 
 .persona-quote {
@@ -103,6 +112,9 @@ background-image: url('/public/images/persona-quotemark-end.png');
   background-size: 30%;
   }
   #persona-pic-peter {
+  background-size: 30%;
+  }
+  #persona-pic-imran {
   background-size: 30%;
   }
 
