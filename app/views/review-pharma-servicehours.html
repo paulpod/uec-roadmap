@@ -90,6 +90,7 @@
 
 
 
+      <form action="/pharma-servicehours" method="get" class="form">
 
       
       <div class="form-group" style="margin: 1em 0 1em 0;background-color: #edf3f8;border-left: 8px solid #0f6ecc;padding:0.5em 1em 0.8em 1em">
@@ -102,12 +103,12 @@
           <fieldset class="inline" style="position: relative;top:-3px">
 
             <div class="multiple-choice">
-              <input id="radio-yes" type="radio" name="radio-group" value="yes">
+              <input id="radio-yes" type="radio" name="reviewPharmaServiceHours" value="true">
               <label for="radio-yes" >Yes</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="radio-no" type="radio" name="radio-group" value="no">
+              <input id="radio-no" type="radio" name="reviewPharmaServiceHours" value="false">
               <label for="radio-no" >No</label>
             </div>
 
@@ -135,14 +136,13 @@
 
         <br clear="all">
 
-        <div id="buttons">
+        <div id="buttons" style="margin-top:2em">
 
 
 
           <div class="form-group ">
-            <!--<input class="button" type="submit" value="Continue">-->
+            <input class="button" type="submit" value="Continue →">
 
-            <a class="button primarybutton" href="review-pharma-holidays" role="button">Continue →</a>
           </div>
 
 

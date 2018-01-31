@@ -61,4 +61,18 @@ router.get('/pharma-hols', function (req, res) {
 })
 
 
+router.get('/pharma-servicehours', function (req, res) {
+  // get the answer from the query string 
+  var compare = req.query.reviewPharmaServiceHours
+
+  if (compare === 'false') {
+    // redirect to the relevant page
+    res.redirect('/edit-pharma-service-hours')
+  } else {
+    // if function is any other value (or is missing) render the page requested
+    res.render('review-pharma-service-holidays')
+  }
+})
+
+
 module.exports = router
