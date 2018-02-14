@@ -1,0 +1,132 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+      <h1 class="heading-large">Your details</h1>
+
+      <p>
+      Please enter your full name and contact details in the boxes below.</p>
+
+      <p>These details will be used by your local DoS team to contact you if they have any questions about your review.</p>
+
+
+      <form class="form">
+
+        <fieldset class="form-group form-block">
+          <legend class="visuallyhidden">First name</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-name">
+              <label for="name-first">Full name</label>
+              <input class="form-control" id="name-first" name="name-full" type="text">
+            </div>
+
+          </div>
+        </fieldset>
+
+        
+
+
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Phone number</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-phone">
+
+              <label for="phone">Phone number</label>
+              <input class="form-control" name="phone" type="text" id="phone">
+
+              <p class="form-hint">Use the best number for DoS leads to reach you on</p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Job title</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-job">
+
+              <label for="job">Job title</label>
+              <input class="form-control" name="job" type="text" id="job">
+            </div>
+
+          </div>
+        </fieldset>
+
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Pharmacy or organisation</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-org">
+
+              <label for="org">Pharmacy or organisation</label>
+              <input class="form-control" name="org" type="text" id="org">
+            </div>
+
+          </div>
+        </fieldset>
+
+
+
+
+
+
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+
+          <a class="button" href="default-pharmacies" role="button">Continue</a>
+        </div>
+
+         
+
+
+        <div>
+           <a class="back-to-previous" href="javascript:history.back()">Previous step</a>
+         </div>
+
+      </form>
+
+
+			
+		</div>
+
+
+    <div class="column-third">
+
+      
+      &nbsp;
+
+
+    </div>
+
+
+	</div>
+
+</main>
+
+
+
+
+
+
+{% endblock %}
+
+
