@@ -97,3 +97,61 @@
 	text-align: center;
 	line-height: 2.5
 }
+
+.gp-time {
+	display: inline-block;
+	background-color: #03b;
+	font-weight: 700;
+	color: white;
+	width: 3.5em;
+	text-align: center;
+	padding:0.3em 0;
+	border-radius: 2px;
+	border-bottom: 3px solid #009;
+}
+.gp-time-no {
+	background-color: #eee;
+	border-bottom: 3px solid #e0e0e0;
+}
+
+.pharma-time {
+	display: inline-block;
+	background-color: #0b3;
+	font-weight: 700;
+	color: white;
+	border-bottom: 3px solid #090;
+	text-align: center;
+	padding:0.3em 1em;
+	border-radius: 2px;
+}
+
+.ae-time-6 {
+	display: inline-block;
+	background-color: #b30;
+	font-weight: 700;
+	color: white;
+	border-bottom: 3px solid #900;
+	text-align: center;
+	padding:0.3em 1em;
+	border-radius: 2px;
+}
+.ae-time-4 {
+	display: inline-block;
+	background-color: #f60;
+	font-weight: 700;
+	color: white;
+	border-bottom: 3px solid #d50;
+	text-align: center;
+	padding:0.3em 1em;
+	border-radius: 2px;
+}
+.ae-time-2 {
+	display: inline-block;
+	background-color: #0b3;
+	font-weight: 700;
+	color: white;
+	border-bottom: 3px solid #090;
+	text-align: center;
+	padding:0.3em 1em;
+	border-radius: 2px;
+}
