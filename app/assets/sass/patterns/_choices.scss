@@ -78,3 +78,22 @@
 		border-bottom: #eee solid 8px;
 	}
 }
+
+
+.waiting-time-choices-table {
+	th, td {
+		padding-left:0.66em;
+	}
+}
+
+.choices-wait-type {
+	border-radius: 1.25em;
+	width: 2.5em;
+	height: 2.5em;
+	background-color: #e80;
+	color: white;
+	font-weight: 800;
+	font-size: 16px;
+	text-align: center;
+	line-height: 2.5
+}

@@ -1,6 +1,9 @@
 // ODS Review services, times, dates, items
 
-
+.timepick-checkbox {
+  position: relative;
+  top:-14px;
+}
 
 #results-table td:first-child {
   vertical-align: top;
@@ -54,22 +57,15 @@
   background-image: url('/public/images/icon-moretime+blue.png');
   background-repeat: no-repeat;
   background-size: 42px 16px;
-  background-position: 1px 4px;
-  padding-left: 2.6em;
+  background-position: -28px 4px;
+  padding-left: 1em;
   padding-bottom: 0.2em;
   font-size: 0.96em;
 line-height: 1.8;
 position: relative;
 top: -8px;
 }
-a.addhours:hover:after {
-  //text-decoration: underline;
-  content: 'add more hours';
-  color: #005eb8;
-  margin-left: 0.3em;
-  position: relative;
-  top:2px;
-  }
+
 
 .removehours {
   text-decoration: none;
