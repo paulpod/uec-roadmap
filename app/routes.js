@@ -52,4 +52,13 @@ router.get('/pharma-hols', function (req, res) {
 
 
 
+//make sure the nhs login email is picked up as data to playback
+router.get('/nhslogin', function (req, res) {
+  var compare = req.query.nhsmail
+
+  res.render('verify-email')
+})
+
+
+
 module.exports = router
