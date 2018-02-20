@@ -1,0 +1,361 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	
+      <h1 class="heading-large">Review your services opening hours</h1>
+
+
+      <p style="max-width: 660px;margin-bottom:0">Please check all of the opening hours for your services. You will be able to make changes, if required, at the next step.</p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-medium">Your services</h3>
+
+      <form action="/pharma-servicehours" method="get" class="form">
+
+        <div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>NHS pharmacist service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" checked type="radio" name="serviceHours1" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" type="radio" name="serviceHours1" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+
+        <!--<div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>NUMSAS pharmacist service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" type="radio" name="serviceHours2" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" type="radio" name="serviceHours2" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>-->
+
+        <div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>NUMSAS pharmacist service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" type="radio" name="serviceHours2" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" checked type="radio" name="serviceHours2" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        
+
+          <table class="timeedittable reviewtable" style="max-width:600px;width:100%">
+
+        <thead>
+          <th> <!--DAY --> </th>
+          <th>Open</th>
+          <th> <!-- TO --> </th>
+          <th>Close</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><div class="day">Monday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Tuesday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Wednesday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">13:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Thursday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">13:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Friday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">13:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Saturday</div></td>
+
+            <td><div class="time" style="color: red">Closed</div></td>
+
+            <td> </td>
+
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="day">Sunday</div></td>
+
+            <td><div class="time" style="color: red">Closed</div></td>
+
+            <td> </td>
+
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+        <div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>Emergency contraception service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" checked type="radio" name="serviceHours3" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" type="radio" name="serviceHours3" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+
+
+    
+
+    </div><!-- end grid col -->
+
+
+    <div class="column-half">
+
+      
+      <h3 class="heading-medium">Pharmacy opening hours</h3>
+
+      <table class="timeedittable reviewtable" style="max-width:600px;width:100%">
+
+        <thead>
+          <th> <!--DAY --> </th>
+          <th>Open</th>
+          <th> <!-- TO --> </th>
+          <th>Close</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><div class="day">Monday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Tuesday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Wednesday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Thursday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Friday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Saturday</div></td>
+
+            <td><div class="time" style="color: red">Closed</div></td>
+
+            <td> </td>
+
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="day">Sunday</div></td>
+
+            <td><div class="time" style="color: red">Closed</div></td>
+
+            <td> </td>
+
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div><!-- end grid col -->
+  </div><!-- end Grid row -->
+
+
+
+     
+
+     
+      
+
+
+
+            
+
+            
+
+        </div><!-- end result container -->
+
+
+
+
+
+        <br clear="all">
+
+        <div id="buttons" style="margin-top:2em">
+
+
+
+          <div class="form-group ">
+            <input class="button" type="submit" value="Continue →">
+
+          </div>
+
+
+          <div class="secondarybutton">
+             <a class="back-to-previous" href="javascript:history.back()">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+<script type="text/javascript">
+  
+  function cbclick(e){
+   e = e || event;
+   var cb = e.srcElement || e.target;
+   if (cb.type !== 'checkbox') {return true;}
+   var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+    while(i--) {
+        if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+         cbxs[i].checked = false;
+        }
+    }
+    // if the click should always 
+</script>
+
+
+{% endblock %}
+
+
