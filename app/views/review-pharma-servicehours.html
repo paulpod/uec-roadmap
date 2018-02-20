@@ -13,111 +13,191 @@
 <main id="content" role="main" style="padding-bottom: 0">
 
 	
-      <h1 class="heading-large">Review your services</h1>
+      <h1 class="heading-large">Review your services opening hours</h1>
 
 
-
-      <p style="max-width: 660px">Please check all of the opening hours for your pharmacy. You will be able to make changes, if required, at the next step.</p>
+      <p style="max-width: 660px">Please check all of the opening hours for your services. You will be able to make changes, if required, at the next step.</p>
 
   <div class="grid-row">
     <div class="column-half">
 
-      <h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>
+      <!--<h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>-->
 
 
-      <p class="review-day-p"><strong>Opening hours</strong></p>
+      <h3 class="heading-medium">Pharmacy opening hours</h3>
 
-      <p class="review-day-p"><span class="review-day-long">Monday</span> <strong>09:00 – 17:30</strong></p>
+      <table class="timeedittable reviewtable" style="max-width:600px;width:100%">
 
-      <p class="review-day-p"><span class="review-day-long">Tuesday</span> <strong>09:00 – 17:30</strong></p>
+        <thead>
+          <th> <!--DAY --> </th>
+          <th>Open</th>
+          <th> <!-- TO --> </th>
+          <th>Close</th>
+        </thead>
 
-      <p class="review-day-p"><span class="review-day-long">Wednesday</span> <strong>09:00 – 13:00</strong><br>
-      <span class="review-day-long">&nbsp;</span> <strong>14:00 – 18:30</strong></p>
+        <tbody>
+          <tr>
+            <td><div class="day">Monday</div></td>
 
-      <p class="review-day-p"><span class="review-day-long">Thursday</span> <strong>09:00 – 13:00</strong><br>
-     <span class="review-day-long">&nbsp;</span> <strong>14:00 – 18:30</strong></p>
-      
-      <p class="review-day-p"><span class="review-day-long">Friday</span> <strong>09:00 – 17:30</strong></p>
+            <td><div class="time">09:00</div></td>
 
-      <p class="review-day-p"><span class="review-day-long">Saturday</span> <strong class="closed">Closed</strong></p>
+            <td> <div class="to">to</div> </td>
 
-      <p class="review-day-p"><span class="review-day-long">Sunday</span> <strong class="closed">Closed</strong></p>
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Tuesday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Wednesday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Thursday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Friday</div></td>
+
+            <td><div class="time">09:00</div></td>
+
+            <td> <div class="to">to</div> </td>
+
+            <td><div class="time">17:30</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">Saturday</div></td>
+
+            <td><div class="time" style="color: red">Closed</div></td>
+
+            <td> </td>
+
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="day">Sunday</div></td>
+
+            <td><div class="time" style="color: red">Closed</div></td>
+
+            <td> </td>
+
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
 
 
-
-      <!--<p class="review-day-p"><strong>Bank holidays</strong><br>
-      
-      <span class="review-bankhol">Good Friday</span><br>
-      <span class="review-date-long">30 December 2018</span> <strong>09:00 – 12:00</strong></p>
-
-      <p class="review-day-p"><span class="review-bankhol">Easter Monday</span><br>
-      <span class="review-date-long">02 April 2018</span> <strong class="closed">Closed</strong></p>
-
-      <p class="review-day-p"><span class="review-bankhol">Early May</span><br>
-      <span class="review-date-long">07 May 2018</span> <strong class="closed">Closed</strong></p>
-
-      <p class="review-day-p"><strong>Other dates</strong><br>
-      <span class="review-date-long">30/03/2018</span> <strong class="closed">Closed</strong></p>-->
-
-      <p><strong>NHS pharmacist service</strong></p>
-
-      <p>Opening hours are the same as the pharmacy</p>
-
-
-      <p><strong>NUMSAS pharmacist service</strong></p>
-
-      <p>Opening hours are the same as the pharmacy</p>
-
-
-      <p><strong>Emergency contraception service</strong></p>
-
-      <p>Opening hours are the same as the pharmacy</p>
-
-
-
-    </div>
-
-
-
-
+    </div><!-- end grid col -->
 
     <div class="column-half">
 
-      &nbsp;
+     
 
-    </div>
+
+      <h3 class="heading-medium">Your services</h3>
+
+      <form action="/pharma-servicehours" method="get" class="form">
+
+        <div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>NHS pharmacist service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" type="radio" name="serviceHours1" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" type="radio" name="serviceHours1" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+
+        <div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>NUMSAS pharmacist service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" type="radio" name="serviceHours2" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" type="radio" name="serviceHours2" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+
+        <div class="form-group completebox" style="padding-top: 0;padding-bottom: 1.5em">
+          <div class="review-message">
+            <strong>Emergency contraception service</strong>
+            <br>
+            <span>Hours are the same as the pharmacy?</span>
+          </div>
+
+          <div style="float:left" id="radiocb">
+            <fieldset class="inline" style="position: relative;top:-3px">
+
+              <div class="multiple-choice">
+                <input id="radio-yes" type="radio" name="serviceHours3" value="true">
+                <label for="radio-yes" >Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-no" type="radio" name="serviceHours3" value="false">
+                <label for="radio-no" >No</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+
+
+    
+
+    </div><!-- end grid col -->
   </div><!-- end Grid row -->
 
 
 
-      <form action="/pharma-servicehours" method="get" class="form">
-
-      
-      <div class="form-group" style="margin: 1em 0 1em 0;background-color: #edf3f8;border-left: 8px solid #0f6ecc;padding:0.5em 1em 0.8em 1em">
-
-        <div class="review-message">
-          <span>Are these hours complete and correct?</span>
-        </div>
-
-        <div style="float:left" id="radiocb">
-          <fieldset class="inline" style="position: relative;top:-3px">
-
-            <div class="multiple-choice">
-              <input id="radio-yes" type="radio" name="reviewPharmaServiceHours" value="true">
-              <label for="radio-yes" >Yes</label>
-            </div>
-
-            <div class="multiple-choice">
-              <input id="radio-no" type="radio" name="reviewPharmaServiceHours" value="false">
-              <label for="radio-no" >No</label>
-            </div>
-
-          </fieldset>
-        </div>
-
-      </div>
-
-    
+     
 
      
       
