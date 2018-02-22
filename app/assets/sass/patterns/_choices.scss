@@ -100,14 +100,14 @@
 
 .gp-time {
 	display: inline-block;
-	background-color: #04c;
+	background-color: #06d;
 	font-weight: 700;
 	color: white;
 	width: 4.5em;
 	text-align: center;
 	padding:0.3em 0;
 	border-radius: 2px;
-	border-bottom: 3px solid #03a;
+	border-bottom: 3px solid #04a;
 }
 .gp-time-no {
 	background-color: #eee;
@@ -154,4 +154,46 @@
 	text-align: center;
 	padding:0.3em 1em;
 	border-radius: 2px;
+}
+
+
+// for appt book slot radios
+.multiple-choice.gpslot {
+	margin-right: 0.2em;
+}
+.gpslots {
+	position: relative;
+	top: -14px;
+}
+.gpslot {
+	background-color: #06d;
+	text-align: center;
+	padding-left: 2em;
+	border-radius: 2px;
+	border-bottom: 3px solid #04a;
+	font-weight: 600;
+} 
+.disabled {
+	background-color: #eee;
+	border-bottom: 3px solid #e0e0e0;
+}
+.disabled label time {
+	color: #666 !important;
+}
+.gpslot label time {
+	color: white;
+	position: relative;
+	top: 1px;
+}
+.gpslot label:before {
+	background-color: white !important;
+	width: 22px !important;
+    height: 22px !important;
+	top: 8px !important;
+    left: 6px !important;
+}
+.gpslot label:after {
+	border: 8px solid !important;
+	top: 13px !important;
+    left: 11px !important;
 }
