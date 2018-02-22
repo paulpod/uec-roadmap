@@ -111,6 +111,7 @@
 }
 
 
+// for the opening hours table on the services bulk review page
 
 .doubletime {
   background-image: url('/public/images/greykeyline.png');
@@ -122,8 +123,19 @@
   margin-bottom:0.8em
 }
 
+input#s2radio-no:checked ~ table#althours1{
+  display:inline-table;
+}
+input#s2radio-yes:checked ~ table#althours1{
+    display:none;
+}
+
+
+
+
 
 //for the select the services list
 .details-table p {
   margin-top: -0.8em;
 }
+
