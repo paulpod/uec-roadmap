@@ -13,7 +13,7 @@
 <main id="content" role="main" style="padding-bottom: 0">
 
   <div style="text-align:right;color: #666;padding-top: 0.5em;margin-bottom: -2em">
-    <span style="margin-right:1em">firstname.reallylonglastname12@nhs.net</span>
+    <span style="margin-right:1em">{{ data['nhsmail'] }}</span>
     <a href="#">Sign out</a>
   </div>
 
@@ -134,31 +134,31 @@
             <td><div class="time">17:30</div></td>
           </tr>
           <tr>
-            <td><div class="day">Wednesday</div></td>
+            <td valign="top"><div class="day">Wednesday</div></td>
 
-            <td><div class="time">09:00</div></td>
+            <td><div class="time">09:00<br>14:30</div></td>
 
-            <td> <div class="to">to</div> </td>
+            <td> <div class="to">to<br>to</div> </td>
 
-            <td><div class="time">13:30</div></td>
+            <td><div class="time">13:30<br>19:00</div></td>
           </tr>
           <tr>
-            <td><div class="day">Thursday</div></td>
+            <td valign="top"><div class="day">Thursday</div></td>
 
-            <td><div class="time">09:00</div></td>
+            <td><div class="time">09:00<br>14:30</div></td>
 
-            <td> <div class="to">to</div> </td>
+            <td> <div class="to">to<br>to</div> </td>
 
-            <td><div class="time">13:30</div></td>
+            <td><div class="time">13:30<br>19:00</div></td>
           </tr>
           <tr>
-            <td><div class="day">Friday</div></td>
+            <td valign="top"><div class="day">Friday</div></td>
 
-            <td><div class="time">09:00</div></td>
+            <td><div class="time">09:00<br>14:30</div></td>
 
-            <td> <div class="to">to</div> </td>
+            <td> <div class="to">to<br>to</div> </td>
 
-            <td><div class="time">13:30</div></td>
+            <td><div class="time">13:30<br>19:00</div></td>
           </tr>
           <tr>
             <td><div class="day">Saturday</div></td>
@@ -180,6 +180,25 @@
           </tr>
         </tbody>
       </table>
+
+      <span>Are these hours complete and correct?</span>
+
+      <div style="float:left" id="radiocb">
+        <fieldset class="inline" style="position: relative;top:-3px">
+
+          <div class="multiple-choice">
+            <input id="radio-yes" type="radio" name="serviceHours2yn" value="true">
+            <label for="radio-yes" >Yes</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-no" type="radio" name="serviceHours2yn" value="false">
+            <label for="radio-no" >No</label>
+          </div>
+
+        </fieldset>
+      </div>
+
     </div>
 
 
