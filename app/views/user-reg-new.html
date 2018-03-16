@@ -22,8 +22,8 @@
 
       <h1 class="heading-large">Your details</h1>
 
-      <p>
-      Please enter your full name and contact details in the boxes below.</p>
+      <!-- this instruction is a bit redundant, it's obvious <p>
+      Please enter your full name and contact details in the boxes below.</p>-->
 
       <p>These details will be used by your local DoS team to contact you if they have any questions about your review.</p>
 
@@ -31,29 +31,23 @@
       <form class="form">
 
         <fieldset class="form-group form-block">
-          <legend class="visuallyhidden">First name</legend>
+          <legend class="visuallyhidden">Full name</legend>
           <div class="form-text">
 
             <div class="form-group form-group-name">
               <label for="name-first">Full name</label>
-              <input class="form-control" id="name-first" name="name-full" type="text">
+              <input class="form-control" id="name-full" name="name-full" type="text">
             </div>
 
           </div>
-        </fieldset>
-
-        
-
-
-
-        <fieldset class="form-group">
+       
           <legend class="visuallyhidden">Phone number</legend>
           <div class="form-text">
 
-            <div class="form-group form-group-phone">
+            <div class="form-group" style="margin-top: 1em">
 
               <label for="phone">Phone number</label>
-              <input class="form-control" name="phone" type="text" id="phone">
+              <input class="form-control" name="phone" type="text" id="phone" type="tel" formnovalidate="formnovalidate" style="max-width: 300px">
 
               <p class="form-hint">Use the best number for DoS leads to reach you on</p>
             </div>
@@ -72,17 +66,43 @@
             </div>
 
           </div>
+        
+          <legend class="visuallyhidden">Name of your pharmacy</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-org" style="margin-top: 1em">
+
+              <label for="org">Name of your pharmacy</label>
+              <input class="form-control" name="org" type="text" id="org">
+            </div>
+
+          </div>
         </fieldset>
 
 
         <fieldset class="form-group">
-          <legend class="visuallyhidden">Name of your pharmacy</legend>
+          <p>You have signed in using {{ data['nhsmail'] }}. If there is a more convenient email address to contact you on, please enter it here.</p>
+
+
+          <legend class="visuallyhidden">Email address</legend>
           <div class="form-text">
 
-            <div class="form-group form-group-org">
+            <div class="form-group form-group-email">
 
-              <label for="org">Name of your pharmacy</label>
-              <input class="form-control" name="org" type="text" id="org">
+              <label for="email">Email address</label>
+              <input class="form-control form-control-2-3" name="org" type="email" id="org" style="max-width: 500px" formnovalidate="formnovalidate">
+            </div>
+
+          </div>
+
+
+          <legend class="visuallyhidden">Email address</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-org" style="margin-top: 1em">
+
+              <label for="confirm">Confirm email</label>
+              <input class="form-control form-control-2-3" name="org" type="email" id="org" style="max-width: 500px" formnovalidate="formnovalidate">
             </div>
 
           </div>

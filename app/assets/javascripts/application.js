@@ -21,3 +21,17 @@ $(document).ready(function () {
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
 })
+
+
+
+
+$('.clickMe').toggle(
+            function(){
+                $('#' + $(this).attr('for')).show();
+                $(this).text('hide');
+            },
+            function(){
+                $('#' + $(this).attr('for')).hide();
+                $(this).text('show');
+            });
+
