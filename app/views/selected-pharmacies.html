@@ -13,7 +13,7 @@
 <main id="content" role="main" style="padding-bottom: 0">
 
   <div style="text-align:right;color: #666;padding-top: 0.5em;margin-bottom: -2em">
-    <span style="margin-right:1em">firstname.reallylonglastname12@nhs.net</span>
+    <span style="margin-right:1em">{{ data['nhsmail'] }}@nhs.net</span>
     <a href="#">Sign out</a>
   </div>
 
@@ -22,7 +22,7 @@
 
       <h1 class="heading-large">Your pharmacies</h1>
 
-      <p>Showing the entry associated with <strong>username@nhs.net</strong> and 2 more pharmacies.</p>
+      <p>Showing the entry associated with <strong>{{ data['nhsmail'] }}</strong> and 2 more pharmacies.</p>
 
 
 
@@ -246,7 +246,7 @@
           <div class="form-group">
             <!--<input class="button" type="submit" value="Continue">-->
 
-            <a class="button" href="selected-grouped-services-unchecked-missing" role="button">Continue →</a>
+            <a class="button" href="services-conditional" role="button">Continue →</a>
           </div>
 
 

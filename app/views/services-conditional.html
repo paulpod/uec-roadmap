@@ -1,0 +1,611 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+
+<style type="text/css">
+  label, div {
+    display: block;
+}
+
+div.textbox {
+    display: none;
+}
+</style>
+<main id="content" role="main" style="padding-bottom: 0">
+
+  <div style="text-align:right;color: #666;padding-top: 0.5em;margin-bottom: -2em">
+    <span style="margin-right:1em">{{ data['nhsmail'] }}@nhs.net</span>
+    <a href="#">Sign out</a>
+  </div>
+
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+      <h1 class="heading-large">Review your services</h1>
+
+      <p>These are the pharmacies you selected.</p>
+
+      <p style="max-width: 640px">
+      Confirm the list of services offered by each one is correct, or tell us which ones need to be removed.
+      </p>
+
+      
+
+
+
+      </div>
+
+
+      <div class="column-third">
+
+        <!--<div class="demo-instruct" style="margin-top:3em">Eg. You no longer offer the Emergency Contraception service at Tavistock, for example</div>-->
+
+      </div>
+
+    </div><!-- end Grid row -->
+
+
+    <div class="grid-row">
+      <div class="column-full">
+
+
+
+
+
+
+
+        <div id="results-table" class="form-group ">
+
+
+          <p><strong style="font-size: 1.5em">FEF88</strong>
+            <br>
+
+          <strong>Boots Pharmacy - Ivybridge</strong>
+            <br>
+          2-3 Erme Terrace, Station Road, Ivybridge, Devon, PL21 0AL</p>
+
+
+
+          <div>
+
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Pharmacist - Boots Pharmacy - Ivybridge</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef88a" style="margin-left: 1.5em">
+                <input id="remove-fef88a" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef88a">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef88a">
+                <div class="multiple-choice">
+                  <input id="check-FEF88-a1" name="FEF88-a1" type="checkbox" value="FEF88-a1" >
+                
+                  <label for="check-FEF88-a1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF88-a2" name="FEF88-a2" type="checkbox" value="FEF88-a2" >
+                
+                  <label for="check-FEF88-a2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0">Pharmacist - Boots NUMSAS Pharmacy - Ivybridge</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef88b" style="margin-left: 1.5em">
+                <input id="remove-fef88b" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef88b">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef88b">
+                <div class="multiple-choice">
+                  <input id="check-FEF88-b1" name="FEF88-b1" type="checkbox" value="FEF88-b1" >
+                
+                  <label for="check-FEF88-b1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF88-b2" name="FEF88-b2" type="checkbox" value="FEF88-b2" >
+                
+                  <label for="check-FEF88-b2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0">Pharmacist - Emergency Contraception and Chlamydia - Ivybridge</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef88c" style="margin-left: 1.5em">
+                <input id="remove-fef88c" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef88c">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef88c">
+                <div class="multiple-choice">
+                  <input id="check-FEF88-c1" name="FEF88-c1" type="checkbox" value="FEF88-c1" >
+                
+                  <label for="check-FEF88-c1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF88-c2" name="FEF88-c2" type="checkbox" value="FEF88-c2" >
+                
+                  <label for="check-FEF88-c2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em">
+              <div class="multiple-choice" data-target="missing-why-fef88" style="margin-left: 1.5em">
+                <input id="remove-fef88x" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef88x" style="color:#700">Services I provide are not listed here</label>
+              </div>
+
+              <div class="panel js-hidden" id="missing-why-fef88">
+                <p style="margin-top:1em;max-width: 690px">Pharmacies in your area usually only profile the following services individually:  Pharmacy and NUMSAS Pharmacy</p>
+
+                <p style="max-width: 690px">Other services you may offer, such as Stopping Smoking or Emergency Contraception, are not profiled individually. Your main profile will include them.</p>
+              </div>
+
+            </div>
+
+
+
+            <br clear="all">
+
+
+
+
+          
+
+
+
+
+
+          
+
+
+            
+
+
+
+          <hr>
+
+          <p style="margin-top: 1.05em"><strong style="font-size: 1.5em">FEJ35</strong>
+            <br>
+            <strong>Boots Pharmacy - Tavistock</strong>
+            <br>
+            Boots Pharmacy, 5-6 Duke Street, Tavistock, Devon, PL19 0BA
+          </p>
+
+
+
+            
+
+
+
+              <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Pharmacist - Boots Pharmacy - Tavistock</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef35a" style="margin-left: 1.5em">
+                <input id="remove-fef35a" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef35a">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef35a">
+                <div class="multiple-choice">
+                  <input id="check-FEF35-a1" name="FEF35-a1" type="checkbox" value="FEF35-a1" >
+                
+                  <label for="check-FEF35-a1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF35-a2" name="FEF35-a2" type="checkbox" value="FEF35-a2" >
+                
+                  <label for="check-FEF35-a2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Emergency Contraception and Chlamydia - Boots Pharmacy - Tavistock</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef35b" style="margin-left: 1.5em">
+                <input id="remove-fef35b" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef35b">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef35b">
+                <div class="multiple-choice">
+                  <input id="check-FEF35-b1" name="FEF35-b1" type="checkbox" value="FEF35-b1" >
+                
+                  <label for="check-FEF35-b1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF35-b2" name="FEF35-b2" type="checkbox" value="FEF35-b2" >
+                
+                  <label for="check-FEF35-b2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Stop Smoking - Boots Pharmacy - Tavistock</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef35c" style="margin-left: 1.5em">
+                <input id="remove-fef35c" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef35c">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef35c">
+                <div class="multiple-choice">
+                  <input id="check-FEF35-c1" name="FEF35-c1" type="checkbox" value="FEF35-c1" >
+                
+                  <label for="check-FEF35-c1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF35-c2" name="FEF35-c2" type="checkbox" value="FEF35-c2" >
+                
+                  <label for="check-FEF35-c2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0">Needle Exchange - Boots Pharmacy - Tavistock</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef35d" style="margin-left: 1.5em">
+                <input id="remove-fef35d" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef35d">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef35d">
+                <div class="multiple-choice">
+                  <input id="check-FEF35-d1" name="FEF35-d1" type="checkbox" value="FEF35-d1" >
+                
+                  <label for="check-FEF35-d1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF35-d2" name="FEF35-d2" type="checkbox" value="FEF35-d2" >
+                
+                  <label for="check-FEF35-d2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0">Supervised Consumption - Boots Pharmacy - Tavistock</p>
+
+              <div class="multiple-choice" data-target="remove-why-fef35e" style="margin-left: 1.5em">
+                <input id="remove-fef35e" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef35e">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fef35e">
+                <div class="multiple-choice">
+                  <input id="check-FEF35-e1" name="FEF35-e1" type="checkbox" value="FEF35-e1" >
+                
+                  <label for="check-FEF35-e1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-FEF35-e2" name="FEF35-e2" type="checkbox" value="FEF35-e2" >
+                
+                  <label for="check-FEF35-e2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em">
+              <div class="multiple-choice" data-target="missing-why-fef35" style="margin-left: 1.5em">
+                <input id="remove-fef35x" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fef35x" style="color:#700">Services I provide are not listed here</label>
+              </div>
+
+              <div class="panel js-hidden" id="missing-why-fef35">
+                <p style="margin-top:1em;max-width: 690px">Pharmacies in your area usually only profile the following services individually:  Pharmacy and NUMSAS Pharmacy</p>
+
+                <p style="max-width: 690px">Other services you may offer, such as Stopping Smoking or Emergency Contraception, are not profiled individually. Your main profile will include them.</p>
+              </div>
+
+            </div>
+
+
+
+            <br clear="all">
+        
+          
+         
+
+
+
+
+
+
+
+
+
+
+                  
+<hr>
+
+          <p style="margin-top: 1.05em"><strong style="font-size: 1.5em">FA079</strong>
+            <br>
+            <strong>King Street Pharmacy - Plymouth</strong>
+            <br>
+            King Street Pharmacy, 140 King Street, Plymouth, Devon, PL1 5JE
+          </p>
+
+
+
+            
+
+
+
+              <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Pharmacist - King Street Pharmacy - Plymouth</p>
+
+              <div class="multiple-choice" data-target="remove-why-fa079a" style="margin-left: 1.5em">
+                <input id="remove-fa079a" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fa079a">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fa079a">
+                <div class="multiple-choice">
+                  <input id="check-fa079-a1" name="fa079-a1" type="checkbox" value="fa079-a1" >
+                
+                  <label for="check-fa079-a1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-fa079-a2" name="fa079-a2" type="checkbox" value="fa079-a2" >
+                
+                  <label for="check-fa079-a2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Emergency Contraception and Chlamydia - King Street Pharmacy - Plymouth</p>
+
+              <div class="multiple-choice" data-target="remove-why-fa079b" style="margin-left: 1.5em">
+                <input id="remove-fa079b" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fa079b">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fa079b">
+                <div class="multiple-choice">
+                  <input id="check-fa079-b1" name="fa079-b1" type="checkbox" value="fa079-b1" >
+                
+                  <label for="check-fa079-b1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-fa079-b2" name="fa079-b2" type="checkbox" value="fa079-b2" >
+                
+                  <label for="check-fa079-b2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0;">Stop Smoking - King Street Pharmacy - Plymouth</p>
+
+              <div class="multiple-choice" data-target="remove-why-fa079c" style="margin-left: 1.5em">
+                <input id="remove-fa079c" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fa079c">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fa079c">
+                <div class="multiple-choice">
+                  <input id="check-fa079-c1" name="fa079-c1" type="checkbox" value="fa079-c1" >
+                
+                  <label for="check-fa079-c1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-fa079-c2" name="fa079-c2" type="checkbox" value="fa079-c2" >
+                
+                  <label for="check-fa079-c2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0">Needle Exchange - King Street Pharmacy - Plymouth</p>
+
+              <div class="multiple-choice" data-target="remove-why-fa079d" style="margin-left: 1.5em">
+                <input id="remove-fa079d" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fa079d">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fa079d">
+                <div class="multiple-choice">
+                  <input id="check-fa079-d1" name="fa079-d1" type="checkbox" value="fa079-d1" >
+                
+                  <label for="check-fa079-d1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-fa079-d2" name="fa079-d2" type="checkbox" value="fa079-d2" >
+                
+                  <label for="check-fa079-d2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em"><p style="margin-bottom: 0">Supervised Consumption - King Street Pharmacy - Plymouth</p>
+
+              <div class="multiple-choice" data-target="remove-why-fa079e" style="margin-left: 1.5em">
+                <input id="remove-fa079e" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fa079e">This service needs to be removed</label>
+              </div>
+
+              <div class="panel js-hidden" id="remove-why-fa079e">
+                <div class="multiple-choice">
+                  <input id="check-fa079-e1" name="fa079-e1" type="checkbox" value="fa079-e1" >
+                
+                  <label for="check-fa079-e1">This service is no longer offered</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="check-fa079-e2" name="fa079-e2" type="checkbox" value="fa079-e2" >
+                
+                  <label for="check-fa079-e2">This service doesn't belong to this pharmacy</label>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br clear="all">
+
+
+            <div style="margin-bottom: 2em">
+              <div class="multiple-choice" data-target="missing-why-fa079" style="margin-left: 1.5em">
+                <input id="remove-fa079x" type="checkbox" name="radio-contact-group" value="Yes">
+        
+                <label for="remove-fa079x" style="color:#700">Services I provide are not listed here</label>
+              </div>
+
+              <div class="panel js-hidden" id="missing-why-fa079">
+                <p style="margin-top:1em;max-width: 690px">Pharmacies in your area usually only profile the following services individually:  Pharmacy and NUMSAS Pharmacy</p>
+
+                <p style="max-width: 690px">Other services you may offer, such as Stopping Smoking or Emergency Contraception, are not profiled individually. Your main profile will include them.</p>
+              </div>
+
+            </div>
+
+
+
+            <br clear="all">
+                  
+
+
+        </div><!-- end table container -->
+
+
+
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+
+        <br clear="all">
+
+
+        <div id="buttons">
+
+          <div id="page-notes">
+
+            <!-- supress the search for more <p style="margin-bottom: 2em"><a href="search-for-more"><strong>Search for more pharmacies</strong></a></p> -->
+
+            <p style="max-width: 650px">You can make changes to the details, address and opening hours of your services at the next step.</p>
+
+          </div>
+
+          
+          <div class="form-group">
+            <!--<input class="button" type="submit" value="Continue">-->
+
+            <a class="button" href="review-pharma-servicehours-onediff" role="button">Continue →</a>
+          </div>
+
+
+          <div>
+             <a class="back-to-previous" href="javascript:history.back()">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+
+{% endblock %}
+
