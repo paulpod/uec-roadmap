@@ -1,0 +1,157 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Pharmancy DoS Quality Payments
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	
+      <h1 class="heading-large">Review your service address</h1>
+
+
+      <p style="max-width: 660px">Please check all of the addresses for your services. You can make changes to each one, or set them to be the same as the main service.</p>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <!--<h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>-->
+
+
+       <h3 class="heading-medium">Pharmacist - Boots Pharmacy - Ivybridge</h3>
+
+      <p style="padding:0.3em;background-color: #fe6">This is the main service – <a href="#">What does that mean</a></p>
+
+      
+      <p><strong>Address</strong><br>
+        2-3 Erme Terrace,<br>
+        Station Road,<br>
+        Ivybridge,<br>
+        Devon
+      </p>
+
+      <p><strong>Town</strong><br>
+        Ivybridge<br>
+        <span style="color:#666">This is set from your postcode</span>
+      </p>
+
+      <p><strong>Postcode</strong><br>
+        PL21 0AL
+      </p>
+
+
+      <p><button href="#" class="button secondary-button">⇧ Make changes to these details</button></p>
+
+
+      <hr>
+
+
+      <h3 class="heading-medium">Pharmacist - Boots NUMSAS Pharmacy - Ivybridge</h3>
+
+      <p>This service uses the same address as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
+
+      <p><button data-target="missing-why-fa079" class="button secondary-button">⇧ Make this service use a different address</Button></p>
+
+
+      <div class="panel js-hidden" id="missing-why-fa079" style="border-left:none;margin-left: 2em">
+        <p style="margin-top:1em;max-width: 690px">Pharmacies in your area usually only profile the following services individually:  Pharmacy and NUMSAS Pharmacy</p>
+
+        <p style="max-width: 690px">Other services you may offer, such as Stopping Smoking or Emergency Contraception, are not profiled individually. Your main profile will include them.</p>
+      </div> 
+
+
+
+      <hr>
+
+
+      <h3 class="heading-medium">Pharmacist - Boots NUMSAS Pharmacy - Ivybridge</h3>
+
+      <p>This service uses the same address as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
+
+      <p><button href="#" class="button secondary-button">⇧ Make this service use a different address</button></p>  
+
+      
+
+
+
+    </div><!-- end grid col -->
+
+    
+
+  </div><!-- end Grid row -->
+
+
+
+     
+
+     
+      
+
+
+
+            
+
+            
+
+        </div><!-- end result container -->
+
+
+
+
+
+        <br clear="all">
+
+        <div id="buttons" style="margin-top:2em">
+
+
+
+          <div class="form-group ">
+            <!--<input class="button" type="submit" value="Continue →">-->
+
+            <a class="button" href="review-service-hours" role="button">Continue →</a>
+
+          </div>
+
+
+          <div class="secondarybutton">
+             <a class="back-to-previous" href="javascript:history.back()">Previous step</a>
+          </div>
+        </div>
+
+      </form>
+
+		</div>
+
+
+   
+
+
+	</div>
+
+</main>
+
+<script type="text/javascript">
+  
+  function cbclick(e){
+   e = e || event;
+   var cb = e.srcElement || e.target;
+   if (cb.type !== 'checkbox') {return true;}
+   var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+    while(i--) {
+        if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+         cbxs[i].checked = false;
+        }
+    }
+    // if the click should always 
+</script>
+
+
+{% endblock %}
+
+
