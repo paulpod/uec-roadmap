@@ -23,15 +23,17 @@ $(document).ready(function () {
 })
 
 
+function toggleDiv(divId) {
+    $("."+divId).toggle();
+}
 
 
 $('.clickMe').toggle(
-            function(){
-                $('#' + $(this).attr('for')).show();
-                $(this).text('hide');
-            },
-            function(){
-                $('#' + $(this).attr('for')).hide();
-                $(this).text('show');
-            });
-
+  function(){
+      $('#' + $(this).attr('for')).show();
+      $(this).text('hide');
+  },
+  function(){
+      $('#' + $(this).attr('for')).hide();
+      $(this).text('show');
+});

@@ -8,41 +8,133 @@
 
 
 
-
-
 <main id="content" role="main" style="padding-bottom: 0">
+
+  <div class="grid-row">
+    <div class="column-full" style="max-width: 690px">
 
 	
       <h1 class="heading-large">Review your services details</h1>
+      <p style="color:#666;font-weight:300;font-size:1em">1 of 3 pharmacies</p>
+
+      <div id="breadcrumb-bar">
+        <ul class="breadcrumb-bar-items">
+          <li id="current">Details</li>
+          <li>Address</li>
+          <li>Hours</li>
+          <li>Holidays</li>
+        </ul>
+
+      </div>
 
 
-      <p style="max-width: 660px">Please check all of the details for your services. You can make changes to each one, or set them to be the same as the main service.</p>
+      <p style="max-width: 660px;margin-bottom: 0;padding-bottom: 0">Please check all of the details for your services. You can make changes to each one, or set them to be the same as the main service.</p>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
 
-      <!--<h3 class="heading-medium" style="margin: 0.365em 0 0.445em 0">Boots Pharmacy - Ivybridge</h3>-->
 
 
       <h3 class="heading-medium">Pharmacist - Boots Pharmacy - Ivybridge</h3>
 
-      <p style="padding:0.3em;background-color: #fe6">This is the main service – <a href="#">What does that mean?</a></p>
+      <!--<p style="padding:0.3em;background-color: #fe6">This is the main service – <a href="#">What does that mean?</a></p>-->
+
+
+
+
+      <div id="main-service-banner" style="margin-bottom: 2em">
+        <details>
+
+          <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="background-color: #fe6;display: block;padding: 0.3em 0.7em">
+            <span class="summary" style="color: black;text-decoration: none;">This is the main service - </span>What does that mean?
+          </summary>
+      
+          <div class="" id="details-content-0" aria-hidden="false" style="display:block;">
+
+            <div style="max-width:630px;border-left:#ccc 6px solid;padding-left:1em">
+              <p style="padding-top: 0.5em">We've grouped all your services that share the same ODS code, and tried to pick your main pharmacy service.</p>
+
+              <p>If other services have the same details, address and hours you don't need to enter them individually – just tell us they are the same using the button.</p>
+            </div>
+          </div>
+
+        </details>
+      </div>
+
+
+
 
       
-      <p><strong>ODS Code</strong><br>
-        FEF88
-      </p>
+      <div class="edit-details-toggle-1">
+        <p><strong>ODS Code</strong><br>
+          FEF88
+        </p>
 
-      <p><strong>Public phone number</strong><br>
-        <span data-locator="td_detail_phone">01752 896787</span>
-      </p>
+        <p><strong>Public phone number</strong><br>
+          <span data-locator="td_detail_phone">01752 896787</span>
+        </p>
 
-      <p><strong>Website</strong><br>
-        <a href="http://www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/">www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/</a>
-      </p>
+        <p><strong>Website</strong><br>
+          <a href="http://www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/">www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/</a>
+        </p>
 
 
-      <p><button href="#" class="button secondary-button">⇧ Make changes to these details</button></p>
+        <!--<p><button href="#" class="button secondary-button">
+        <strong>⇧</strong> Make changes to these details</button></p>-->
+
+        <div style="margin-top: 1em">
+        <a href="javascript:toggleDiv('edit-details-toggle-1');" class="button secondary-button"><strong>⇧</strong> Make changes to these details</a>
+        </div>
+
+      </div>
+
+
+
+      <div class="edit-details-toggle-1" style="display: none;">
+
+        <fieldset class="form-group form-block" style="margin-bottom: 1em">
+          <legend class="visuallyhidden">ODS Code</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-name" style="margin-bottom: 1em">
+              <label for="ods-code">ODS Code</label>
+              <input class="form-control" id="ods-code" name="ods-code" type="text" value="FEF88" style="width:5em">
+            </div>
+
+          </div>
+
+          <legend class="visuallyhidden">ODS Code</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-name" style="margin-bottom: 1em">
+              <label for="pub-phone">Public phone number</label>
+              <input class="form-control" id="pub-phone" name="pub-phone" type="text" value="01752 896787" style="width:8em">
+            </div>
+
+          </div>
+
+          <legend class="visuallyhidden">Website</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-name" style="margin-bottom: 1em">
+              <label for="www">ODS Code</label>
+              <input class="form-control" id="www" name="www" type="text" value="www.boots.com/en/Store-Locator/Boots-Ivybridge-Station-Road/" style="width:100%">
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+
+        <div style="margin-top: 2em">
+          <a href="javascript:toggleDiv('edit-details-toggle-1');" class="button "><strong>⇧</strong> Save these changes </a>
+
+          <a href="javascript:toggleDiv('edit-details-toggle-1');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+        </div>
+
+      </div>
+
+
+
 
 
       <hr>
@@ -52,7 +144,7 @@
 
       <p>This service uses the same details as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
 
-      <p><button data-target="missing-why-fa079" class="button secondary-button">⇧ Make this service use different details</Button></p>
+      <p><button data-target="missing-why-fa079" class="button secondary-button"><strong>⇧</strong> Make this service use different details</Button></p>
 
 
       <div class="panel js-hidden" id="missing-why-fa079" style="border-left:none;margin-left: 2em">
@@ -66,11 +158,13 @@
       <hr>
 
 
-      <h3 class="heading-medium">Pharmacist - Boots NUMSAS Pharmacy - Ivybridge</h3>
+      <h3 class="heading-medium">Pharmacist - Emergency Contraception and Chlamydia - Ivybridge</h3>
 
       <p>This service uses the same details as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
 
-      <p><button href="#" class="button secondary-button">⇧ Make this service use different details</button></p>  
+      <p><button href="#" class="button secondary-button">
+      <strong>⇧</strong> Make this service use different details
+    </button></p>  
 
 
 

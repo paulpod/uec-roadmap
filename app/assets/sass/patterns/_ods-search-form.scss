@@ -3,8 +3,10 @@
 
 .secondary-button {
   background-color: $nhs-blue;
-  box-shadow: 0 2px 0 #001636;
-  
+  box-shadow: 0 2px 0 #001636; 
+}
+.secondary-button:hover {
+background-color: #004888;
 }
 
 .multiple-choice {

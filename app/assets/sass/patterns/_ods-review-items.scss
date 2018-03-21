@@ -139,3 +139,57 @@ input#s2radio-yes:checked ~ table#althours1{
   margin-top: -0.8em;
 }
 
+
+// for the breadcrumb bar, more like progress within each
+// Pharmacy loop of n services, bulk updating
+
+
+#breadcrumb-bar {
+background-color: #ddd;
+padding: 0.5em 0 0.5em 1em;
+margin-bottom: 2em;
+}
+#breadcrumb-bar li {
+  display: inline-block;
+  margin-right: 1.9em;
+}
+#breadcrumb-bar li#current {
+  color: #080;
+}
+#breadcrumb-bar li::after {
+  margin-left: 1.9em;
+  color: #666;
+  content: '>';
+  text-decoration: none;
+}
+#breadcrumb-bar li:last-child::after {
+  content: none;
+  margin-left: 0;
+}
+@media (max-width: 515px) {
+#breadcrumb-bar {
+  display: none;
+  }
+}
+
+
+
+.edit-time-table tr, .edit-time-table td {
+  border-top: none;
+  border-bottom: none;
+}
+
+.edit-time-table .day {
+position: relative;
+top:1.78em;
+}
+
+.add-hours {
+  position: relative;
+  left:14em;
+  top:2.4em;
+  margin-bottom: 2em;
+}
+.add-hours a {
+    text-decoration: none;
+}
