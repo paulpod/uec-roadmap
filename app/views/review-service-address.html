@@ -56,25 +56,73 @@
 
       
       
-      <p><strong>Address</strong><br>
-        2-3 Erme Terrace,<br>
-        Station Road,<br>
-        Ivybridge,<br>
-        Devon
-      </p>
+      <div class="edit-address-toggle-1">
+        <p><strong>Address</strong><br>
+          2-3 Erme Terrace,<br>
+          Station Road,<br>
+          Ivybridge,<br>
+          Devon
+        </p>
 
-      <p><strong>Town</strong><br>
-        Ivybridge<br>
-        <span style="color:#666">This is set from your postcode</span>
-      </p>
+        <p><strong>Town</strong><br>
+          Ivybridge<br>
+          <span style="color:#666">This is set from your postcode</span>
+        </p>
 
-      <p><strong>Postcode</strong><br>
-        PL21 0AL
-      </p>
+        <p><strong>Postcode</strong><br>
+          PL21 0AL
+        </p>
 
 
-      <p><button href="#" class="button secondary-button">
-      <strong>⇧</strong> Make changes to these details</button></p>
+        <p><a href="javascript:toggleDiv('edit-address-toggle-1');" class="button secondary-button">
+        <strong>⇧</strong> Make changes to these details</a></p>
+      </div>
+
+      <!-- - - - - - - - -->
+
+      <div class="edit-address-toggle-1" style="display: none;">
+
+        <fieldset class="form-group form-block" style="margin-bottom: 1em">
+          <legend class="visuallyhidden">Address</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-address" style="margin-bottom: 1em">
+              <label for="address">Address</label>
+              <input class="form-control" id="address" name="address" type="text" value="2-3 Erme Terrace" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Station Road" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Ivybridge" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Devon" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <a href="#">+ add another address line</a>
+
+            </div>
+
+          </div>
+
+          <legend class="visuallyhidden">Postcode</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-postocode" style="margin-bottom: 1em">
+              <label for="postcode">Postcode</label>
+              <input class="form-control" id="postcode" name="postcode" type="text" value="PL21 0AL" style="width:8em;text-transform:uppercase">
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+
+        <div style="margin-top: 2em">
+          <a href="javascript:toggleDiv('edit-address-toggle-1');" class="button "><strong>⇧</strong> Save these changes </a>
+
+          <a href="javascript:toggleDiv('edit-address-toggle-1');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+        </div>
+
+      </div>
 
 
       <hr>
@@ -82,29 +130,123 @@
 
       <h3 class="heading-medium">Pharmacist - Boots NUMSAS Pharmacy - Ivybridge</h3>
 
-      <p>This service uses the same address as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
+      <div class="edit-address-toggle-2">
 
-      <p><button data-target="missing-why-fa079" class="button secondary-button">
-      <strong>⇧</strong> Make this service use a different address</Button></p>
+        <p>This service uses the same address as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
+
+        <p><a href="javascript:toggleDiv('edit-address-toggle-2');" class="button secondary-button">
+        <strong>⇧</strong> Make this service use a different address</a></p>
+      </div>
 
 
-      <div class="panel js-hidden" id="missing-why-fa079" style="border-left:none;margin-left: 2em">
-        <p style="margin-top:1em;max-width: 690px">Pharmacies in your area usually only profile the following services individually:  Pharmacy and NUMSAS Pharmacy</p>
 
-        <p style="max-width: 690px">Other services you may offer, such as Stopping Smoking or Emergency Contraception, are not profiled individually. Your main profile will include them.</p>
-      </div> 
+      <div class="edit-address-toggle-2" style="display: none;">
+
+        <fieldset class="form-group form-block" style="margin-bottom: 1em">
+          <legend class="visuallyhidden">Address</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-address" style="margin-bottom: 1em">
+              <label for="address">Address</label>
+              <input class="form-control" id="address" name="address" type="text" value="2-3 Erme Terrace" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Station Road" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Ivybridge" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Devon" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <a href="#">+ add another address line</a>
+
+            </div>
+
+          </div>
+
+          <legend class="visuallyhidden">Postcode</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-postocode" style="margin-bottom: 1em">
+              <label for="postcode">Postcode</label>
+              <input class="form-control" id="postcode" name="postcode" type="text" value="PL21 0AL" style="width:8em;text-transform:uppercase">
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+
+        <div style="margin-top: 2em">
+          <a href="javascript:toggleDiv('edit-address-toggle-2');" class="button "><strong>⇧</strong> Save these changes </a>
+
+          <a href="javascript:toggleDiv('edit-address-toggle-2');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+        </div>
+
+      </div>
+
+
+      
 
 
 
       <hr>
 
 
+      
       <h3 class="heading-medium">Pharmacist - Emergency Contraception and Chlamydia - Ivybridge</h3>
 
-      <p>This service uses the same address as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
+      <div class="edit-address-toggle-3">
 
-      <p><button href="#" class="button secondary-button">
-      <strong>⇧</strong> Make this service use a different address</button></p>  
+        <p>This service uses the same address as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
+
+        <p><a href="javascript:toggleDiv('edit-address-toggle-3');" class="button secondary-button">
+        <strong>⇧</strong> Make this service use a different address</a></p>
+      </div>
+
+
+      <div class="edit-address-toggle-3" style="display: none;">
+
+        <fieldset class="form-group form-block" style="margin-bottom: 1em">
+          <legend class="visuallyhidden">Address</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-address" style="margin-bottom: 1em">
+              <label for="address">Address</label>
+              <input class="form-control" id="address" name="address" type="text" value="2-3 Erme Terrace" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Station Road" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Ivybridge" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <input class="form-control" id="address" name="address" type="text" value="Devon" style="width:16em;margin-bottom: 0.5em">
+              <br>
+              <a href="#">+ add another address line</a>
+
+            </div>
+
+          </div>
+
+          <legend class="visuallyhidden">Postcode</legend>
+          <div class="form-text">
+
+            <div class="form-group form-group-postocode" style="margin-bottom: 1em">
+              <label for="postcode">Postcode</label>
+              <input class="form-control" id="postcode" name="postcode" type="text" value="PL21 0AL" style="width:8em;text-transform:uppercase">
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+
+        <div style="margin-top: 2em">
+          <a href="javascript:toggleDiv('edit-address-toggle-3');" class="button "><strong>⇧</strong> Save these changes </a>
+
+          <a href="javascript:toggleDiv('edit-address-toggle-3');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+        </div>
+
+      </div> 
 
       
 
