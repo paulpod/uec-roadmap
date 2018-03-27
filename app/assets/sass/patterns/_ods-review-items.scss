@@ -151,13 +151,13 @@ margin-bottom: 2em;
 }
 #breadcrumb-bar li {
   display: inline-block;
-  margin-right: 1.9em;
+  margin-right: 1.2em;
 }
 #breadcrumb-bar li#current {
   color: #080;
 }
 #breadcrumb-bar li::after {
-  margin-left: 1.9em;
+  margin-left: 1.2em;
   color: #666;
   content: '>';
   text-decoration: none;
