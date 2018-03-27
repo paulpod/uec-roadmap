@@ -1,0 +1,116 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Service finder
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+<div class="grid-row">
+
+    
+
+    <div class="column-two-thirds">
+
+      <div>
+
+      <div id="WHERE">
+
+        <div style="float:left;margin-top:3em" id="radiocb">
+          <fieldset class="" style="position: relative;top:-3px">
+
+            <label for="distance-radio-group"><strong>Where should the patient be seen?</strong></label>
+
+            <br clear="all">
+
+
+            <div class="multiple-choice">
+              <input id="radio-5m" type="radio" name="distance-radio-group" value="5m">
+
+              <label for="radio-5m" >5 miles</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-10m" type="radio" name="distance-radio-group" value="10m">
+              <label for="radio-10m" >10 miles</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-20m" type="radio" name="distance-radio-group" value="20m">
+              <label for="radio-20m" >20 miles</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-40m" type="radio" name="distance-radio-group" value="40m">
+              <label for="radio-40m" >40 miles</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-60m" type="radio" name="distance-radio-group" value="60m">
+              <label for="radio-60m" >60 miles</label>
+            </div>
+
+          </fieldset>
+
+          <br clear="all">
+
+          <p>from <a href="locate">my current location</a> or <strong>postcode</strong> 
+
+            <input class="form-control" name="age" type="text" id="postcode" size="12" maxlength="10" style="width:8em;padding:8px;margin-left:0.33em">
+
+
+
+        </div>
+
+        <br clear="all">
+
+
+
+        <div>
+        <div class="form-group" style="margin-top: 2em">
+
+          <a class="button" href="finder-3d" role="button">Continue</a>
+        
+        </div>
+
+        <div>
+          <a class="back-arrow" href="finder-3b">Previous step</a>
+        </div>
+
+        <br clear="all">
+
+      </div>
+
+      </div><!-- close WHERE area -->
+
+
+
+
+
+    </div><!-- end column -->
+
+  </div><!-- end grid row -->
+
+
+<br clear="all">
+
+
+
+
+</form>
+</main>
+
+
+
+
+
+
+{% endblock %}
+
+

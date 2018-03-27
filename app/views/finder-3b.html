@@ -1,0 +1,103 @@
+{% extends "responsive-layout.html" %}
+
+{% block page_title %}
+  NHS Service finder
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+<div class="grid-row">
+
+    
+
+    <div class="column-two-thirds">
+
+      
+<p>date: {{ data['my-autocomplete'] }}</p>
+
+
+
+
+
+    <div id="when" style="margin-top: 3em">
+
+        <div style="float:left" id="radiocb">
+          <fieldset class="" style="position: relative;top:-3px">
+
+            <label for="time-radio-group"><strong>How urgently should the patient be seen?</strong></label>
+
+            <br clear="all">
+
+
+            <div class="multiple-choice">
+              <input id="radio-1h" type="radio" name="time-radio-group" value="1h">
+              <label for="radio-1h" >1 hour</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-2h" type="radio" name="time-radio-group" value="2h">
+              <label for="radio-2h" >2 hours</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-6h" type="radio" name="time-radio-group" value="6h">
+              <label for="radio-6h" >6 hours</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-12h" type="radio" name="time-radio-group" value="12h">
+              <label for="radio-12h" >12 hours</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-24h" type="radio" name="time-radio-group" value="24h">
+              <label for="radio-24h" >24 hours</label>
+            </div>
+
+          </fieldset>
+
+          <br clear="all">
+
+          <div style="margin: 2em 0">
+            <div class="form-group">
+
+              <a class="button" href="finder-3c" role="button">Continue</a>
+        
+              </div>
+
+              <div>
+                <a class="back-arrow" href="finder-3a">Previous step</a>
+              </div>
+
+              <br clear="all">
+
+            </div>
+          </div><!-- close WHEN area -->
+
+        </div><!-- end column -->
+
+      </div><!-- end grid row -->
+
+
+    <br clear="all">
+
+
+
+
+</form>
+</main>
+
+
+
+
+
+
+{% endblock %}
+
+
