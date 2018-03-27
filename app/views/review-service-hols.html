@@ -57,88 +57,54 @@
 
 
 
-      <div class="edit-time-toggle-1">
+      <div class="edit-hols-toggle-1">
         <table class="reviewtable" style="max-width:600px;width:100%">
 
         <thead>
-          <th>Day </th>
+          <th>Date </th>
           <th colspan="3" style="text-align: center;">Opening hours</th>
         </thead>
 
         <tbody>
           <tr>
-            <td><div class="day">Monday</div></td>
+            <td><div class="day" style="width: 100%"><strong>Good Friday</strong><br>Friday 30 March</div></td>
 
             <td><div class="time">09:00</div></td>
 
             <td> <div class="to">to</div> </td>
 
-            <td><div class="time">17:30</div></td>
+            <td><div class="time">12:30</div></td>
           </tr>
           <tr>
-            <td><div class="day">Tuesday</div></td>
+            <td><div class="day" style="width: 100%"><strong>Easter Monday</strong><br>Monday 2 April</div></td>
 
             <td><div class="time">09:00</div></td>
 
             <td> <div class="to">to</div> </td>
 
-            <td><div class="time">17:30</div></td>
+            <td><div class="time">12:30</div></td>
           </tr>
           <tr>
-            <td><div class="day">Wednesday</div></td>
+            <td><div class="day" style="width: 100%"><strong>Early May</strong><br>Monday 7 May</div></td>
 
             <td><div class="time">09:00</div></td>
 
             <td> <div class="to">to</div> </td>
 
-            <td><div class="time">17:30</div></td>
+            <td><div class="time">12:30</div></td>
           </tr>
-          <tr>
-            <td><div class="day">Thursday</div></td>
+          
 
-            <td><div class="time">09:00</div></td>
-
-            <td> <div class="to">to</div> </td>
-
-            <td><div class="time">17:30</div></td>
-          </tr>
-          <tr>
-            <td><div class="day">Friday</div></td>
-
-            <td><div class="time">09:00</div></td>
-
-            <td> <div class="to">to</div> </td>
-
-            <td><div class="time">17:30</div></td>
-          </tr>
-          <tr>
-            <td><div class="day">Saturday</div></td>
-
-            <td><div class="time" style="color: red">Closed</div></td>
-
-            <td> </td>
-
-            <td></td>
-          </tr>
-          <tr>
-            <td style="border-bottom: none;"><div class="day">Sunday</div></td>
-
-            <td style="border-bottom: none;"><div class="time" style="color: red">Closed</div></td>
-
-            <td style="border-bottom: none;"> </td>
-
-            <td style="border-bottom: none;"></td>
-          </tr>
         </tbody>
         </table>
 
         <div style="margin-top: 1em">
-        <a href="javascript:toggleDiv('edit-time-toggle-1');" class="button secondary-button"><strong>⇧</strong> Make changes to these hours</a>
+        <a href="javascript:toggleDiv('edit-hols-toggle-1');" class="button secondary-button"><strong>⇧</strong> Make changes to these days</a>
         </div>
 
       </div>
 
-      <div style="display:none;" class="edit-time-toggle-1">
+      <div style="display:none;" class="edit-hols-toggle-1">
         <table class="edit-time-table" style="max-width:600px;width:100%">
 
         <thead>
@@ -151,8 +117,8 @@
         <tbody>
           <tr>
             <td>
-              <div class="day" style="">Monday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 12em"><strong>Good Friday</strong><br>Friday 30 March</div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -174,8 +140,8 @@
 
           <tr>
             <td>
-              <div class="day" style="">Tuesday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 15em"><strong>Easter Monday</strong><br>Monday 2 April</div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -197,8 +163,9 @@
 
           <tr>
             <td>
-              <div class="day" style="">Wednesday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 15em"><strong>Early May</strong><br>Monday 7 May
+              </div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -218,10 +185,20 @@
             <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
           </tr>
 
-          <tr>
+
+          <tr class="edit-addhols-toggle-1">
             <td>
-              <div class="day" style="">Thursday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <p><a href="javascript:toggleDiv('edit-addhols-toggle-1');">+ Add another date</a></p>
+            </td>
+          </tr>
+
+          <tr class="edit-addhols-toggle-1" style="display:none;">
+           <td>
+              <div class="day" style="width: 15em">
+                <input type="date" class="form-control" style="width: 8.8em"> <a href="javascript:toggleDiv('edit-addhols-toggle-1');" style="text-decoration: none;margin-left: 0.5em">x remove</a></div>
+              </div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
+
             </td>
 
             <td>
@@ -241,95 +218,24 @@
             <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
           </tr>
 
-          <tr>
-            <td>
-              <div class="day" style="">Friday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
 
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="day" style="">Saturday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
-
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="day" style="">Sunday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
-
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
 
           
-          
+
         </tbody>
         </table>
 
 
         <div style="margin-top: 2em">
-          <a href="javascript:toggleDiv('edit-time-toggle-1');" class="button "><strong>⇧</strong> Save these changes </a>
+          <a href="javascript:toggleDiv('edit-hols-toggle-1');" class="button "><strong>⇧</strong> Save these changes </a>
 
-          <a href="javascript:toggleDiv('edit-time-toggle-1');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+          <a href="javascript:toggleDiv('edit-hols-toggle-1');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
         </div>
 
       </div>
 
-      <!--<p style="margin: 1em 0 3em 0"><button href="#" class="button secondary-button " for="textbox2">
-      <strong>⇧</strong> Make changes to these hours</button></p>-->
-
-
-
       
+
 
       
 
@@ -347,12 +253,12 @@
 
       <div class="edit-time-toggle-2">
         <div style="margin-top: 1em">
-        <a href="javascript:toggleDiv('edit-time-toggle-2');" class="button secondary-button"><strong>⇧</strong> Make this service use different hours</a>
+        <a href="javascript:toggleDiv('edit-hols-toggle-2');" class="button secondary-button"><strong>⇧</strong> Make this service use different hours</a>
         </div>
 
       </div>
 
-      <div style="display:none;" class="edit-time-toggle-2">
+      <div style="display:none;" class="edit-hols-toggle-2">
         <table class="edit-time-table" style="max-width:600px;width:100%">
 
         <thead>
@@ -365,8 +271,8 @@
         <tbody>
           <tr>
             <td>
-              <div class="day" style="">Monday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 12em"><strong>Good Friday</strong><br>Friday 30 March</div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -388,8 +294,8 @@
 
           <tr>
             <td>
-              <div class="day" style="">Tuesday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 15em"><strong>Easter Monday</strong><br>Monday 2 April</div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -411,8 +317,9 @@
 
           <tr>
             <td>
-              <div class="day" style="">Wednesday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 15em"><strong>Early May</strong><br>Monday 7 May
+              </div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -432,10 +339,20 @@
             <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
           </tr>
 
-          <tr>
+
+          <tr class="edit-addhols-toggle-2">
             <td>
-              <div class="day" style="">Thursday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <p><a href="javascript:toggleDiv('edit-addhols-toggle-2');">+ Add another date</a></p>
+            </td>
+          </tr>
+
+          <tr class="edit-addhols-toggle-2" style="display:none;">
+           <td>
+              <div class="day" style="width: 15em">
+                <input type="date" class="form-control" style="width: 8.8em"> <a href="javascript:toggleDiv('edit-addhols-toggle-2');" style="text-decoration: none;margin-left: 0.5em">x remove</a></div>
+              </div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
+
             </td>
 
             <td>
@@ -455,92 +372,24 @@
             <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
           </tr>
 
-          <tr>
-            <td>
-              <div class="day" style="">Friday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
 
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="day" style="">Saturday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
-
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="day" style="">Sunday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
-
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
 
           
-          
+
         </tbody>
         </table>
 
 
         <div style="margin-top: 2em">
-          <a href="javascript:toggleDiv('edit-time-toggle-2');" class="button "><strong>⇧</strong> Save these changes </a>
+          <a href="javascript:toggleDiv('edit-hols-toggle-2');" class="button "><strong>⇧</strong> Save these changes </a>
 
-          <a href="javascript:toggleDiv('edit-time-toggle-2');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+          <a href="javascript:toggleDiv('edit-hols-toggle-2');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
         </div>
 
-
-        <p style="margin-top: 2em"><button href="#" class="button secondary-button">
-      <strong>⇧</strong> Use the same hours as your main service</button></p> 
-
       </div>
+
+
+
 
 
 
@@ -551,14 +400,14 @@
 
       <p>This service uses the same hours as your <span style="padding:0.3em;background-color: #fe6">main service</span></p>
 
-      <div class="edit-time-toggle-3">
+      <div class="edit-hols-toggle-3">
         <div style="margin-top: 1em">
-        <a href="javascript:toggleDiv('edit-time-toggle-3');" class="button secondary-button"><strong>⇧</strong> Make this service use different hours</a>
+        <a href="javascript:toggleDiv('edit-hols-toggle-3');" class="button secondary-button"><strong>⇧</strong> Make this service use different hours</a>
         </div>
 
       </div>
 
-      <div style="display:none;" class="edit-time-toggle-3">
+      <div style="display:none;" class="edit-hols-toggle-3">
         <table class="edit-time-table" style="max-width:600px;width:100%">
 
         <thead>
@@ -571,8 +420,8 @@
         <tbody>
           <tr>
             <td>
-              <div class="day" style="">Monday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 12em"><strong>Good Friday</strong><br>Friday 30 March</div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -594,8 +443,8 @@
 
           <tr>
             <td>
-              <div class="day" style="">Tuesday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 15em"><strong>Easter Monday</strong><br>Monday 2 April</div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -617,8 +466,9 @@
 
           <tr>
             <td>
-              <div class="day" style="">Wednesday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <div class="day" style="width: 15em"><strong>Early May</strong><br>Monday 7 May
+              </div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
             </td>
 
             <td>
@@ -638,10 +488,20 @@
             <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
           </tr>
 
-          <tr>
+
+          <tr class="edit-addhols-toggle-3">
             <td>
-              <div class="day" style="">Thursday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
+              <p><a href="javascript:toggleDiv('edit-addhols-toggle-3');">+ Add another date</a></p>
+            </td>
+          </tr>
+
+          <tr class="edit-addhols-toggle-3" style="display:none;">
+           <td>
+              <div class="day" style="width: 15em">
+                <input type="date" class="form-control" style="width: 8.8em"> <a href="javascript:toggleDiv('edit-addhols-toggle-3');" style="text-decoration: none;margin-left: 0.5em">x remove</a></div>
+              </div>
+              <div class="add-hours"><a href="#" style="padding-left: 6em">+ Add more hours</a></div>
+
             </td>
 
             <td>
@@ -661,90 +521,19 @@
             <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
           </tr>
 
-          <tr>
-            <td>
-              <div class="day" style="">Friday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
 
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="day" style="">Saturday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
-
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="day" style="">Sunday</div>
-              <div class="add-hours"><a href="#">+ Add more hours</a></div>
-            </td>
-
-            <td>
-              <div id="openclosed" style="margin-top: -1.7em">
-                <div class="multiple-choice">
-                  <input id="radio-closed" type="checkbox" name="radio-group" value="openclosed" checked="">
-                  <label for="radio-closed"></label>
-                </div>
-              </div>
-            </td>
-
-
-            <td><div class="time" style=""><input value="09:00" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-
-            <td> <div class="to" style="">to</div> </td>
-
-            <td style="width: 6em"><div class="time"><input value="17:30" class="form-control" style="width: 5em;min-height: 38px"></div></td>
-          </tr>
 
           
-          
+
         </tbody>
         </table>
 
 
         <div style="margin-top: 2em">
-          <a href="javascript:toggleDiv('edit-time-toggle-3');" class="button "><strong>⇧</strong> Save these changes </a>
+          <a href="javascript:toggleDiv('edit-hols-toggle-1');" class="button "><strong>⇧</strong> Save these changes </a>
 
-          <a href="javascript:toggleDiv('edit-time-toggle-3');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
+          <a href="javascript:toggleDiv('edit-hols-toggle-1');" style="text-decoration: none;position: relative;top:0.5em;left:2em">Don't save changes </a>
         </div>
-
-
-        <p style="margin-top: 2em"><button href="#" class="button secondary-button">
-      <strong>⇧</strong> Use the same hours as your main service</button></p> 
 
       </div>
 
