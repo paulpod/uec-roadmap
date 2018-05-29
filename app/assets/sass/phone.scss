@@ -1,0 +1,36 @@
+/* Make a fake phone container for non-tech users on desktops */
+
+#fakephone {
+	border-radius: 20px;
+	border: solid black 40px;
+	max-width: 480px;
+	background-image: url('/public/images/ios-topbar.png');
+	background-repeat: no-repeat;
+	background-size: 520px;
+}
+
+/* and some fake phone layout elements */
+
+#fakephonetitle {
+	margin-top:33px;
+	background-color: #f7f7f7;
+	font-size: 1.3em;
+}
+#fakephonetitle-a {
+	width:100px;
+	float: left;
+	text-align: left;
+}
+#fakephonetitle-a a, #fakephonetitle-c a {
+	text-decoration: none;
+}
+#fakephonetitle-c {
+	width:100px;
+	float: right;
+	text-align: right;
+}
+#fakephonetitle-b {
+	width:280px;
+	float: left;
+	text-align: center;
+}

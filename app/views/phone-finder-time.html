@@ -1,0 +1,107 @@
+{% extends "minimal-layout.html" %}
+
+{% block page_title %}
+  NHS Service finder
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+<div id="fakephone">
+    <div id="fakephonetitle">
+        <div id="fakephonetitle-a">
+            <a href="phone-finder-filter-list">Back</a>
+        </div>
+
+        <div id="fakephonetitle-b">
+            Time
+        </div>
+
+        <!--<div id="fakephonetitle-c">
+            <a href="phone-finder-glossary">Glossary</a>
+        </div>-->
+
+        <br clear="all">
+
+    </div>
+
+
+        <div id="services" class="">
+
+          <p class="phone-bodytext">How urgently does the patient need to be seen?</p>
+          
+
+          <ul class="list phone-list">
+            <li class="multiple-choice">
+              <input id="services-s1" type="checkbox" name="services-s1" value="s1">
+
+              <label for="services-s1" class="name">Acute Assessment unit</label>
+              <p class="synonym"></p>
+            </li>
+            <li class="multiple-choice">
+              <input id="services-s2" type="checkbox" name="services-s2" value="s2">
+
+              <label for="services-s2" class="name">Ambulance Service</label>
+              <p class="synonym"></p>
+            </li>
+            <li class="multiple-choice">
+              <input id="services-s3" type="checkbox" name="services-s3" value="s3">
+
+              <label for="services-s3" class="name">Care Home</label>
+              <p class="synonym"></p>
+            </li>
+            <li class="multiple-choice">
+              <input id="services-s4" type="checkbox" name="services-s4" value="s4">
+
+              <label for="services-s4" class="name">Clinics</label>
+              <p class="synonym"></p>
+            </li>
+            <li class="multiple-choice">
+              <input id="services-s5" type="checkbox" name="services-s5" value="s5">
+
+              <label for="services-s5" class="name">Community Based Services</label>
+              <p class="synonym"></p>
+            </li>
+            
+          </ul>
+
+        </div>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+        <div>
+            <a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>
+        </div>
+
+        <div id="phone-browser-nav">
+          <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
+
+          <map name="ios-browser-navmap" id="ios-browser-navmap">
+            <area alt="" title="back" href="phone-finder-search-type" shape="rect" coords="0,12,100,80" style="outline:none;" />
+          </map>
+
+        </div>
+
+
+</div>
+
+</main>
+
+
+<script type="text/javascript">
+    var options = {
+  valueNames: [ 'name', 'synonym' ]
+};
+
+var serviceList = new List('services', options);
+</script>
+
+
+
+{% endblock %}
+
+

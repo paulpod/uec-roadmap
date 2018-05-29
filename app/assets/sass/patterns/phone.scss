@@ -1,0 +1,131 @@
+/* Make a fake phone container for non-tech users on desktops */
+
+#fakephone {
+	border-radius: 20px;
+	border: solid black 40px;
+	max-width: 480px;
+	background-image: url('/public/images/ios-topbar.png');
+	background-repeat: no-repeat;
+	background-size: 480px;
+	height: 850px;
+	overflow: hidden;
+}
+#fakephonetitle {
+	margin-top:30px;
+	background-color: #f7f7f7;
+	font-size: 1.2em;
+	border-bottom: 1px solid #bbb;
+	padding: 8px 10px 14px 5px;
+}
+#fakephonetitle-a {
+	width:108px;
+	float: left;
+	text-align: left;
+	padding-left: 28px;
+	background-image: url('/public/images/blue-left-arrow.svg');
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+#fakephonetitle-a a, #fakephonetitle-c a {
+	text-decoration: none;
+	color: #007aff;
+}
+#fakephonetitle-c {
+	width:85px;
+	float: right;
+	text-align: right;
+}
+#fakephonetitle-b {
+	width:200px;
+	float: left;
+	font-weight: 600;
+	text-align: center;
+}
+
+.phonesearchbox {
+	padding:12px 0;
+	background-color: #c9c9ce;
+}
+
+.search {
+	padding:5px;
+	width: 450px;
+	border:none;
+	border-radius: 8px;
+	text-align:center;
+	margin-left: 10px;
+	font-size: 1.3em;
+}
+
+.phonebutton, .phone-next {
+	
+	
+	height: 60px;
+	color: white;
+	width: 440px;
+	border: none;
+	margin: 20px 20px 0 20px;
+	font-size: 1.6em;
+	border-radius: 4px;
+}
+.phone-next {
+	background-color: green;
+	position: absolute;
+	top:750px;
+	-webkit-box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
+	box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
+}
+.phone-secondary {
+	background-color: blue;
+}
+
+
+.phone-list {
+	height: 640px;
+	overflow: scroll;
+}
+#services li {
+	padding-left: 13px;
+	margin-bottom: 1.15em;
+}
+#glossary li {
+	padding-left: 0;
+}
+
+.phone-list label {
+font-size: 1.2em;
+padding-left: 40px;
+}
+.list {
+	margin-left: 20px;
+}
+.synonym {
+	display: none;
+}
+
+div#phone-browser-nav {
+	background-image: url('/public/images/ios-browser-nav.png');
+	background-repeat: no-repeat;
+	background-size: 480px;
+	width:480px;
+	height:89px;
+	position: absolute;
+	top:850px;
+}
+
+.phone-heading {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.8em;
+	margin: 1.4em 0 0.7em 0;
+}
+.phone-bodytext {
+	text-align: center;
+	font-size: 1em;
+	margin: 0.6em 1.8em 0.8em 1.6em;
+}
+h3.glossary-title {
+	font-weight: 700;
+}

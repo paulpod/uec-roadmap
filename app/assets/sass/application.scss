@@ -28,9 +28,13 @@ $path: "/public/images/";
 
 @import 'patterns/a2si-personas';
 
+@import 'patterns/phone';
+
 
 // Add extra styles here, or re-organise the Sass files
 // in whichever way makes most sense to you
+
+
 
 
 
@@ -126,8 +130,4 @@ strong {
 @import 'global-header-override';
 
 
-
-#breadcrumb-bar {
-background-color: #ddd;
-}
 
