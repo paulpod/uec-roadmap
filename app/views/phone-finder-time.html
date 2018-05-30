@@ -37,51 +37,45 @@
 
           <ul class="list phone-list">
             <li class="multiple-choice">
-              <input id="services-s1" type="checkbox" name="services-s1" value="s1">
+              <input id="time-s1" type="radio" name="time-s1" value="1">
 
-              <label for="services-s1" class="name">Acute Assessment unit</label>
-              <p class="synonym"></p>
+              <label for="time-s1" class="name">1 hour</label>
             </li>
             <li class="multiple-choice">
-              <input id="services-s2" type="checkbox" name="services-s2" value="s2">
+              <input id="time-s2" type="radio" name="time-s2" value="2">
 
-              <label for="services-s2" class="name">Ambulance Service</label>
-              <p class="synonym"></p>
+              <label for="time-s2" class="name">2 hours</label>
             </li>
             <li class="multiple-choice">
-              <input id="services-s3" type="checkbox" name="services-s3" value="s3">
+              <input id="time-s3" type="radio" name="time-s3" value="6">
 
-              <label for="services-s3" class="name">Care Home</label>
-              <p class="synonym"></p>
+              <label for="time-s3" class="name">6 hours</label>
             </li>
             <li class="multiple-choice">
-              <input id="services-s4" type="checkbox" name="services-s4" value="s4">
+              <input id="time-s4" type="radio" name="time-s4" value="12">
 
-              <label for="services-s4" class="name">Clinics</label>
-              <p class="synonym"></p>
+              <label for="time-s4" class="name">12 hours</label>
             </li>
             <li class="multiple-choice">
-              <input id="services-s5" type="checkbox" name="services-s5" value="s5">
+              <input id="time-s5" type="radio" name="time-s5" value="24">
 
-              <label for="services-s5" class="name">Community Based Services</label>
-              <p class="synonym"></p>
+              <label for="time-s5" class="name">24 hours</label>
             </li>
             
           </ul>
 
         </div>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
         <div>
-            <a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>
+            <a href="phone-finder-location"><button class="phonebutton phone-next">Next</button></a>
         </div>
 
         <div id="phone-browser-nav">
           <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
 
           <map name="ios-browser-navmap" id="ios-browser-navmap">
-            <area alt="" title="back" href="phone-finder-search-type" shape="rect" coords="0,12,100,80" style="outline:none;" />
+            <area alt="" title="back" href="phone-finder-filter-list" shape="rect" coords="0,12,100,80" style="outline:none;" />
           </map>
 
         </div>
@@ -91,14 +85,6 @@
 
 </main>
 
-
-<script type="text/javascript">
-    var options = {
-  valueNames: [ 'name', 'synonym' ]
-};
-
-var serviceList = new List('services', options);
-</script>
 
 
 

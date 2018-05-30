@@ -47,6 +47,12 @@
 	padding:12px 0;
 	background-color: #c9c9ce;
 }
+.phoneinputbox {
+	
+}
+.phoneinputbox input {
+	border:3px solid black;
+}
 
 .search {
 	padding:5px;
@@ -55,6 +61,16 @@
 	border-radius: 8px;
 	text-align:center;
 	margin-left: 10px;
+	font-size: 1.3em;
+}
+
+.postcode {
+	padding:5px;
+	width: 400px;
+	border:none;
+	border-radius: 8px;
+	text-align:center;
+	margin-left: 30px;
 	font-size: 1.3em;
 }
 
@@ -122,10 +138,27 @@ div#phone-browser-nav {
 	margin: 1.4em 0 0.7em 0;
 }
 .phone-bodytext {
+	text-align: left;
+	font-size: 1em;
+	margin: 0.6em 1.8em 0.8em 1.6em;
+}
+.phone-hinttext {
 	text-align: center;
 	font-size: 1em;
 	margin: 0.6em 1.8em 0.8em 1.6em;
 }
+.phoneformlabel {
+	font-size: 1em;
+	font-weight: 600;
+	margin: 0.6em 1.8em 0.8em 1.6em;
+}
 h3.glossary-title {
 	font-weight: 700;
+}
+#locate {
+	text-decoration: none;
+	background-image: url('/public/images/location-arrow-blue.svg');
+	background-repeat: no-repeat;
+	background-size: 21px;
+	padding-left: 1.6em;
 }
