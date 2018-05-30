@@ -55,21 +55,21 @@
 }
 
 .search {
-	padding:5px;
-	width: 450px;
+	padding:5px 20px;
+	width: 420px;
 	border:none;
 	border-radius: 8px;
-	text-align:center;
+	text-align:left;
 	margin-left: 10px;
 	font-size: 1.3em;
 }
 
 .postcode {
-	padding:5px;
-	width: 400px;
+	padding:5px 20px;
+	width: 380px;
 	border:none;
 	border-radius: 8px;
-	text-align:center;
+	text-align:left;
 	margin-left: 30px;
 	font-size: 1.3em;
 }
@@ -168,7 +168,7 @@ input#gp-picker {
 	width: 400px;
 	border:2px solid black;
 	border-radius: 8px;
-	text-align:center;
+	text-align:left;
 	margin-left: 30px;
 	font-size: 1.3em;
 }
@@ -195,4 +195,8 @@ div#phone-age {
 	text-align:left;
 	margin-left: 30px;
 	font-size: 1.3em;
+}
+#gp-picker__listbox {
+	overflow: scroll;
+	height:520px;
 }
