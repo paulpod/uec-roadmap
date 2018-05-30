@@ -208,7 +208,7 @@ div#phone-age {
 }
 .resultblob {
 	display: inline-block;
-	background-color: #be0;
+	background-color: #ddd;
 	font-weight: 600;
 	border-radius: 13px;
 	width: 26px;
@@ -217,12 +217,12 @@ div#phone-age {
 	position: relative;
 	top:-4px;
 	left: -2px;
-	color: #360;
+	color: #036;
 	line-height: 1.4;
 }
 .noresultblob {
 	display: inline-block;
-	background-color: #fc0;
+	background-color: #456;
 	font-weight: 600;
 	border-radius: 13px;
 	width: 55px;
@@ -231,13 +231,14 @@ div#phone-age {
 	position: relative;
 	top:-4px;
 	left: -2px;
-	color: #620;
+	color: #eee;
 	font-size: 16px;
 	line-height: 1.6;
 }
 #phone-results {
 	padding-bottom: 0.5em;
-	border-bottom: 4px solid #69c;
+	margin-bottom: 0.5em;
+	border-bottom: 4px solid #eee;
 }
 .results-list {
 	overflow: scroll;
