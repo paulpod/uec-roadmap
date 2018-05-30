@@ -51,7 +51,7 @@
 	
 }
 .phoneinputbox input {
-	border:3px solid black;
+	border:2px solid black;
 }
 
 .search {
@@ -140,12 +140,13 @@ div#phone-browser-nav {
 .phone-bodytext {
 	text-align: left;
 	font-size: 1em;
-	margin: 0.6em 1.8em 0.8em 1.6em;
+	margin: 1em 1em 0.2em 1.6em;
 }
 .phone-hinttext {
-	text-align: center;
+	text-align: left;
+	color: #444;
 	font-size: 1em;
-	margin: 0.6em 1.8em 0.8em 1.6em;
+	margin: 0.5em 1.8em 1.2em 1.6em;
 }
 .phoneformlabel {
 	font-size: 1em;
@@ -161,4 +162,26 @@ h3.glossary-title {
 	background-repeat: no-repeat;
 	background-size: 21px;
 	padding-left: 1.6em;
+}
+input#gp-picker {
+	padding:5px;
+	width: 400px;
+	border:2px solid black;
+	border-radius: 8px;
+	text-align:center;
+	margin-left: 30px;
+	font-size: 1.3em;
+}
+ul#gp-picker__listbox li {
+	padding-left: 30px;
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #999;
+	background-color: #fff;
+}
+#nogp-question {
+	font-size: 1.2em;
+	margin-top: 0.5em;
+	margin-left: 30px;
 }
