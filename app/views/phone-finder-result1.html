@@ -1,0 +1,138 @@
+{% extends "minimal-layout.html" %}
+
+{% block page_title %}
+  NHS Service finder
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+<div id="fakephone">
+    <div id="fakephonetitle">
+        <div id="fakephonetitle-a">
+            <a href="phone-finder-patient">Back</a>
+        </div>
+
+        <div id="fakephonetitle-b">
+            Search results
+        </div>
+
+        <div id="fakephonetitle-c">
+            <!--<a href="phone-finder-glossary">Glossary</a>-->
+        </div>
+
+        <br clear="all">
+
+    </div>
+
+    <div id="phone-results">
+       <h2 class="phone-heading-results">NHS Oxford - Care Homes with Nursing - Fewcott Home</h2>
+
+    </div>
+
+    <div id="phone-result-content">
+
+
+       <div class="profile-section opening-hours">
+          <h3>Opening hours</h3>
+          <dl>
+            <dt>Monday</dt>
+            <dd>Open 24 hours</dd>
+            <dt>Tuesday</dt>
+            <dd>Open 24 hours</dd>
+            <dt>Wednesday</dt>
+            <dd>Open 24 hours</dd>
+            <dt>Thursday</dt>
+            <dd>Open 24 hours</dd>
+            <dt>Friday</dt>
+            <dd>Open 24 hours</dd>
+            <dt>Saturday</dt>
+            <dd>Open 24 hours</dd>
+            <dt>Sunday</dt>
+            <dd>Open 24 hours</dd>
+                
+            <dt>Public Holidays</dt>
+            <dd>Open 24 hours</dd>
+          </dl>
+
+          <br clear"all">
+        </div>
+
+        <div class="profile-section service-details">
+          <h3>Details</h3>
+
+          <dl>
+            <dt>Type of service</dt>
+            <dd>Care Home</dd>
+
+            <dt>Capacity</dt>
+            <dd>Not specified</dd>
+
+            <dt>Address</dt>
+            <dd>FRITWELL ROAD<br>FEWCOTT<br>BISCESTER<br>OXFORDSHIRE<br>OX27 7NZ</dd>
+
+            <dt>Telephone</dt>
+            <dd>01869 345 501</dd>
+
+            <dt>Non-public telephone</dt>
+            <dd>01869 345 502</dd>
+          </dl>
+        </div>
+
+
+        <div class="profile-section service-information">
+          <h3>Important Information</h3>
+
+          <p>SERVICE OVERVIEW:</p>
+
+          <p>This service deals with a whole range of health problems. They also provide health education, offer advice on smoking and diet, run clinics, give vaccinations and carry out simple surgical operations.</p>
+
+          <p>Practices also include nurses, healthcare assistants, practice managers, receptionists and other staff. Practices also work closely with other healthcare professionals, such as health visitors, midwives, mental health services and social care services.</p>
+
+          <p>REFERRAL CRITERIA:</p>
+
+          <p>Contact the practice to make an appointment or advise patient to attend in person (if more convenient). Most practices have urgent appointments available each day, if patient has an urgent care need.</p>
+
+          <p>FURTHER INFORMATION:</p>
+
+          <p>Wheelchair accessible premises</p>
+        </div>
+
+
+      </div>
+
+   
+
+
+    
+
+
+    <!--<div>
+        <a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>
+    </div>-->
+
+    <div id="phone-browser-nav">
+      <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
+
+      <map name="ios-browser-navmap" id="ios-browser-navmap">
+        <area alt="" title="back" href="phone-finder-patient" shape="rect" coords="0,12,100,80" style="outline:none;" />
+      </map>
+
+    </div>
+
+
+</div>
+
+</main>
+
+
+
+
+
+{% endblock %}
+
+
