@@ -328,3 +328,33 @@ li.result p {
 	line-height: 1.5;
 	font-size: 18px;
 }
+.phone-number  {
+	text-decoration: none;
+}
+.phone-call {
+background-color: #0078fa;
+border-radius: 4px;
+bottom-border:4px solid #0066d4;
+font-weight: 600;
+color: white;
+padding: 6px 12px;
+margin-left: 10px;
+}
+.phone-primary-button {
+	background-color: green;
+	border-bottom:#060 4px solid;
+	height: 40px;
+	color: white;
+	width: 320px;
+	padding-top: 4px;
+	margin: 20px 20px 0 0;
+	font-size: 1.1em;
+	border-radius: 4px;
+}
+.feedback {
+	width:400px;
+	height: 80px;
+	border-radius: 4px;
+	padding:6px;
+display: inline-block;
+}

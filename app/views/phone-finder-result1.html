@@ -62,7 +62,7 @@
           <br clear"all">
         </div>
 
-        <div class="profile-section service-details">
+        <div class="profile-section service-details" style="margin-bottom: 2em">
           <h3>Details</h3>
 
           <dl>
@@ -75,11 +75,12 @@
             <dt>Address</dt>
             <dd>FRITWELL ROAD<br>FEWCOTT<br>BISCESTER<br>OXFORDSHIRE<br>OX27 7NZ</dd>
 
-            <dt>Telephone</dt>
-            <dd>01869 345 501</dd>
+            <dt style="margin-bottom: 1em">Telephone</dt>
+            <dd><a href="tel:01869345501" class="phone-number">01869 345 501 <span class="phone-call">Call</span></a></dd>
+
 
             <dt>Non-public telephone</dt>
-            <dd>01869 345 502</dd>
+            <dd><a href="tel:01869345502" class="phone-number">01869 345 502 <span class="phone-call">Call</span></a></dd>
           </dl>
         </div>
 
@@ -103,17 +104,83 @@
         </div>
 
 
+
+        <div id="map-block">
+          <details>
+
+            <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="margin-left: 1em">
+              <span class="summary" >Show a map</span>
+            </summary>
+        
+            <div class="" id="details-content-0" aria-hidden="false" style="display:block;">
+
+              <div style="max-width:440px">
+                
+                <iframe width="480" height="420" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJJTcn0yzDdkgRobE0ieoazrM&destination=OX27+7NZ&key=AIzaSyB4HaYoJWHWt2snOCW7HsLN9FaWZ_LmfLY" allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </details>
+        </div><!-- end map block -->
+
+
+        <div class="profile-section actions">
+
+
+          <div id="direct-patient">
+            <a href="phone-finder-time">
+              <button class="phone-primary-button">Direct patient to this service</button>
+            </a>
+          </div>
+
+
+          <div id="info-feedback" style="background-color: #ddd;padding: 0.5em 0 0.2em 1.1em;margin: 1.5em 0 0 -20px;width:433px">
+
+            <span>Is something wrong with this information?</span>
+            <details>
+
+              <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="color: black">
+                <span class="summary" style="color: black;text-decoration: none;font-weight: 600">Tell us about how to correct or improve it</span>
+              </summary>
+          
+              <div class="" id="details-content-0" aria-hidden="false" style="display:block;height: 50px">
+
+                <div style="max-width:440px">
+
+                  <textarea class="feedback" rows="3" cols="30" wrap="soft" maxlength="1000"></textarea>
+
+                  <br clear="all">
+
+                  <button>Send feedback</button>
+                  
+                  
+                </div>
+              </div>
+
+            </details>
+          </div><!-- end feedback -->
+
+
+
+         
+
+
+
+
+
+
+        </div><!-- end actions
+
+
+
+
       </div>
 
    
 
 
-    
 
-
-    <!--<div>
-        <a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>
-    </div>-->
 
     <div id="phone-browser-nav">
       <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
