@@ -83,10 +83,12 @@
 	border: none;
 	margin: 20px 20px 0 20px;
 	font-size: 1.6em;
+	font-weight: 600;
 	border-radius: 4px;
 }
 .phone-next {
 	background-color: green;
+	border-bottom:#060 4px solid;
 	position: absolute;
 	top:750px;
 	-webkit-box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
@@ -94,7 +96,8 @@
 	box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
 }
 .phone-secondary {
-	background-color: blue;
+	background-color: #0078fa;
+	border-bottom:4px solid #0066d4;
 }
 
 
@@ -334,10 +337,10 @@ li.result p {
 .phone-call {
 background-color: #0078fa;
 border-radius: 4px;
-bottom-border:4px solid #0066d4;
+border-bottom:4px solid #0066d4;
 font-weight: 600;
 color: white;
-padding: 6px 12px;
+padding: 6px 12px 4px 12px;
 margin-left: 10px;
 }
 .phone-primary-button {
@@ -346,15 +349,28 @@ margin-left: 10px;
 	height: 40px;
 	color: white;
 	width: 320px;
-	padding-top: 4px;
+	padding: 4px 0;
 	margin: 20px 20px 0 0;
 	font-size: 1.1em;
 	border-radius: 4px;
+	font-weight: 600;
 }
 .feedback {
 	width:400px;
 	height: 80px;
 	border-radius: 4px;
+	border:2px solid black;
 	padding:6px;
-display: inline-block;
+	display: inline-block;
+}
+.phone-secondary-button {
+	background-color: #0078fa;
+	border-bottom:4px solid #0066d4;
+	height: 40px;
+	color: white;
+	width: 200px;
+	padding-top: 4px;
+	margin: 8px 20px 20px 0;
+	font-size: 1.1em;
+	border-radius: 4px;
 }
