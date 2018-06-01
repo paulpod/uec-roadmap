@@ -309,14 +309,14 @@ li.result p {
 }
 .opening-hours dt {
 	display: inline-block;
-	width:12em;
+	width:11em;
 }
 .opening-hours dd {
 	display: inline-block;
 }
 .service-details dt {
 	display: inline-block;
-	width:12em;
+	width:11em;
 	vertical-align: top;
 }
 .service-details dd {
@@ -340,7 +340,7 @@ border-radius: 4px;
 border-bottom:4px solid #0066d4;
 font-weight: 600;
 color: white;
-padding: 6px 12px 4px 12px;
+padding: 6px 20px 4px 20px;
 margin-left: 10px;
 }
 .phone-primary-button {
@@ -373,4 +373,25 @@ margin-left: 10px;
 	margin: 8px 20px 20px 0;
 	font-size: 1.1em;
 	border-radius: 4px;
+}
+#direct-patient details summary::-webkit-details-marker { display:none; }
+#direct-patient input {
+	width:410px;
+	border-radius: 4px;
+	border:2px solid black;
+	padding:6px;
+	display: inline-block;
+}
+#direct-patient a {
+	padding: 5px 1em;
+}
+#direct-patient a:hover {
+color: white;
+}
+
+
+.results-footer {
+	height :100px;
+	width: 100%;
+	background-color: #666;
 }

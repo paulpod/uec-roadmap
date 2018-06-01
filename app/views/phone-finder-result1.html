@@ -129,9 +129,26 @@ src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJJTcn0yz
 
 
           <div id="direct-patient">
-            <a href="phone-finder-time">
-              <button class="phone-primary-button">Direct patient to this service</button>
-            </a>
+
+              <details>
+
+              <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+                <a class="phone-primary-button direct-patient-button">Direct patient to this service</a>
+              </summary>
+
+              <div class="" id="details-content-0" aria-hidden="false" style="">
+                <p><strong>Patient email address (optional)</strong><br>
+                  For convenience you may send the public details for this service to your patient.
+                </p>
+
+                <input class="form-control" type="text" name="patient-email" placeholder="Patient email address">
+
+                <button class="phone-secondary-button">Send email</button>
+
+              </div>
+            </details>
+
+
           </div>
 
 
@@ -140,11 +157,11 @@ src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJJTcn0yz
             <span>Is something wrong with this information?</span>
             <details>
 
-              <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="color: black">
+              <summary role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true" style="color: black">
                 <span class="summary" style="color: black;text-decoration: none;font-weight: 600">Tell us about how to correct or improve it</span>
               </summary>
           
-              <div class="" id="details-content-0" aria-hidden="false" style="">
+              <div class="" id="details-content-1" aria-hidden="false" style="">
 
                 <div style="max-width:440px">
 
@@ -169,11 +186,11 @@ src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJJTcn0yz
             <span>Referring a patient to this service?</span>
             <details>
 
-              <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="color: black">
+              <summary role="button" aria-controls="details-content-2" tabindex="0" aria-expanded="true" style="color: black">
                 <span class="summary" style="color: black;text-decoration: none;font-weight: 600">Tell us about success or failure</span>
               </summary>
           
-              <div class="" id="details-content-0" aria-hidden="false" style="">
+              <div class="" id="details-content-2" aria-hidden="false" style="">
 
                 <div style="max-width:440px">
 
@@ -190,16 +207,12 @@ src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJJTcn0yz
             </details>
           </div><!-- end feedback -->
 
-
-
-         
-
-
-
-
-
-
         </div><!-- end actions -->
+
+
+        <div class="results-footer">
+          &nbsp;
+          <p>footer</p>
 
 
 
