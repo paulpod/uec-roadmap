@@ -94,10 +94,32 @@
               font-weight:600; 
               padding-right: 1em;
             }
-            div.banner td p {
+            
+            div.banner td, div.header td, div.encounter td, div.encounter th {
+              vertical-align: top;
+            }
+            div.encounter th {
+              font-weight: normal;color:#444;
+            }
+            div.encounter td {
               font-weight: 600;
             }
+            div.banner td p, div.header td p, div.encounter td p {
+              font-weight: 600;
+              padding-top: 0;
+              margin-top: 0;
+            }
             div.banner td:last-child {  vertical-align: top; padding-right: 0;}
+            div.encounter th {
+              width: 25%;
+            }
+            div.encounter tr {
+              border-bottom: 1px solid #ccc !important;
+            }
+            div.encounter td, div.encounter th {
+              padding-bottom: 0.66em;
+            }
+
 
 
             /*div.banner TABLE P {margin: 0;}*/
@@ -316,104 +338,130 @@
                       
                     
       <h2 class="heading-medium">Medications and medical devices</h2>
-                      
-                      Medications
+
+
+      <!-- not sure what this heading is really doing but have left it in -->
+      <h3 class="heading-small">Medications</h3>
                       
                     
+      <!-- let's try this header in a stacked style instead -->
       <div class="header">
          <table class="header">
             <tr>
-               <th class="header">Document Created</th>
-               <td class="header">01-Jan-2017, 20:00</td>
-            </tr>
-            <tr>
-               <th class="header">Document Owner</th>
-               <td class="header">Medway NHS Foundation Trust</td>
-            </tr>
-            <tr>
-               <th class="header">Authored by</th>
-               <td class="header">Mary Jones - Nurse Triage Practitioner, Medway NHS Foundation Trust on 01-Jan-2017, 20:00</td>
-            </tr>
-            <tr>
-               <th class="header" valign="top">Consent Status</th>
-               <td class="header">Consent given for electronic record sharing</td>
+              <td width="25%">
+                 <p><span class="label"><span class="visually-hidden">Document </span>Created</span><br>
+                 
+                 01-Jan-2017, 20:00</p>
+              </td>
+              <td width="25%">
+                 <p><span class="label"><span class="visually-hidden">Document</span>Owner</span><br>
+
+                 Medway NHS Foundation Trust</p>
+              </td>
+              <td>
+                 <p><span class="label">Author<span class="visually-hidden">ed by</span></span><br>
+
+                 Mary Jones - Nurse Triage Practitioner, Medway NHS Foundation Trust on 01-Jan-2017, 20:00</p>
+               </td><td>
+                 <p><span class="label">Consent Status</span><br>
+
+                 Consent given for electronic record sharing</p>
+               </td>
             </tr>
          </table>
       </div>
+
+
 
 
       <div id="informantBanner" class="banner">
          <table>
-            <tbody>
-               <tr>
-                  <th class="header">Informant</th>
-                  <td>Helga Bloggs - Spouse</td>
-               </tr>
-            </tbody>
-         </table>
-         <table class="header">
-            <tbody>
-               <tr>
-                  <td>
-                     <p class="label">Primary Home Address</p>
-                     <p>43 Summers Avenue<br>Somerset Street<br>Medway<br>ME5 7TY
-                     </p>
-                  </td>
-                  <td><span class="label">Mobile Phone </span>07886554123
-                  </td>
-               </tr>
-            </tbody>
+            <tr>
+              <td width="25%">
+                <p><span class="label">Informant</span><br>
+
+                Helga Bloggs - Spouse</p>
+              </td>
+
+              <td width="25%">
+                <p><span class="label">Primary Home Address</span><br>
+
+                  43 Summers Avenue<br>
+                  Somerset Street<br>
+                  Medway<br>
+                  ME5 7TY
+                </p>
+              </td>
+              <td>
+                <p><span class="label">Mobile Phone </span><br>
+
+                07886554123</p>
+              </td>
+
+            </tr>
          </table>
       </div>
 
 
 
 
-      <div class="titlebar">
-         <table class="titlebar">
+      <!-- Have changed this tables class to 'encounter' as that makes more sense -->
+      <!-- All the nested elements don't need individual classes, so removed  . . -->
+      <div class="encounter">
+         <table>
             <tr>
-               <th class="titlebar">Encounter Type</th>
-               <td class="titlebar">NHS111 Encounter</td>
+               <th>Encounter Type</th>
+               <td>NHS111 Encounter</td>
             </tr>
             <tr>
-               <th class="titlebar">Encounter Time</th>
-               <td class="titlebar">01-Jan-2017, 19:45 to 01-Jan-2017, 20:15</td>
+               <th>Encounter Time</th>
+               <td>01-Jan-2017, 19:45 to 01-Jan-2017, 20:15</td>
             </tr>
             <tr>
-               <th class="titlebar">Journey Identifier</th>
-               <td class="titlebar">LOC665</td>
+               <th>Journey Identifier</th>
+               <td>LOC665</td>
             </tr>
             <tr>
-               <th class="titlebar">Case Reference</th>
-               <td class="titlebar">CASEREF1234</td>
+               <th>Case Reference</th>
+               <td>CASEREF1234</td>
             </tr>
             <tr>
-               <th class="titlebar">Case ID</th>
-               <td class="titlebar">CASEID123</td>
+               <th>Case ID</th>
+               <td>CASEID123</td>
             </tr>
             <tr>
-               <th class="titlebar">Encounter Disposition</th>
-               <td class="titlebar">Passed onto clinical hub</td>
+               <th>Encounter Disposition</th>
+               <td>Passed onto clinical hub</td>
             </tr>
             <tr>
-               <th class="titlebar">Care Setting Location</th>
-               <td class="titlebar">Incident Location</td>
+               <th>Care Setting Location</th>
+               <td>Incident Location</td>
             </tr>
             <tr>
-               <th class="titlebar">Care Setting Address</th>
-               <td class="titlebar">
-                  <p class="label">Visit Address</p>
-                  <p>2, Brancaster Road<br>Medway<br>ME5 FL5<br>Follow the high street and turn left by Boots<br>GB<br>Great Britain<br>+38.265789-85.623415
+               <th>Care Setting Address</th>
+               <td>
+                  <p><span class="label">Visit Address</span><br>
+
+                    2, Brancaster Road<br>
+                    Medway<br>
+                    ME5 FL5<br>
+                    Follow the high street and turn left by Boots<br>
+                    GB<br>
+                    Great Britain<br>
+                    +38.265789-85.623415
                   </p>
                </td>
             </tr>
             <tr>
-               <th class="titlebar">Care Setting Type</th>
-               <td class="titlebar">Example Care Setting</td>
+               <th>Care Setting Type</th>
+               <td>Example Care Setting</td>
             </tr>
             <tr>
-               <th class="titlebar">Responsible Party</th>
-               <td class="titlebar">Dave Cornwell - Medical Director, Medway South Out of Hours Centre<br></td>
+              <th>Responsible Party</th>
+              <td>
+                Dave Cornwell - Medical Director,<br>
+                Medway South Out of Hours Centre
+              </td>
             </tr>
          </table>
       </div>
