@@ -95,14 +95,15 @@
               padding-right: 1em;
             }
             
-            div.banner td, div.header td, div.encounter td, div.encounter th {
+            div.banner td, div.header td, div.encounter td, div.encounter th, div.history th {
               vertical-align: top;
             }
-            div.encounter th {
+            div.encounter th, div.history th {
               font-weight: normal;color:#444;
             }
-            div.encounter td {
+            div.encounter td, div.history td {
               font-weight: 600;
+              vertical-align: top;
             }
             div.banner td p, div.header td p, div.encounter td p {
               font-weight: 600;
@@ -110,7 +111,7 @@
               margin-top: 0;
             }
             div.banner td:last-child {  vertical-align: top; padding-right: 0;}
-            div.encounter th {
+            div.encounter th, div.history th {
               width: 25%;
             }
             div.encounter tr {
@@ -468,232 +469,244 @@
 
 
 
-      <input type="checkbox" id="toggle"><label for="toggle"><span class="expand"><span class="changeArrow arrow-up">↑Hide History</span><span class="changeArrow arrow-dn">↓View History</span></span></label><div id="existingHistory" class="fieldsetContainer">
-         <h4>Patient Journey</h4>
-         <div>
-            <table id="hist">
-               <tr>
-                  <th>Date/Time of call</th>
-                  <td id="journdate">01-Jan-2017, 20:00</td>
-               </tr>
-               <tr>
-                  <th>Disposition</th>
-                  <td id="disposition">Dx001 - 
-                                        Passed onto clinical hub
-                  </td>
-               </tr>
-               <tr>
-                  <th>Case Id</th>
-                  <td id="caseid">LOC665</td>
-               </tr>
-               <tr>
-                  <th>Author</th>
-                  <td id="jauthor">Mary Jones - Nurse Triage Practitioner, Medway NHS Foundation Trust</td>
-               </tr>
-               <tr>
-                  <th>Advice given</th>
-                  <td></td>
-               </tr>
-               <tr>
-                  <th>Consent for Information Sharing</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <table>
-                                                    
-                           <tbody>
-                                                          
-                              <tr>
-                                                              
-                                 <th>Permission to view outcome</th>
-                                                              
-                                 <td>Permission to view obtained</td>
-                                                            
-                              </tr>
-                                                          
-                              <tr>
-                                                              
-                                 <th>Date obtained</th>
-                                                              
-                                 <td>01-Jan-2017, 20:00</td>
-                                                            
-                              </tr>
-                                                          
-                              <tr>
-                                                              
-                                 <th>Date expires</th>
-                                                              
-                                 <td>15-Jan-2017, 20:00</td>
-                                                            
-                              </tr>
-                                                        
-                           </tbody>
-                                                  
-                        </table>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Presenting complaints or issues</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>Patient feels dizzy.</content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Clinical Summary</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>
-                                          Patient fels nausea and dizzy after waking up. Lasted 30 minutes.
-                                          
-                        </content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Other Notes</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                        Additional Patient Notes<br></br>
-                                        Additional Patient Notes  01-Feb-2017, 12:00<br></br>
-                                              
-                     </text>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">These are more notes, nested under the top one.</text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Disposition Details</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>Lie down.</content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Information and advice given</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>Do not perform any strenuous activities.</content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Allergies and adverse reaction</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>No known allergies or adverse reaction.</content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Triage Form</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>An injury or other health problem was described.
-                                          <br></br>The individual was described as breathing and conscious.
-                                          <br></br>Loss of at least a mugful of blood in the last 30 minutes was not described.
-                                          <br></br>An illness or other health problem was described. - Dizziness
-                                          <br></br>Fighting for breath was not described.
-                                          <br></br>A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure
-                           or suicide attempt was not described as the main call reason.
-                                          <br></br>Dizziness and nausea was described.
-                                          <br></br>
-                                                  
-                        </content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Medications and medical devices</th>
-                  <td>
-                     <text xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                                
-                        <content>
-                                          Medications
-                                          
-                        </content>
-                                              
-                     </text>
-                  </td>
-               </tr>
-            </table>
-         </div>
-      </div>
-      <div id="participantBanner" class="banner">
-         <table>
-            <tbody>
-               <tr>
-                  <th class="sectitle">Other participant(s) in this document</th>
-               </tr>
-            </tbody>
-         </table>
-         <table>
-            <tr>
-               <th class="participant">Referred To</th>
-            </tr>
-            <tr>
-               <th class="header">Referred To Organization</th>
-               <td class="titlebar">Medway Community Hospital</td>
-            </tr>
-         </table>
-         <table class="header">
-            <tbody>
-               <tr>
-                  <td>
-                     <p class="label">Visit Address</p>
-                     <p>Church Street Walk in Centre<br>4 Church Street<br>Medway<br>ME8 7TT
-                     </p>
-                  </td>
-                  <td><span class="label">Emergency Phone </span>0123456789
-                  </td>
-               </tr>
-            </tbody>
-         </table><br><table>
-            <tr>
-               <th class="participant">Call back Contact</th>
-            </tr>
-            <tr>
-               <th class="header">Name</th>
-               <td class="titlebar">Call Centre Manager - Call Centre</td>
-            </tr>
-            <tr>
-               <th class="header">Organization</th>
-               <td class="titlebar">111 CALL CENTRE</td>
-            </tr>
-         </table>
-      </div>
-      <div class="footer">
-         <table class="header">
-            <tr>
-               <th class="header">Document ID</th>
-               <td class="header">A709A442-3CF4-476E-8377-376500E829C9</td>
-               <th class="header">Version</th>
-               <td class="header">2</td>
-            </tr>
-            <tr>
-               <th class="header">Replacement of</th>
-               <td class="header">A709A442-3CF4-476E-8377-376500E82AAA</td>
-               <th class="header">Version</th>
-               <td class="header">1</td>
-            </tr>
-         </table>
       
-		</div>
+      <div id="hidden-block">
+        <details>
+
+          <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="margin: 2em 0">
+            <span class="summary" >Show patient history</span>
+          </summary>
+      
+          <div class="" id="details-content-0" aria-hidden="false" style="margin:0 -1.5em;padding:1.5em;background-color:#ffc;display:block;">
+
+            <!-- removed the nested table from this one -->
+
+            <h2 class="heading-medium" style="margin-top: 0">Patient Journey</h2>
+
+            <div class="history">
+               <table>
+                  <tr>
+                     <th>Date/Time of call</th>
+                     <td>01-Jan-2017, 20:00</td>
+                  </tr>
+                  <tr>
+                     <th>Disposition</th>
+                     <td>Dx001 - Passed onto clinical hub
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Case Id</th>
+                     <td>LOC665</td>
+                  </tr>
+                  <tr>
+                     <th>Author</th>
+                     <td>Mary Jones - Nurse Triage Practitioner, Medway NHS Foundation Trust</td>
+                  </tr>
+                  <tr>
+                     <th>Advice given</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2"><h3 class="heading-small">Consent for Information Sharing</h3></td>
+                  </tr>
+
+                  <tr>
+                     <th>Permission to view outcome</th>
+                     <td>Permission to view obtained</td>
+                  </tr>
+
+                  <tr>
+                     <th>Date obtained</th>
+                     <td>01-Jan-2017, 20:00</td>
+                  </tr>
+
+                  <tr>
+                     <th>Date expires<p><br></p></th>
+                     <td>15-Jan-2017, 20:00</td>
+                  </tr>
+
+                  <tr>
+                     <th>Presenting complaints or issues</th>
+                     <td>
+                        Patient feels dizzy.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Clinical Summary</th>
+                     <td>
+                        Patient fels nausea and dizzy after waking up. Lasted 30 minutes.
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Other Notes</th>
+                     <td>
+                        Additional Patient Notes<br>
+                        
+                        Additional Patient Notes  01-Feb-2017, 12:00<br>
+                                                 
+                        
+                        These are more notes, nested under the top one.
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Disposition Details</th>
+                     <td>
+                     Lie down.
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Information and advice given</th>
+                     <td>
+                     Do not perform any strenuous activities.
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Allergies and adverse reaction</th>
+                     <td>
+                     No known allergies or adverse reaction.
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Triage Form</th>
+                     <td>
+                        An injury or other health problem was described.
+                        <br></br>The individual was described as breathing and conscious.
+                        <br></br>Loss of at least a mugful of blood in the last 30 minutes was not described.
+                        <br></br>An illness or other health problem was described. - Dizziness
+                        <br></br>Fighting for breath was not described.
+                        <br></br>A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure or suicide attempt was not described as the main call reason.
+                        <br></br>Dizziness and nausea was described.
+                        <br></br>
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Medications and medical devices</th>
+                     <td>
+                        Medications
+
+                     </td>
+                  </tr>
+               </table>
+            </div><!-- end history block -->
+
+          </div><!-- end details block -->
+
+        </details>
+
+      </div><!-- end hidden block -->
+         
+
+
+      <div id="participantBanner" class="banner">
+
+        <h3 class="heading-small">Other participant(s) in this document</h3>
+        <!-- this was in a table before, for no particular reason … removed -->
+              
+
+         
+        <!-- Next was two separate tables, but as far as I could tell should be one -->
+
+       
+
+
+        <table class="header">
+          <tr>
+            <td>
+              <p>
+                <span class="label">Referred To Organization</span><br>
+
+                Medway Community Hospital
+              </p>
+            </td>
+            <td>
+              <p>
+                <span class="label">Visit Address</span><br>
+               
+                Church Street Walk in Centre<br>
+                4 Church Street<br>
+                Medway<br>
+                ME8 7TT
+              </p>
+            </td>
+            <td>
+              <p>
+                <span class="label">Emergency Phone</span><br>
+
+                0123456789
+              </p>
+            </td>
+          </tr>
+        </table>
+
+
+         <table>
+            <tr>
+              <td>
+                <p>Call back Contact</p>
+              </td>
+              <td>
+                <p>
+                  <span class="label">Name</span><br>
+
+                  Call Centre Manager - Call Centre
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span class="label">Organization</span><br>
+
+                  111 CALL CENTRE
+                </p>
+              </td>
+            </tr>
+         </table>
+      </div>
+
+
+
+
+      <div class="footer">
+         <table>
+            <tr>
+              <td>
+                <p>
+                  <span class="label">Document ID</span><br>
+
+                  A709A442-3CF4-476E-8377-376500E829C9
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span class="label">Version</span><br>
+
+                  2
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="label">Replacement of</span><br>
+
+                  A709A442-3CF4-476E-8377-376500E82AAA
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span class="label">Version</span><br>
+
+                  1
+                </p>
+              </td>
+            </tr>
+         </table>
+       </div>
 
 
    
