@@ -404,3 +404,22 @@ color: white;
 	padding-left: 1.4em;
 	background-position: 0 3px;
 }
+
+.group-list {
+	margin-left: 0px;
+}
+.group-list li {
+margin-left: 16px;
+}
+
+li.list-grouper {
+	display: inline-block;
+	width: 100%;
+	background-color: #cdf;
+margin-left:-9px;
+border-top: 8px solid #cdf;
+border-bottom: 4px solid #cdf;
+border-left: 12px solid #cdf;
+}
+
+
