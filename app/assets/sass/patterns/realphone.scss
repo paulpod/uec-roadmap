@@ -1,0 +1,457 @@
+/* Make a fake phone container for non-tech users on desktops */
+body {
+	background-color: white;
+}
+#fakephone {
+}
+.hide-fake-element {
+	display: none;
+}
+#fakephonetitle {
+	display: none;
+	margin-top:30px;
+	background-color: #f7f7f7;
+	font-size: 1.2em;
+	border-bottom: 1px solid #bbb;
+	padding: 8px 10px 14px 5px;
+}
+#fakephonetitle-a {
+	width:108px;
+	float: left;
+	text-align: left;
+	padding-left: 28px;
+	background-image: url('/public/images/blue-left-arrow.svg');
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+#fakephonetitle-a a, #fakephonetitle-c a {
+	text-decoration: none;
+	color: #007aff;
+}
+#fakephonetitle-c {
+	width:85px;
+	float: right;
+	text-align: right;
+}
+#fakephonetitle-b {
+	width:200px;
+	float: left;
+	font-weight: 600;
+	text-align: center;
+}
+
+.phonesearchbox {
+	position: fixed;
+	padding:12px 20px 12px 0;
+	background-color: #c9c9ce;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: -24px;
+	z-index: 1000;
+}
+
+.phonesearchbox input {
+	width: 315px;
+}
+.phoneinputbox {
+	
+}
+.phoneinputbox input {
+	border:2px solid black;
+}
+
+.search {
+	padding:5px 20px;
+	width: 420px;
+	border:none;
+	border-radius: 8px;
+	text-align:left;
+	margin-left: 10px;
+	font-size: 1.3em;
+}
+
+.postcode {
+	padding:8px 20px;
+	width: 300px;
+	border:none;
+	border-radius: 8px;
+	text-align:left;
+	margin-left: 0;
+	margin-top: 10px;
+	font-size: 1.3em;
+}
+
+.phonebutton, .phone-next {
+	position: fixed;
+	bottom:20px;
+	height: 50px;
+	color: white;
+	width: 340px;
+	border: none;
+	
+	font-size: 1.4em;
+	font-weight: 600;
+	border-radius: 4px;
+}
+/* special case for the buttons on the front screen, sigh */
+.introphonebutton {
+	height: 50px;
+	color: white;
+	width: 340px;
+	border: none;
+	font-size: 1.4em;
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 10px 0 5px 0;
+}
+
+.phone-next {
+
+	background-color: green;
+	border-bottom:#060 4px solid;
+	-webkit-box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
+	box-shadow: 0px 0px 50px 15px rgba(255,255,255,1);
+}
+.phone-secondary {
+	background-color: #0078fa;
+	border-bottom:4px solid #0066d4;
+}
+
+
+.phone-list {
+	//height: 640px;
+	//overflow: scroll;
+}
+#services {
+	min-height: 500px;
+}
+#services ul {
+	margin-bottom: 6em;
+}
+#services li {
+	padding-left: 13px;
+	margin-bottom: 1.15em;
+}
+#glossary li {
+	padding-left: 0;
+}
+
+.phone-list label {
+font-size: 1.2em;
+padding-left: 40px;
+}
+.list {
+	margin-left: 0;
+}
+.synonym {
+	display: none;
+}
+
+div#phone-browser-nav {
+	background-image: url('/public/images/ios-browser-nav.png');
+	background-repeat: no-repeat;
+	background-size: 480px;
+	width:480px;
+	height:89px;
+	position: absolute;
+	top:850px;
+	display: none;
+}
+
+.phone-heading {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.6em;
+	margin: 0.2em 0 0.7em 0;
+}
+.phone-heading-results {
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.48em;
+	margin: 0.4em 0 0 1.1em;
+}
+.phone-bodytext {
+	text-align: left;
+	font-size: 1.1em;
+	margin: 0.2em 0 0.8em 0;
+}
+.phone-hinttext {
+	text-align: left;
+	color: #444;
+	font-size: 1em;
+	margin: 0.5em 0 1.2em 0;
+}
+.phoneformlabel {
+	font-size: 1em;
+	font-weight: 600;
+	margin: 0.6em 1.8em 0.8em 1.6em;
+}
+h3.glossary-title {
+	font-weight: 700;
+}
+#locate {
+	text-decoration: none;
+	background-image: url('/public/images/location-arrow-blue.svg');
+	background-repeat: no-repeat;
+	background-size: 21px;
+	padding-left: 1.6em;
+}
+input#gp-picker {
+	padding:5px;
+	width: 330px;
+	border:2px solid black;
+	border-radius: 8px;
+	text-align:left;
+	margin-left: 30px;
+	font-size: 1.3em;
+}
+ul#gp-picker__listbox li {
+	padding-left: 30px;
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #999;
+	background-color: #fff;
+}
+#nogp-question {
+	font-size: 1.2em;
+	margin-top: 0.5em;
+	margin-left: 30px;
+}
+div#phone-age {
+	margin-bottom: 3em;
+}
+#phone-age input {
+	padding:5px;
+	border:2px solid black;
+	border-radius: 8px;
+	text-align:left;
+	margin-left: 0;
+	font-size: 1.3em;
+}
+#gp-picker__listbox {
+	overflow: scroll;
+	height:520px;
+}
+.resultblob {
+	display: inline-block;
+	background-color: #ddd;
+	font-weight: 600;
+	border-radius: 11px;
+	width: 22px;
+	height:22px;
+	text-align: center;
+	position: relative;
+	top:-4px;
+	left: -2px;
+	color: #666;
+	line-height: 1.3;
+	font-size: 0.9em;
+}
+.noresultblob {
+	display: inline-block;
+	background-color: #888;
+	font-weight: 600;
+	border-radius: 13px;
+	width: 55px;
+	height:26px;
+	text-align: center;
+	position: relative;
+	top:-4px;
+	left: -2px;
+	color: #eee;
+	font-size: 16px;
+	line-height: 1.6;
+}
+#phone-results {
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	border-bottom: 4px solid #eee;
+	margin-left: -30px;
+}
+.results-list {
+width: 374px;
+}
+li.result {
+	background-image: url('/public/images/blue-right-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: 348px center;
+	background-size: 18px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 12px;
+	margin-bottom: 0;
+}
+.results-list a {
+	text-decoration: none;
+	color: inherit;
+}
+li.result p {
+	margin: 0;
+}
+.open-now {
+	font-weight: 600;
+	color: #080;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.result-distance {
+	display: inline-block;
+	width: 90px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.result-title {
+	max-width: 330px;
+	text-decoration: none;
+}
+.result-title a {
+	text-decoration: none;
+}
+
+.result-type {
+	font-weight: 600;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	color: #888;
+	padding-top: 5px;
+}
+.profile-section {
+	padding-left: 32px;
+	line-height: 1.8;
+	margin-top:1em;
+}
+.profile-section h3 {
+	font-weight: 600;
+}
+.opening-hours dt {
+	display: inline-block;
+	width:11em;
+}
+.opening-hours dd {
+	display: inline-block;
+}
+.service-details dt {
+	display: inline-block;
+	width:11em;
+	vertical-align: top;
+}
+.service-details dd {
+	display: inline-block;
+}
+#phone-result-content {
+margin-left: -35px;
+}
+.service-information {
+	max-width: 430px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+.phone-number  {
+	text-decoration: none;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+.phone-call {
+background-color: #0078fa;
+border-radius: 4px;
+border-bottom:4px solid #0066d4;
+font-weight: 600;
+color: white;
+padding: 6px 20px 4px 20px;
+margin-left: 10px;
+}
+.phone-primary-button {
+	background-color: green;
+	border-bottom:#060 4px solid;
+	height: 30px;
+	color: white;
+	width: 280px;
+	padding: 4px 0;
+	margin: 20px 20px 0 0;
+	font-size: 1em;
+	border-radius: 4px;
+	font-weight: 600;
+}
+.feedback {
+	width:400px;
+	height: 80px;
+	border-radius: 4px;
+	border:2px solid black;
+	padding:6px;
+	display: inline-block;
+}
+.phone-secondary-button {
+	background-color: #0078fa;
+	border-bottom:4px solid #0066d4;
+	height: 40px;
+	color: white;
+	width: 200px;
+	padding-top: 4px;
+	margin: 8px 20px 20px 0;
+	font-size: 1.1em;
+	border-radius: 4px;
+}
+#direct-patient details summary::-webkit-details-marker { display:none; }
+#direct-patient input {
+	width:410px;
+	border-radius: 4px;
+	border:2px solid black;
+	padding:6px;
+	display: inline-block;
+}
+#direct-patient a {
+	padding: 5px 1em;
+}
+#direct-patient a:hover {
+color: white;
+}
+
+
+.results-footer {
+	height :100px;
+	width: 100%;
+	background-color: #666;
+	
+}
+
+#refine-fiddle {
+	background-image: url('/public/images/fiddle-icon.svg');
+	background-repeat: no-repeat;
+	background-size: 24px;
+	padding-left: 1.4em;
+	background-position: 0 3px;
+}
+
+.group-list {
+	margin-left: 0px;
+}
+.group-list li {
+margin-left: 16px;
+}
+
+li.list-grouper {
+	display: inline-block;
+	width: 100%;
+	background-color: #cdf;
+margin-left:-9px;
+border-top: 8px solid #cdf;
+border-bottom: 4px solid #cdf;
+border-left: 12px solid #cdf;
+}
+
+.more-button {
+	height: 60px;
+	color: white;
+	width: 420px;
+	border: none;
+	margin: 10px 20px 0 0;
+	font-size: 1.6em;
+	font-weight: 600;
+	border-radius: 4px;
+	background-color: #0078fa;
+	border-bottom:#0066d4 4px solid;
+}

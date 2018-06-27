@@ -1,12 +1,13 @@
 /* Make a fake phone container for non-tech users on desktops */
 
 #fakephone {
-	border-radius: 20px;
-	border: solid black 40px;
+	border: solid red 40px;
 	max-width: 480px;
 	background-image: url('/public/images/ios-topbar.png');
 	background-repeat: no-repeat;
-	background-size: 520px;
+	background-size: 480px;
+	height: 850px;
+	overflow: hidden;
 }
 
 /* and some fake phone layout elements */
