@@ -1,0 +1,85 @@
+.roadmap-column {
+
+}
+
+.roadmap-colhead {
+	background-color: #666;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+	margin-bottom: 5px;
+}
+
+.roadmap-icon {
+background-color: #22aa33;
+width: 80px;
+height: 80px;
+float:left;
+margin-right:5px;
+}
+
+.roadmap-block {
+background-color: #22aa33;
+width: 200px;
+height: 70px;
+float:left;
+font-weight: bold;
+font-size: 0.8em;
+color: white;
+text-transform: uppercase;
+padding: 10px 0 0 10px;
+}
+
+.roadmap-row {
+	margin-bottom:5px;
+}
+.roadmap-row:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+
+.roadmap-expander {
+	background-color: #22aa33;
+	width: 30px;
+	height: 80px;
+	float: left;
+	
+}
+
+.moreinfo {
+width: 320px;
+position: fixed;
+
+left: 365px;
+border: solid 4px #22aa33;
+z-index: 1000;
+background-color: #eee;
+padding: 10px 0 0 10px;
+font-size: 0.8em;
+}
+
+.moreinfo-button a {
+	color: white;
+	font-weight: 600;
+	font-size: 1.3em;
+	text-decoration: none !important;
+
+}
+
+.moreinfo-1 {
+	top: 80px;
+}
+.moreinfo-2 {
+	top: 165px;
+}
+.moreinfo-3 {
+	top: 250px;
+}
+.moreinfo-4 {
+	top: 335px;
+}
+.moreinfo-5 {
+	top: 420px;
+}
