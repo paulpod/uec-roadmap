@@ -19,7 +19,7 @@ margin-right: 0.5%;
 }
 
 .roadmap-icon {
-	border-right: #eee 5px solid;
+border-right: #eee 2px solid;
 width: 18%;
 height: 65px;
 float:left;
@@ -27,22 +27,25 @@ margin-right:5px;
 }
 
 .roadmap-block {
-
-width: 72%;
+width: 70%;
 height: 60px;
 float:left;
 font-weight: bold;
-font-size: 0.8em;
 color: white;
-text-transform: uppercase;
+text-transform: none;
+font-size: 0.8em;
 padding: 5px 0 0 5px;
+overflow: hidden;
+
 }
 
+
 .roadmap-row {
-	margin-bottom:5px;
+margin-bottom:5px;
+position: relative;
 }
 .row-111 {
-background-color: #1d3975;
+background-color: #3d5d95;
 }
 .row-ctp {
 background-color: #009741;
@@ -59,19 +62,27 @@ background-color: #f38b2a;
 .row-uec {
 background-color: #d073aa;
 }
+.row-grey {
+background-color: #888;
+}
 
 
 .roadmap-row:after {
-	content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
 .roadmap-expander {
-	width: 5%;
-	height: 65px;
-	float: right;
-	
+height: 1em;
+width: 1em;
+background-color: rgba(0,0,0,0.25);
+position: absolute;
+bottom: 0;
+right: 0;
+display: inline-block;
+line-height: 0.42;
+text-align: center;
 }
 
 .moreinfo {
@@ -88,9 +99,7 @@ font-size: 0.8em;
 .moreinfo-button a {
 	color: white;
 	font-weight: 600;
-	font-size: 1.3em;
 	text-decoration: none !important;
-
 }
 
 .moreinfo-1 {
@@ -107,4 +116,37 @@ font-size: 0.8em;
 }
 .moreinfo-5 {
 	top: 420px;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+	.roadmap-block {
+	font-size: 0.75em;
+	padding: 4px 0 0 4px;
+	}
+	.roadmap-expander {
+	font-size: 0.75em;
+	}
+}
+
+@media (max-width: 1110px) {
+	.roadmap-block {
+	font-size: 0.7em;
+	padding: 3px 0 0 3px;
+	}
+	.roadmap-expander {
+	font-size: 0.7em;
+	}
+}
+@media (max-width: 910px) {
+	.roadmap-block {
+	font-size: 0.66em;
+	padding: 3px 0 0 3px;
+	}
+	.roadmap-expander {
+	font-size: 0.66em;
+	}
 }
