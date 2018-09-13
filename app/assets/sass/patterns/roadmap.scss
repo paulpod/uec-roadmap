@@ -1,27 +1,47 @@
+#roadmap-header {
+width:100%;
+background-image: url('/public/images/nhs-logo-blue.svg');
+background-repeat: no-repeat;
+background-position: top right 7px;
+background-size: 10%;
+margin-left: 7px;
+margin-bottom: 20px;
+}
+
+.roadmap-h1 {
+color: #005EB8;
+font-weight: 600;
+line-height: 1.05;
+margin-bottom: 0.33em;
+}
+.roadmap-h2 {
+color: #005EB8;
+}
+
 .roadmap-column {
 width: 19.5%;
 float: left;
-margin-right: 0.5%;
+margin-left: 0.5%;
+font-size: 0.8em;
 }
 .roadmap-column:after {
-	content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
 .roadmap-colhead {
-	background-color: #666;
-	font-weight: 600;
-	font-size: 1em;
-	color: white;
-	text-align: center;
-	padding: 1em 0;
-	margin-bottom: 5px;
+background-color: #666;
+font-weight: 600;
+color: white;
+text-align: center;
+padding: 1em 0;
+margin-bottom: 5px;
 }
 
 .roadmap-icon {
 border-right: #eee 2px solid;
-width: 18%;
+width: 20%;
 height: 65px;
 float:left;
 margin-right:5px;
@@ -34,7 +54,6 @@ float:left;
 font-weight: bold;
 color: white;
 text-transform: none;
-font-size: 0.8em;
 padding: 5px 0 0 5px;
 overflow: hidden;
 
@@ -92,7 +111,7 @@ position: fixed;
 left: 320px;
 border: solid 4px #666;
 z-index: 1000;
-background-color: #eee;
+background-color: #ee0;
 padding: 10px 0 0 10px;
 font-size: 0.8em;
 }
@@ -119,39 +138,99 @@ font-size: 0.8em;
 	top: 420px;
 }
 
+details {
+	
+}
+.summary {
+	color: white;
+	display: inline-block;
+	float: right;
+	background-color: rgba(0,0,0,0.25);
+	margin-top: -1.55em;
+	padding: 0 0.2em 0 0.5em;
+	position: relative;
+	top:4px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.summary:hover {
+	color: #ffc;
+	background-color: rgba(0,0,0,0.5);
+}
 
+.details-popup {
+	background-color: #ffc;
+	display: block;
+	position: absolute;
+	z-index: 1000;
+	padding: 0.25em 0.5em;
+	-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
 
+}
 
-
-@media (max-width: 1200px) {
-	.roadmap-block {
+@media (max-width: 1800px) {
+	.roadmap-column {
 	font-size: 0.75em;
+	}
+	.roadmap-block {
 	padding: 4px 0 0 4px;
 	}
-	.roadmap-expander {
+	.roadmap-h1 {
+	font-size: 2.3em;
+	max-width: 66%;
+	}
+	.roadmap-h2 {
+	font-size: 1.4em;
+	max-width: 66%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.roadmap-column {
 	font-size: 0.75em;
+	}
+	.roadmap-block {
+	padding: 4px 0 0 4px;
+	}
+	.roadmap-h1 {
+	font-size: 2.2em;
+	max-width: 76%;
+	}
+	.roadmap-h2 {
+	font-size: 1.4em;
+	max-width: 76%;
 	}
 }
 
 @media (max-width: 1110px) {
-	.roadmap-block {
+	.roadmap-column {
 	font-size: 0.7em;
+	}
+	.roadmap-block {
 	padding: 3px 0 0 3px;
 	}
-	.roadmap-expander {
-	font-size: 0.7em;
+	.roadmap-h1 {
+	font-size: 1.7em;
+	max-width: 80%;
+	}
+	.roadmap-h2 {
+	font-size: 1em;
+	max-width: 80%;
 	}
 }
 @media (max-width: 910px) {
-	.roadmap-block {
+	.roadmap-column {
 	font-size: 0.66em;
+	}
+	.roadmap-block {
 	padding: 3px 0 0 3px;
 	}
-	.roadmap-expander {
-	font-size: 0.66em;
-	}
 	.roadmap-colhead {
-		font-size: 0.9em;
+	font-size: 0.9em;
 	}
 }
 @media (max-width: 600px) {
