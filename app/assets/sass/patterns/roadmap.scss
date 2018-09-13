@@ -12,6 +12,7 @@ margin-right: 0.5%;
 .roadmap-colhead {
 	background-color: #666;
 	font-weight: 600;
+	font-size: 1em;
 	color: white;
 	text-align: center;
 	padding: 1em 0;
@@ -148,5 +149,13 @@ font-size: 0.8em;
 	}
 	.roadmap-expander {
 	font-size: 0.66em;
+	}
+	.roadmap-colhead {
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 600px) {
+	.roadmap-colhead {
+		font-size: 0.8em;
 	}
 }

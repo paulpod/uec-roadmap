@@ -10,28 +10,13 @@ $path: "/public/images/";
 @import 'patterns/colours';
 
 // Take a look at in app/assets/sass/patterns/ to see which files are imported.
-@import 'patterns/check-your-answers';
-@import 'patterns/task-list';
+
 @import 'patterns/back-arrows';
 @import 'patterns/nhs-footer';
 @import 'patterns/nhs-header';
 
 
-@import 'patterns/user-details-form';
-@import 'patterns/ods-search-form';
-@import 'patterns/ods-review-items';
-@import 'patterns/ods-edit-items';
-
-@import 'patterns/ods-edit-table';
-
-@import 'patterns/choices';
-
-@import 'patterns/a2si-personas';
-
-// swapping out a fake phone css file for a real mobile one
-/*@import 'patterns/phone';*/
-/*@import 'patterns/realphone';*/
-
+// Some special styles for the roadmap elements
 @import 'patterns/roadmap';
 
 
@@ -59,38 +44,6 @@ $path: "/public/images/";
 
 
 
-.demo-instruct {
-	padding: 1em;
-	background-color: #ce9;
-}
-
-.details-table td {
-	border:none;
-}
-.details-table td:first-child {
-width:2.4em;
-padding: 0
-
-
-}
-.details-table.form-group {
-	margin:0;
-}
-
-
-
-.completebox {
-	margin: 1em 0 1em 0;
-	background-color: #edf3f8;
-	border-left: 8px solid #0f6ecc;
-	padding:0.5em 1em 0.8em 1em
-}
-@media screen and (max-width: 767px) {
-	.completebox {
-		padding:0 1em 1.8em 1em
-
-	}
-}
 
 
 
