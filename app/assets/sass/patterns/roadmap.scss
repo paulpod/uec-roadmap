@@ -244,6 +244,54 @@ details summary::-webkit-details-marker {
 }
 
 
+//for opto+dental
+.summary-opto {
+	color: white;
+	//border-left: solid white 1px;
+	//background-color: rgba(0,0,0,0.25);
+	height: 61px;
+	padding: 0.2em 1em 0 0.5em;
+	position: relative;
+	//left: 64px;
+	font-weight: 600;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.summary:hover {
+	color: #ffc;
+	//background-color: rgba(0,0,0,0.5);
+}
+.roadmap-opto-column {
+	width: 10.5%;
+}
+.metacolumn {
+	background-color: #444;
+	width:205%;
+	display: block;
+	height: 26px;
+}
+.metacolumn h3 {
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 5px;
+}
+.ghostcolumn {
+	height: 26px;
+	background:transparent;
+}
+
+.full-width-col {
+	font-size: 0.8em;
+	margin: 0 1em 0 0.5em;
+}
+
+
+
+
+
 
 @media (max-width: 2300px) {
 	.roadmap-column {
