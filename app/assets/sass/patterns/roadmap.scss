@@ -13,7 +13,6 @@ float: left;
 	width: 55%;
 	float: left;
 	margin-right: 10px;
-	//background-color: yellow;
 }
 .roadmap-h1 {
 color: #005EB8;
@@ -22,7 +21,7 @@ line-height: 1.05;
 margin-bottom: 0.33em;
 }
 .roadmap-h2 {
-color: #005EB8;
+color: #666;
 }
 
 .roadmap-column {
@@ -117,46 +116,7 @@ li.key {
 }
 
 
-/* Old small blobs for key 
 
-li.key-natav::before {
-content: "\25AA";
-color: #3d5d95;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-li.key-beta::before {
-content: "\25AA"; color: #009741;
-font-size: 2em;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-li.key-natman::before {
-content: "\25AA"; color: #00a8cb;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-li.key-market::before {
-content: "\25AA"; color: #e32627;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-li.key-subloc::before {
-content: "\25AA"; color: #e37b2a;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-li.key-alpha::before {
-content: "\25AA"; color: #d073aa;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-li.key-grey::before {
-content: "\25AA"; color: #888;
-display: inline-block; width: 1em;
-margin-left: -1em;
-}
-For responsive a wider viewport 1280 view */
 
 li.key-beta {
 	border-left: 1.25em solid #009741;
@@ -199,34 +159,8 @@ li.key-grey {
 }
 
 
-.roadmap-expander {
-height: 1em;
-width: 1em;
-background-color: rgba(0,0,0,0.25);
-position: absolute;
-bottom: 0;
-right: 0;
-display: inline-block;
-line-height: 0.42;
-text-align: center;
-}
 
-.moreinfo {
-width: 320px;
-position: fixed;
-left: 320px;
-border: solid 4px #666;
-z-index: 1000;
-background-color: #ee0;
-padding: 10px 0 0 10px;
-font-size: 0.8em;
-}
 
-.moreinfo-button a {
-	color: white;
-	font-weight: 600;
-	text-decoration: none !important;
-}
 
 .moreinfo-1 {
 	top: 80px;
@@ -457,8 +391,113 @@ details summary::-webkit-details-marker {
 	}
 	
 }
-@media (max-width: 600px) {
+@media (max-width: 769px) {
+	.roadmap-column {
+		float:none;
+		width: 85%;
+		margin-left: 60px;
+	}
+	.roadmap-colhead h3 {
+		transform: rotate(90deg);
+		font-size: 1.6em;
+		text-align: left;
+		font-weight: 600;
+		width: 200px;
+		position: relative;
+		left: -80px;
+		top:90px;
+	}
 	.roadmap-colhead {
-		font-size: 0.8em;
+		background-color: #444;
+		position: absolute;
+	    left: 5px;
+	    width:50px;
+	    height: 99%;
+	}
+	.icon-nhs-window {
+	background-image: none;
+	}
+	.summary {
+    left: 0;
+    font-size: 1.33em;
+	}
+	.roadmap-block {
+    max-width: none;
+
+	}
+	.details-popup {
+	font-size: 1.33em;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+	
+
+	#colhead1 {
+	}
+	#colhead2 {
+		height: 192px;
+	}
+	#colhead3 {
+		height: 320px;
+	}
+	#colhead4 {
+		height: 114px;
+	}
+	#colhead5 {
+		height: 664px;
+	}
+
+	header {
+		display: inline-block;
+	}
+	header::after {
+		clear: all;
+	}
+	#roadmap-header {
+	background-image: url('/public/images/nhs-logo-blue.svg');
+	background-repeat: no-repeat;
+	background-position: top left -2px;
+	background-size: 20%;
+	padding-top: 2.3em;
+	padding-bottom: 0;
+	margin-top: -1em;
+	border-bottom: 2px solid #ccc;
+	width: 96%;
+	}
+	#roadmap-title {
+	width: 100%;
+	float: none;
+	}
+	#roadmap-title h1 {
+		font-size: 1.8em;
+	}
+	#roadmap-title h2 {
+		font-size: 1.2em;
+	}
+	.details-popup-top {
+		width: 88%;
+	}
+	#roadmap-key {
+	margin-top: 1em;
+	width: 100%;
+	float: none;
+	}
+	.key {
+	font-size: 0.88em;
+	}
+	#key-asterix {
+		font-size: 0.88em;
+		text-align: right;
+		position: relative;
+		right: 16px;
+	}
+}
+
+
+@media(min-width: 770px) {
+	.hide-desktop {
+		display: none;
 	}
 }
