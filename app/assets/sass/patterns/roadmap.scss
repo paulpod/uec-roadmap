@@ -433,23 +433,6 @@ details summary::-webkit-details-marker {
 		display: none;
 	}
 	
-
-	#colhead1 {
-		height: 872px;
-	}
-	#colhead2 {
-		height: 192px;
-	}
-	#colhead3 {
-		height: 320px;
-	}
-	#colhead4 {
-		height: 114px;
-	}
-	#colhead5 {
-		height: 664px;
-	}
-
 	header {
 		display: inline-block;
 	}
@@ -489,10 +472,27 @@ details summary::-webkit-details-marker {
 	font-size: 0.88em;
 	}
 	#key-asterix {
-		font-size: 0.88em;
-		text-align: right;
-		position: relative;
-		right: 16px;
+	font-size: 0.88em;
+	text-align: right;
+	position: relative;
+	right: 16px;
+	}
+
+
+	#colhead1 {
+		height: 872px;
+	}
+	#colhead2 {
+		height: 252px;
+	}
+	#colhead3 {
+		height: 252px;
+	}
+	#colhead4 {
+		height: 114px;
+	}
+	#colhead5 {
+		height: 600px;
 	}
 }
 
