@@ -53,9 +53,9 @@ if (isSecure) {
 
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
-if (env === 'production' && useAuth === 'true') {
-  app.use(utils.basicAuth(username, password))
-}
+//if (env === 'production' && useAuth === 'true') {
+//  app.use(utils.basicAuth(username, password))
+//}
 
 // Set up App
 var appViews = [path.join(__dirname, '/app/views/'), path.join(__dirname, '/lib/')]
