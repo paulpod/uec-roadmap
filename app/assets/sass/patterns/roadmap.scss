@@ -391,7 +391,7 @@ details summary::-webkit-details-marker {
 	}
 	
 }
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
 	.roadmap-column {
 		float:none;
 		width: 85%;
