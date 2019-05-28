@@ -1,0 +1,633 @@
+{% extends "minimal-layout.html" %}
+
+{% block page_title %}
+  Urgent and Emergency Care Roadmap
+{% endblock %}
+
+{% block content %}
+
+
+<style type="text/css" media="print">
+    @page { 
+        size: landscape;
+    }
+    .icon-nhs-window {
+      background-image: none;
+    }
+    .summary {
+    border-left: none;
+    left: 0;
+    }
+    .roadmap-block {
+    width: 88%;
+    }
+    body, .roadmap-row, .summary {
+      color-adjust: exact !important;
+    }
+</style>
+
+
+<header>
+	<div id="roadmap-header">
+    <div id="roadmap-title">
+  		<h1 class="roadmap-h1">Urgent &amp; Emergency care: roadmap for digital health and care services</h1>
+
+  		<h2 class="roadmap-h2">From the Digital Transformation Portfolio</h2>
+
+      <details class="details-top">
+        <summary class="" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+          <img src="/public/images/i-info-ball.png" height="24px">
+
+          <span style="display: inline-block;position: relative;top:-5px;text-decoration: underline;margin-top:1em">About this roadmap</span>
+        </summary>
+
+        <div class="details-popup-top" id="details-content-0" aria-hidden="false">
+
+          <p>The Five Year Forward View sets out that to meet rising demand, the NHS must harness the power of information and technology to provide care and services that are convenient for patients, efficient for the NHS and which get people the right care for them as quickly as possible</p>
+
+          <p>This roadmap sets out our plans to provide the infrastructure, systems, technology and processes that enable the development of digital urgent care services. We will improve telephone and online triage and provide improved technology to support clinicians, so that treatment is better targeted and patients are referred to the right place, first time</p>
+
+          <p>For more information visit <a href="https://www.england.nhs.uk/urgent-emergency-care/" target="_new">https://www.england.nhs.uk/urgent-emergency-care/</a></p>
+
+        </div>
+      </details>
+    </div>
+
+    <div id="roadmap-key">
+      <ul>
+        
+        <li class="key key-beta">Beta or local pilot (in public or private testing)</li>
+
+        <li class="key key-alpha">Alpha (for internal testing)</li>
+
+        <li class="key key-market">Market (for suppliers)</li>
+
+        <li class="key key-natav">Nationally available (live service open to all)</li>
+
+        <li class="key key-natman">Nationally mandated* (required service)</li>
+
+        <li class="key key-subloc">Subject to local implementation</li>
+
+        <li class="key hide-mobile" style="font-weight: 400">* dependent on local implementation</li>
+
+      </ul>
+
+      <div class="hide-desktop" id="key-asterix">
+        * dependent on local implementation
+      </div>
+
+      <details class="details-top">
+        <summary class="" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+          <img src="/public/images/i-info-ball.png" height="24px">
+
+          <span style="display: inline-block;position: relative;top:-5px;text-decoration: underline;margin-top:1em">Abbreviations explained</span>
+        </summary>
+
+        <div class="details-popup-top" id="details-content-0" aria-hidden="false">
+
+          <p><strong>ED</strong> = Emergency department </p>
+
+          <p><strong>CTP</strong> = <a href="https://digital.nhs.uk/about-nhs-digital/our-work/transforming-health-and-care-through-technology/urgent-and-emergency-care-domain-b/clinical-triage-project" target="_new">Clinical Triage Platform</a></p>
+
+          <p><strong>DoS</strong> = <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_new">Directory of Services</a></p>
+
+          <p><strong>UEC</strong> = <a href="https://www.england.nhs.uk/urgent-emergency-care/" target="_new">Urgent and Emergency Care</a></p>
+
+          <p><strong>UTC</strong> = <a href="https://www.england.nhs.uk/urgent-emergency-care/urgent-treatment-centres/" target="_new">Urgent Treatment Centres</a></p>
+
+          <p><strong>EPS</strong> = <a href="https://www.nhs.uk/NHSEngland/AboutNHSservices/pharmacists/Pages/eps.aspx" target="_new">Electronic Prescription Service</a></p>
+
+          <p><strong>SCR</strong> = <a href="https://digital.nhs.uk/services/summary-care-records-scr" target="_new">Summary Care Record</a></p>
+
+          <p><strong>OOH</strong> = Out of hours</p>
+
+          <p><strong>CDSS</strong> = <a href="https://www.england.nhs.uk/five-year-forward-view/next-steps-on-the-nhs-five-year-forward-view/harnessing-technology-and-innovation/" target="_new">Clinical Decision Support Systems</a></p>
+
+          <p><strong>IUC</strong> = <a href="https://www.england.nhs.uk/urgent-emergency-care/nhs-111/urgent-care-workforce-development/" target="_new">Integrated Urgent Care</a></p>
+
+
+          <p><strong>CAS</strong> = <a href="https://www.england.nhs.uk/urgent-emergency-care/nhs-111/urgent-care-workforce-development/" target="_new">Clinical Assessment Service</a></p>
+
+        </div>
+      </details>
+
+    </div>
+
+    <br clear="all">
+
+  </div><!-- END roadmap header -->
+</header>
+
+
+<main role="main" style="background-color: #fff;margin-right: 10px">
+
+
+
+
+	<div class="roadmap-column">
+		<div class="roadmap-colhead" id="colhead1"><h3>Available now</h3></div>
+
+
+
+		  
+		<div class="roadmap-row row-natman icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS 111 Online live nationally</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>NHS 111 online is being made available across the country this year, connecting patients to local services for help when they need it</p>
+
+          <p><a href="http://111.nhs.uk">http://111.nhs.uk</a></p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS 111 online can validate 999 and ED triage outcomes</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Users can speak to a clinician when their triage suggests they might need to ring 999 for a low-acuity ambulance or go to an emergency treatment centre</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+    <div class="roadmap-row row-market icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Publication of improved interoperability guidance on developer.nhs.uk </span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Further information at <a href="https://developer.nhs.uk/apis/cds-api/index.html" target="_new">developer.nhs.uk</a> from Q4 18/19</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Ambulance telephone call analysis</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Discovery and alpha on application of natural language processing on nature of call and call audit</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS Pathways Senior Clinician Module v3</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>New version available to SCM users with streamlined workflow, improved routing for chest pain, possible stroke and allergic reaction symptoms plus expanded Pharmacy and Mental Health options</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+    
+
+
+    
+
+	
+  </div><!-- END column one -->
+
+
+  <div class="hide-desktop">
+    <br clear="all">
+  </div>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<!-- column two -->
+	<div class="roadmap-column">
+		<div class="roadmap-colhead" id="colhead2"><h3>April - June 2019</h3></div>
+
+
+		<div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS 111 online: Help NHS 111 online users who need a prescription</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>People who urgently need prescription medication can use NHS 111 online to find out what to do next. Their case may be sent electronically for a consultation with a pharmacist.</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS Pathways Release 17 to support triage</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Beta testing and commencement of national roll-out of R17. Clinical improvements to choking, drowning and cold exposure pathways and for unexpected deaths, non mobile babies and injested objects.</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+    <div class="roadmap-row row-natav icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>CDS API Implementation Guide</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>A specification to describe how triage / CDSS systems should be built interoperably</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+    <div class="roadmap-row row-alpha icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Extending contact history (ECH) Discovery</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Providing clinicians in UEC settings an at a glance view of recent patient encounters with 111, aiding identification of escalating clinical risk and clinical decision making.</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+    <div class="roadmap-row row-natav icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>CAD to CAD</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Update the messaging specifications for ambulance to ambulance information flow</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+	</div><!-- END column  -->
+
+  <div class="hide-desktop">
+    <br clear="all">
+  </div>
+
+
+
+
+
+<!-- column three -->
+  <div class="roadmap-column">
+    <div class="roadmap-colhead" id="colhead3"><h3>July - Sept 2019</h3></div>
+
+
+    <div class="roadmap-row row-beta icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS Pathways Release 18 Live Beta Testing</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>R18 contains significant changes to high end pathways to support the use of Ambulance resources, Release 18 also contains changes to Care Advice across the entire Pathways suite (750+ pathways) creating a better call experience for patients and reducing call lengths, other changes include changes to clinical pathways in response to user feedback and simplification of the Pathways product to make it easier for call handlers and clinicians to use.</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+    <div class="roadmap-row row-alpha icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Pathways Clinical Consultation Support (PaCCS) Alpha available</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>PaCCS is a new clinical consultation support product being developed by NHS Pathways for use by clinicians in 111, 999 and IUC CAS settings. This product will not be algorithm based but will provide structured guidance for clinicians to support their telephone consultation.</p>
+
+
+        </div>
+      </details>
+      
+    </div>
+
+
+   
+
+
+  </div><!-- END COLUMN -->
+
+  <div class="hide-desktop">
+    <br clear="all">
+  </div>
+
+
+
+
+
+
+  <div class="roadmap-column">
+    <div class="roadmap-colhead" id="colhead4"><h3>Oct - Dec 2019</h3></div>
+
+     <div class="roadmap-row row-natav icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS Pathways Release 18 widescale deployment window </span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>To be added</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    
+
+
+    
+  </div><!-- END COLUMN -->
+
+  <div class="hide-desktop">
+    <br clear="all">
+  </div>
+
+
+
+
+
+
+	<div class="roadmap-column">
+		<div class="roadmap-colhead" id="colhead5"><h3>2020 +</h3></div>
+
+    <div class="roadmap-row row-beta icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS 111 online can book into urgent care services</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Users who need to visit an urgent care service, like an out-of-hours GP, can book their appointment online</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+    <div class="roadmap-row row-alpha icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Connect NHS 111 online to online GP consultations</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Can users who need to speak to a GP today be linked directly into to their local online consultation system via 111 online?</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+
+
+
+
+	</div><!-- END column five -->
+
+  <div class="hide-desktop">
+    <br clear="all">
+  </div>
+
+
+	<br clear="all">
+
+  <!-- HIDE THIS no longer relevant 
+  <div style="padding: 1em 0.5em" class="hide-on-small">
+    <p>Link to the last <a href="https://indd.adobe.com/view/8e899548-982c-4401-ae9d-21f89f7d8f76" target="_new" >interactive PDF roadmap here</a></p>
+
+  </div>
+  -->
+
+
+
+
+
+
+<!-- hide the old available now items --
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS 111 can book Out of Hours GP appointments</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Appointments can now be booked from NHS 111 into the majority of GP Out of Hours services and into many Urgent Treatment Centre services</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Electronic Prescriptions</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Supplier approval to route electronic prescriptions from NHS 111 and GP Out of Hours to pharmacies via EPS has begun</p>
+ 
+          <p><a href="https://digital.nhs.uk/services/electronic-prescription-service/electronic-prescription-service-in-integrated-urgent-care">https://digital.nhs.uk/services/…</a></p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-beta icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Pharmacy profile updates</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Profile Updater is live in BETA enabling all pharmacy providers to keep their service information (e.g. opening times) up to date on the Directory of Services (DoS) </p>
+
+          <p><a href="https://digital.nhs.uk/services/directory-of-services-dos">https://digital.nhs.uk/services/directory-of-services-dos</a></p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Access to Mental Health and End of Life records</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Clinicians in over 50% of Urgent Treatment Centres and Emergency Departments have electronic or manual access to patients’ Mental Health records and End of Life records</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-natav icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS Pathways Repeat Prescription Module</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Enable specific high volume Repeat Prescription calls to be managed by users trained in this module only. This increases availability of call handlers and clinicians in IUC, fast tracks appropriate calls to clinicians and also reduces provider training commitments</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-subloc icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Summary Care Records additional info</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Clinicians have access to Summary Care Records (SCR) for 15% of patients that have additional information in their SCR</p>
+
+          <p><a href="https://digital.nhs.uk/services/summary-care-records-scr">https://digital.nhs.uk/services/summary-care-records-scr</a></p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-natav icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Local services prioritised in DoS</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Commissioners can prioritise services that are locally-commissioned to ensure patients are directed to the most appropriate services, and ensure they aren’t directed to services that aren’t able to help them</p>
+          <p><a href="https://digital.nhs.uk/services/directory-of-services-dos">https://digital.nhs.uk/services/directory-of-services-dos</a></p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-alpha icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Ambulance strategy</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Digital strategy available now to inform and support the digitisation of information made available to Ambulance services</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-market icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>Standards and specifications</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Publication of initial standards and specifications that will enable suppliers to develop products that integrate into the current UEC systems</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    <div class="roadmap-row row-natav icon-nhs-window">
+
+      <details class="">
+        <summary class="roadmap-block summary" role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span>NHS Pathways updated to support triage</span></summary>
+
+        <div class="details-popup" id="details-content-0" aria-hidden="false">
+
+          <p>Clinical Decision Support System (CDSS) to support non-clinical and clinical triage in 111/999/OOH. This update contains a range of content changes including; revised content for patients who have fallen, further sepsis content, support for 999 services with a major incident feature and updates for IUC CAS products</p>
+
+        </div>
+      </details>
+      
+    </div>
+
+    -->
+
+
+
+
+
+</main>
+
+
+
+{% endblock %}
+
+
